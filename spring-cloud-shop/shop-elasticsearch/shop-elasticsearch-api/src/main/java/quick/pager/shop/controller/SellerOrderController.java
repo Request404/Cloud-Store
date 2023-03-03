@@ -1,6 +1,7 @@
 package quick.pager.shop.controller;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,16 +22,16 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(ConstantsClient.ELASTICSEARCH)
 public class SellerOrderController {
 
-    @Autowired
-    private SellerOrderService sellerOrderService;
+  @Autowired
+  private SellerOrderService sellerOrderService;
 
-    /**
-     * 订单查询
-     *
-     * @param request 请求参数
-     */
-    @PostMapping("/seller/order/page")
-    public Response<List<ESSellerOrderResponse>> queryPage(@RequestBody final ESSellerOrderPageRequest request) {
-        return sellerOrderService.queryPage(request);
-    }
+  /**
+   * 订单查询
+   *
+   * @param request 请求参数
+   */
+  @PostMapping("/seller/order/page")
+  public Response<List<ESSellerOrderResponse>> queryPage(@RequestBody final ESSellerOrderPageRequest request) {
+    return sellerOrderService.queryPage(request);
+  }
 }

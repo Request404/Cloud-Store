@@ -1,6 +1,7 @@
 package quick.pager.shop.job.response;
 
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
@@ -10,9 +11,9 @@ import lombok.Data;
  */
 @Data
 public class JobStatusResponse implements Serializable {
-    private static final long serialVersionUID = 7068600043114220277L;
+  private static final long serialVersionUID = 7068600043114220277L;
 
-    private int code;
+  private int code;
 
-    private String desc;
+  private String desc;
 }

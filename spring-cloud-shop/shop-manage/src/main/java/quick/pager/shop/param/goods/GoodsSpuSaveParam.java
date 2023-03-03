@@ -8,5 +8,5 @@ import quick.pager.shop.param.Param;
  * @author request404
  */
 public class GoodsSpuSaveParam extends Param {
-    private static final long serialVersionUID = -4326419745093971206L;
+  private static final long serialVersionUID = -4326419745093971206L;
 }

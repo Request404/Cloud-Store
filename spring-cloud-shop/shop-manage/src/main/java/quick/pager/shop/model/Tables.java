@@ -14,13 +14,13 @@ import quick.pager.shop.model.Model;
 @Data
 public class Tables extends Model {
 
-    private static final long serialVersionUID = 2230728377435647289L;
+  private static final long serialVersionUID = 2230728377435647289L;
 
-    @TableField("TABLE_SCHEMA")
-    private String tableSchema;
-    @TableField("TABLE_NAME")
-    private String tableName;
-    @TableField("TABLE_COMMENT")
-    private String tableComment;
+  @TableField("TABLE_SCHEMA")
+  private String tableSchema;
+  @TableField("TABLE_NAME")
+  private String tableName;
+  @TableField("TABLE_COMMENT")
+  private String tableComment;
 
 }

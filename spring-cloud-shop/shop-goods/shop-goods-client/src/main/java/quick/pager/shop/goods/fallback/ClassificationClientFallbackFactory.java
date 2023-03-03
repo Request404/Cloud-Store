@@ -8,8 +8,8 @@ import quick.pager.shop.goods.client.ClassificationClient;
 @Slf4j
 @Component
 public class ClassificationClientFallbackFactory implements FallbackFactory<ClassificationClient> {
-    @Override
-    public ClassificationClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public ClassificationClient create(Throwable cause) {
+    return null;
+  }
 }

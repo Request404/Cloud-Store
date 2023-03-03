@@ -15,15 +15,15 @@ import quick.pager.shop.model.Model;
 @TableName("t_user")
 public class User extends Model {
 
-    private static final long serialVersionUID = 6874571522967825468L;
+  private static final long serialVersionUID = 6874571522967825468L;
 
-    /**
-     * 手机号码
-     */
-    private String phone;
-    /**
-     * 登陆密码
-     */
-    private String password;
+  /**
+   * 手机号码
+   */
+  private String phone;
+  /**
+   * 登陆密码
+   */
+  private String password;
 
 }

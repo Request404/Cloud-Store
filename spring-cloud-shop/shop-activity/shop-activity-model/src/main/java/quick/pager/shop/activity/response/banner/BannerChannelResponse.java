@@ -1,6 +1,7 @@
 package quick.pager.shop.activity.response.banner;
 
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
@@ -10,14 +11,14 @@ import lombok.Data;
  */
 @Data
 public class BannerChannelResponse implements Serializable {
-    private static final long serialVersionUID = 1489702414131088409L;
+  private static final long serialVersionUID = 1489702414131088409L;
 
-    /**
-     * 渠道类型
-     */
-    private String channelType;
-    /**
-     * 渠道名称
-     */
-    private String channelName;
+  /**
+   * 渠道类型
+   */
+  private String channelType;
+  /**
+   * 渠道名称
+   */
+  private String channelName;
 }

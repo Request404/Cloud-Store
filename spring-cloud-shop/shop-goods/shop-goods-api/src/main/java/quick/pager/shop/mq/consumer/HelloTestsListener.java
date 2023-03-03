@@ -11,10 +11,10 @@ import java.io.IOException;
 public class HelloTestsListener {
 
 
-    @StreamListener(target = GoodsMQ.GREETING)
-    public void process(@Payload String msg) throws IOException {
-        System.out.println("MQ返回消息:" + msg);
+  @StreamListener(target = GoodsMQ.GREETING)
+  public void process(@Payload String msg) throws IOException {
+    System.out.println("MQ返回消息:" + msg);
 
-    }
+  }
 
 }

@@ -21,21 +21,21 @@ import lombok.experimental.Accessors;
 @TableName("t_goods_sku_stock")
 public class GoodsSkuStock extends Model {
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    /**
-     * 商品主表主键
-     */
-    private Long goodsId;
-    /**
-     * t_goods_sku id
-     */
-    private Long skuId;
+  /**
+   * 商品主表主键
+   */
+  private Long goodsId;
+  /**
+   * t_goods_sku id
+   */
+  private Long skuId;
 
-    /**
-     * 商品库存
-     */
-    private Integer stock;
+  /**
+   * 商品库存
+   */
+  private Integer stock;
 
 
 }

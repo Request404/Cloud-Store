@@ -10,11 +10,11 @@ import quick.pager.shop.user.response.UserAccountResponse;
  */
 public interface UserAccountService {
 
-    /**
-     * 根据用户主键查询用户账户信息
-     *
-     * @param userId 用户主键
-     * @return 户账户信息
-     */
-    Response<UserAccountResponse> account(final Long userId);
+  /**
+   * 根据用户主键查询用户账户信息
+   *
+   * @param userId 用户主键
+   * @return 户账户信息
+   */
+  Response<UserAccountResponse> account(final Long userId);
 }

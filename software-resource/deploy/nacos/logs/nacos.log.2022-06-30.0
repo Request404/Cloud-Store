@@ -1,0 +1,196 @@
+2022-06-30 14:48:46,724 INFO Starting Nacos v1.3.2 on LAPTOP-98HNLMK2 with PID 2520 (F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\target\nacos-server.jar started by Acer in F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\bin)
+
+2022-06-30 14:48:46,738 INFO The following profiles are active: standalone
+
+2022-06-30 14:48:59,733 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$73c81413] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-30 14:49:00,103 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-30 14:49:00,169 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2812b107' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-30 14:49:00,181 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$989cb6c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-30 14:49:00,205 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-30 14:49:02,351 INFO Tomcat initialized with port(s): 8848 (http)
+
+2022-06-30 14:49:02,488 INFO Starting service [Tomcat]
+
+2022-06-30 14:49:02,488 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2022-06-30 14:49:02,577 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Acer\product\11.2.0\dbhome_1\bin;E:\Machine-Learing\Cuda Development\cudnn\bin;E:\Machine-Learing\Cuda Development\extras\CUPTI\lib64;E:\Machine-Learing\Cuda Development\bin;E:\Machine-Learing\Cuda Development\libnvvp;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\ProgramData\chocolatey\bin;F:\JavaDevEnv\mysql-8.0.20-winx64\bin;F:\JavaDevEnv\apache-maven-3.6.3\bin;F:\JavaDevEnv\gradle-7.3.3-bin\gradle-7.3.3\bin;F:\JavaScriptEnv\nodejs\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.2.0\;E:\Github\Git\Git\cmd;E:\BaiduNetdiskDownload\adt-bundle-windows-x86\sdk\tools;E:\BaiduNetdiskDownload\adt-bundle-windows-x86\sdk\platform-tools;F:\Python\XshellData\Xftp\;F:\Python\XshellData\Xshell\;F:\Python\Python2.7;E:\Python Machine Learn;E:\Python Machine Learn\Library\mingw-w64\bin;E:\Python Machine Learn\Library\usr\bin;E:\Python Machine Learn\Library\bin;E:\Python Machine Learn\Scripts;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;F:\JBrainSW\IntelliJ Idea\IntelliJ IDEA 2021.2\bin;;F:\JBrainSW\WebStorm\WebStorm 2021.2.2\bin;;F:\JBrainSW\PyCharm\PyCharm 2021.1\bin;;C:\Users\Acer\AppData\Roaming\npm;;%DevEco Studio%;.]
+
+2022-06-30 14:49:03,157 INFO Initializing Spring embedded WebApplicationContext
+
+2022-06-30 14:49:03,157 INFO Root WebApplicationContext: initialization completed in 16060 ms
+
+2022-06-30 14:49:04,502 INFO HikariPool-1 - Starting...
+
+2022-06-30 14:49:05,146 INFO HikariPool-1 - Start completed.
+
+2022-06-30 14:49:07,232 INFO Nacos-related cluster resource initialization
+
+2022-06-30 14:49:07,324 INFO The cluster resource is initialized
+
+2022-06-30 14:49:08,827 INFO Reflections took 141 ms to scan 1 urls, producing 6 keys and 24 values 
+
+2022-06-30 14:49:08,933 INFO Reflections took 7 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2022-06-30 14:49:08,946 INFO Reflections took 9 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2022-06-30 14:49:14,597 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2022-06-30 14:49:15,042 INFO Adding welcome page: class path resource [static/index.html]
+
+2022-06-30 14:49:16,299 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2022-06-30 14:49:16,390 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62417a16, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c715e84, org.springframework.security.web.header.HeaderWriterFilter@c9413d8, org.springframework.security.web.csrf.CsrfFilter@cf65451, org.springframework.security.web.authentication.logout.LogoutFilter@70fab835, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b9d6699, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72b16078, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32057e6, org.springframework.security.web.session.SessionManagementFilter@46074492, org.springframework.security.web.access.ExceptionTranslationFilter@37eeec90]
+
+2022-06-30 14:49:17,164 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2022-06-30 14:49:17,200 INFO Initializing ExecutorService 'taskScheduler'
+
+2022-06-30 14:49:17,779 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2022-06-30 14:49:17,786 INFO Started Nacos in 36.376 seconds (JVM running for 41.148)
+
+2022-06-30 14:49:17,786 INFO Nacos Log files: F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\logs
+
+2022-06-30 14:49:17,799 INFO Nacos Log files: F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\conf
+
+2022-06-30 14:49:17,800 INFO Nacos Log files: F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\data
+
+2022-06-30 14:49:17,801 INFO Nacos started successfully in stand alone mode. use external storage
+
+2022-06-30 14:54:27,678 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2022-06-30 14:54:27,678 INFO Initializing Servlet 'dispatcherServlet'
+
+2022-06-30 14:54:27,694 INFO Completed initialization in 13 ms
+
+2022-06-30 14:59:09,826 INFO [capacityManagement] start correct usage
+
+2022-06-30 14:59:11,088 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-30 14:59:12,179 WARN clearConfigHistory start
+
+2022-06-30 15:09:11,089 INFO [capacityManagement] start correct usage
+
+2022-06-30 15:09:11,090 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-30 15:09:12,219 WARN clearConfigHistory start
+
+2022-06-30 15:19:11,091 INFO [capacityManagement] start correct usage
+
+2022-06-30 15:19:11,105 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-30 15:19:12,224 WARN clearConfigHistory start
+
+2022-06-30 15:29:11,107 INFO [capacityManagement] start correct usage
+
+2022-06-30 15:29:11,110 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-30 15:29:12,229 WARN clearConfigHistory start
+
+2022-06-30 15:31:38,529 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a420639 (Communications link failure
+
+The last packet successfully received from the server was 39,011 milliseconds ago.  The last packet sent successfully to the server was 39,011 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:31:38,529 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35ebccbe (Communications link failure
+
+The last packet successfully received from the server was 25,377 milliseconds ago.  The last packet sent successfully to the server was 25,377 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:31:44,656 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@30ef4e45 (Communications link failure
+
+The last packet successfully received from the server was 797,940 milliseconds ago.  The last packet sent successfully to the server was 797,940 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:32:03,819 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@49d8ff2d (Communications link failure
+
+The last packet successfully received from the server was 816,110 milliseconds ago.  The last packet sent successfully to the server was 816,111 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:32:07,852 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@463011e5 (Communications link failure
+
+The last packet successfully received from the server was 817,763 milliseconds ago.  The last packet sent successfully to the server was 817,763 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:32:07,859 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d666454 (Communications link failure
+
+The last packet successfully received from the server was 817,519 milliseconds ago.  The last packet sent successfully to the server was 817,520 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:32:22,727 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@45ba61e0 (Communications link failure
+
+The last packet successfully received from the server was 832,302 milliseconds ago.  The last packet sent successfully to the server was 832,302 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:32:36,762 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@651ce977 (Communications link failure
+
+The last packet successfully received from the server was 845,640 milliseconds ago.  The last packet sent successfully to the server was 845,641 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:32:36,822 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@35a3d032 (Communications link failure
+
+The last packet successfully received from the server was 845,309 milliseconds ago.  The last packet sent successfully to the server was 845,310 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:32:41,632 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f2c13b9 (Communications link failure
+
+The last packet successfully received from the server was 849,526 milliseconds ago.  The last packet sent successfully to the server was 849,526 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:00,538 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e7921c1 (Communications link failure
+
+The last packet successfully received from the server was 865,743 milliseconds ago.  The last packet sent successfully to the server was 865,744 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:05,668 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24276655 (Communications link failure
+
+The last packet successfully received from the server was 867,299 milliseconds ago.  The last packet sent successfully to the server was 867,300 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:05,754 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4db685e (Communications link failure
+
+The last packet successfully received from the server was 867,009 milliseconds ago.  The last packet sent successfully to the server was 867,009 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:19,444 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4dd5bade (Communications link failure
+
+The last packet successfully received from the server was 877,790 milliseconds ago.  The last packet sent successfully to the server was 877,790 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:34,575 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@65d4ba95 (Communications link failure
+
+The last packet successfully received from the server was 892,356 milliseconds ago.  The last packet sent successfully to the server was 892,356 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:34,694 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d51ea05 (Communications link failure
+
+The last packet successfully received from the server was 890,013 milliseconds ago.  The last packet sent successfully to the server was 890,016 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:38,351 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@65bb85a9 (Communications link failure
+
+The last packet successfully received from the server was 891,613 milliseconds ago.  The last packet sent successfully to the server was 891,613 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:33:57,258 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1a0acd1b (Communications link failure
+
+The last packet successfully received from the server was 902,234 milliseconds ago.  The last packet sent successfully to the server was 902,234 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:34:03,483 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39d7b42e (Communications link failure
+
+The last packet successfully received from the server was 906,787 milliseconds ago.  The last packet sent successfully to the server was 906,788 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:34:03,655 WARN HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@548e0663 (Communications link failure
+
+The last packet successfully received from the server was 900,163 milliseconds ago.  The last packet sent successfully to the server was 900,164 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+
+2022-06-30 15:39:11,110 INFO [capacityManagement] start correct usage
+
+2022-06-30 15:39:12,384 WARN clearConfigHistory start
+
+2022-06-30 15:39:15,386 ERROR clearConfigHistory error : org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3001ms.
+
+2022-06-30 15:49:15,388 WARN clearConfigHistory start
+
+2022-06-30 15:49:18,388 ERROR clearConfigHistory error : org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3000ms.
+
+2022-06-30 15:59:18,391 WARN clearConfigHistory start
+
+2022-06-30 15:59:21,392 ERROR clearConfigHistory error : org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3000ms.
+
+2022-06-30 16:09:21,393 WARN clearConfigHistory start
+
+2022-06-30 16:09:24,399 ERROR clearConfigHistory error : org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3004ms.
+
+2022-06-30 16:19:24,400 WARN clearConfigHistory start
+
+2022-06-30 16:19:27,402 ERROR clearConfigHistory error : org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 3000ms.
+

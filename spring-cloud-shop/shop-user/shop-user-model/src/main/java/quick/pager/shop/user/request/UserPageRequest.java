@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class UserPageRequest extends PageRequest {
-    private static final long serialVersionUID = -4675730668917862757L;
+  private static final long serialVersionUID = -4675730668917862757L;
 
 
 }

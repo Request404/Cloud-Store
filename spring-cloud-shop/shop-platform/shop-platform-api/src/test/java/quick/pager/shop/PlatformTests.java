@@ -12,14 +12,14 @@ import quick.pager.shop.mq.PlatformMQ;
 @SpringBootTest(classes = Platform.class)
 public class PlatformTests {
 
-    @Autowired
-    private PlatformMQ platformMQ;
+  @Autowired
+  private PlatformMQ platformMQ;
 
-    @Test
-    public void testSmsMQ() {
+  @Test
+  public void testSmsMQ() {
 
-        boolean send = platformMQ.sendSMS().send(MessageBuilder.withPayload("测试").build());
+    boolean send = platformMQ.sendSMS().send(MessageBuilder.withPayload("测试").build());
 
-        System.out.println(send);
-    }
+    System.out.println(send);
+  }
 }

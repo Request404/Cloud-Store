@@ -11,12 +11,12 @@ import lombok.experimental.Accessors;
 @TableName("t_assemble_activity_goods")
 public class AssembleActivityGoods extends Model {
 
-    private static final long serialVersionUID = 8176754461106350259L;
+  private static final long serialVersionUID = 8176754461106350259L;
 
-    private Long goodsId;
+  private Long goodsId;
 
-    private Long activityId;
+  private Long activityId;
 
-    private Long ruleId;
+  private Long ruleId;
 
 }

@@ -12,14 +12,14 @@ import quick.pager.shop.user.request.PageRequest;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SMSTemplatePageRequest extends PageRequest {
-    private static final long serialVersionUID = -6861845088669194884L;
+  private static final long serialVersionUID = -6861845088669194884L;
 
-    /**
-     * 所属模块
-     */
-    private String module;
-    /**
-     * 模板标识
-     */
-    private String smsTemplateCode;
+  /**
+   * 所属模块
+   */
+  private String module;
+  /**
+   * 模板标识
+   */
+  private String smsTemplateCode;
 }

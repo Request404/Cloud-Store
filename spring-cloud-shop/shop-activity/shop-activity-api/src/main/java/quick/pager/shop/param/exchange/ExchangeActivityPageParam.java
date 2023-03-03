@@ -7,9 +7,9 @@ import quick.pager.shop.param.PageParam;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class ExchangeActivityPageParam extends PageParam {
-    private static final long serialVersionUID = -256563756822376249L;
-    /**
-     * 活动名称
-     */
-    private String activityName;
+  private static final long serialVersionUID = -256563756822376249L;
+  /**
+   * 活动名称
+   */
+  private String activityName;
 }

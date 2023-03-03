@@ -19,19 +19,19 @@ import lombok.experimental.Accessors;
 @TableName("t_goods_sku_tag")
 public class GoodsSkuTag extends Model {
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    /**
-     * 商品主表主键
-     */
-    private Long goodsId;
-    /**
-     * 商品t_goods_sku id
-     */
-    private Long skuId;
-    /**
-     * 标签名称
-     */
-    private String name;
+  /**
+   * 商品主表主键
+   */
+  private Long goodsId;
+  /**
+   * 商品t_goods_sku id
+   */
+  private Long skuId;
+  /**
+   * 标签名称
+   */
+  private String name;
 
 }

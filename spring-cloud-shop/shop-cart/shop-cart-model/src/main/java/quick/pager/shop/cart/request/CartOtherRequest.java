@@ -2,6 +2,7 @@ package quick.pager.shop.cart.request;
 
 import java.io.Serializable;
 import java.util.List;
+
 import lombok.Data;
 
 /**
@@ -11,11 +12,11 @@ import lombok.Data;
  */
 @Data
 public class CartOtherRequest implements Serializable {
-    private static final long serialVersionUID = 5666983421837988488L;
+  private static final long serialVersionUID = 5666983421837988488L;
 
-    /**
-     * 商品购物车主键集
-     */
-    private List<Long> goodsCartIds;
+  /**
+   * 商品购物车主键集
+   */
+  private List<Long> goodsCartIds;
 
 }

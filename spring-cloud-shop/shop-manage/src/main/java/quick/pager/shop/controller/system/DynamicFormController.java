@@ -1,6 +1,7 @@
 package quick.pager.shop.controller.system;
 
 import java.util.List;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -28,42 +29,42 @@ import quick.pager.shop.utils.Assert;
 @RequestMapping(ConstantsClient.MANAGE)
 public class DynamicFormController {
 
-    @Autowired
-    private DynamicFormService dynamicFormService;
+  @Autowired
+  private DynamicFormService dynamicFormService;
 
-    /**
-     * 创建表单
-     */
-    @PreAuthorize("hasAuthority('PAGER_SYSTEM_DYNAMIC')")
-    @PostMapping("/dynamic/form/create")
-    public Response<Long> create(@RequestBody DynamicFormOtherSaveParam param) {
+  /**
+   * 创建表单
+   */
+  @PreAuthorize("hasAuthority('PAGER_SYSTEM_DYNAMIC')")
+  @PostMapping("/dynamic/form/create")
+  public Response<Long> create(@RequestBody DynamicFormOtherSaveParam param) {
 
-        Assert.isTrue(StringUtils.isNotEmpty(param.getBizType()), () -> ResponseStatus.PARAMS_EXCEPTION);
+    Assert.isTrue(StringUtils.isNotEmpty(param.getBizType()), () -> ResponseStatus.PARAMS_EXCEPTION);
 
-        return dynamicFormService.create(param);
-    }
+    return dynamicFormService.create(param);
+  }
 
-    /**
-     * 创建表单
-     */
-    @PreAuthorize("hasAuthority('PAGER_SYSTEM_DYNAMIC')")
-    @PostMapping("/dynamic/form/modify")
-    public Response modify(@RequestBody DynamicFormOtherSaveParam param) {
+  /**
+   * 创建表单
+   */
+  @PreAuthorize("hasAuthority('PAGER_SYSTEM_DYNAMIC')")
+  @PostMapping("/dynamic/form/modify")
+  public Response modify(@RequestBody DynamicFormOtherSaveParam param) {
 
-        Assert.isTrue(StringUtils.isNotEmpty(param.getBizType()), () -> ResponseStatus.PARAMS_EXCEPTION);
+    Assert.isTrue(StringUtils.isNotEmpty(param.getBizType()), () -> ResponseStatus.PARAMS_EXCEPTION);
 
-        return dynamicFormService.modify(param);
-    }
+    return dynamicFormService.modify(param);
+  }
 
-    /**
-     * 创建表单
-     */
-    @PreAuthorize("hasAuthority('PAGER_SYSTEM_DYNAMIC')")
-    @GetMapping("/dynamic/form/get")
-    public Response<List<DynamicFormResponse>> get(@RequestParam String bizType) {
+  /**
+   * 创建表单
+   */
+  @PreAuthorize("hasAuthority('PAGER_SYSTEM_DYNAMIC')")
+  @GetMapping("/dynamic/form/get")
+  public Response<List<DynamicFormResponse>> get(@RequestParam String bizType) {
 
-        return dynamicFormService.get(bizType);
-    }
+    return dynamicFormService.get(bizType);
+  }
 
 
 }

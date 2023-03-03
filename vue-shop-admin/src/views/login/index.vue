@@ -194,7 +194,10 @@ $light_gray: #eee;
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: $bg;
+  background-image: url("../../assets/home_background_img.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+  //background-color: $bg;
 
   .login-form {
     position: absolute;

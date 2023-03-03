@@ -12,13 +12,13 @@ import quick.pager.shop.user.request.PageRequest;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class AssembleRecordPageRequest extends PageRequest {
-    private static final long serialVersionUID = -4414340422176840509L;
-    /**
-     * 活动主键
-     */
-    private Long activityId;
-    /**
-     * 手机号码
-     */
-    private String phone;
+  private static final long serialVersionUID = -4414340422176840509L;
+  /**
+   * 活动主键
+   */
+  private Long activityId;
+  /**
+   * 手机号码
+   */
+  private String phone;
 }

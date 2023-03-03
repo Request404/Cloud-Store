@@ -7,8 +7,8 @@ package quick.pager.shop.settlement.constants;
  */
 public interface Constants {
 
-    /**
-     * 积分抵扣
-     */
-    String INTEGRAL_DEDUCTION = "integral_deduction";
+  /**
+   * 积分抵扣
+   */
+  String INTEGRAL_DEDUCTION = "integral_deduction";
 }

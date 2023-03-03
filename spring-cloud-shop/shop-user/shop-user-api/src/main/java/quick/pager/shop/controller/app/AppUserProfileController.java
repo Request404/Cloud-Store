@@ -22,16 +22,16 @@ import quick.pager.shop.util.AuthUtils;
 @RequestMapping(ConstantsClient.USER)
 public class AppUserProfileController {
 
-    @Autowired
-    private UserService userService;
+  @Autowired
+  private UserService userService;
 
-    /**
-     * 用户信息详情
-     */
-    @PostMapping("/app/profile")
-    public Response<UserProfileResponse> profile() {
-        // 获取当前登录人
-        LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
-        return userService.profile(principal.getId());
-    }
+  /**
+   * 用户信息详情
+   */
+  @PostMapping("/app/profile")
+  public Response<UserProfileResponse> profile() {
+    // 获取当前登录人
+    LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
+    return userService.profile(principal.getId());
+  }
 }

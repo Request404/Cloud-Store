@@ -23,18 +23,18 @@ import quick.pager.shop.util.AuthUtils;
 @RequestMapping(ConstantsClient.USER)
 public class AppFeedbackController {
 
-    @Autowired
-    private FeedbackService feedbackService;
+  @Autowired
+  private FeedbackService feedbackService;
 
-    /**
-     * 用户提交意见反馈
-     *
-     * @param request 保存参数
-     */
-    @PostMapping("/app/feedback/create")
-    public Response<Long> create(@RequestBody FeedbackRequest request) {
-        // 获取当前登录人
-        LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
-        return feedbackService.create(principal.getId(), request);
-    }
+  /**
+   * 用户提交意见反馈
+   *
+   * @param request 保存参数
+   */
+  @PostMapping("/app/feedback/create")
+  public Response<Long> create(@RequestBody FeedbackRequest request) {
+    // 获取当前登录人
+    LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
+    return feedbackService.create(principal.getId(), request);
+  }
 }

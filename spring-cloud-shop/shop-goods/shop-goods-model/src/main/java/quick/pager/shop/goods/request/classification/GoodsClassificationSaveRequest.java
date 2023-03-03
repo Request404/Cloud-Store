@@ -13,18 +13,18 @@ import quick.pager.shop.user.request.Request;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsClassificationSaveRequest extends Request {
-    private static final long serialVersionUID = 6958547173183868641L;
-    /**
-     * 分类名称
-     */
-    private String className;
-    /**
-     * spu主键
-     */
-    private Long spuId;
-    /**
-     * 序号
-     */
-    private Integer sequence;
+  private static final long serialVersionUID = 6958547173183868641L;
+  /**
+   * 分类名称
+   */
+  private String className;
+  /**
+   * spu主键
+   */
+  private Long spuId;
+  /**
+   * 序号
+   */
+  private Integer sequence;
 
 }

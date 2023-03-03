@@ -3,6 +3,7 @@ package quick.pager.shop.service;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -17,37 +18,37 @@ import quick.pager.shop.constants.RedisKeys;
 @Service
 public class InitService {
 
-//    @Autowired
+  //    @Autowired
 //    private SystemConfigMapper systemConfigMapper;
 //    @Autowired
 //    private SmsTemplateMapper smsTemplateMapper;
-    @Autowired
-    private RedisTemplate<String,Object> redisTemplate;
+  @Autowired
+  private RedisTemplate<String, Object> redisTemplate;
 
-    @PostConstruct
-    public void init() {
-        initSystemConfig();
+  @PostConstruct
+  public void init() {
+    initSystemConfig();
 
-        initSMSTemplate();
-    }
+    initSMSTemplate();
+  }
 
 
-    /**
-     * 初始化项目配置信息
-     */
-    private void initSystemConfig() {
+  /**
+   * 初始化项目配置信息
+   */
+  private void initSystemConfig() {
 //        List<SystemConfig> systemConfigs = systemConfigMapper.selectByModule(Constants.SMS_MODULE.USER);
 //
 //        systemConfigs.forEach(systemConfig -> {
 //            redisService.set(RedisKeys.UserKeys.SHOP_SYSTEM_CONFIG + systemConfig.getConfigName(), systemConfig.getConfigValue(), 30 * 24 * 60 * 60);
 //        });
 
-    }
+  }
 
-    /**
-     * 初始化短信模板配置信息
-     */
-    private void initSMSTemplate() {
+  /**
+   * 初始化短信模板配置信息
+   */
+  private void initSMSTemplate() {
 
 //        List<SmsTemplate> smsTemplates = smsTemplateMapper.selectByModule(Constants.SMS_MODULE.USER, null);
 //        ArrayList<String> templateCodes = new ArrayList<>(smsTemplates.size());
@@ -59,5 +60,5 @@ public class InitService {
 //
 //        redisService.setListOps(RedisKeys.UserKeys.SHOP_SMS_TEMPLATE_CODE, templateCodes);
 
-    }
+  }
 }

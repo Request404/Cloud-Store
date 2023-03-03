@@ -1,6 +1,7 @@
 package quick.pager.shop.service;
 
 import java.util.List;
+
 import quick.pager.shop.model.SystemConfigDetail;
 import quick.pager.shop.platform.request.SystemConfigDetailOtherRequest;
 import quick.pager.shop.platform.request.SystemConfigDetailSaveRequest;
@@ -16,18 +17,18 @@ import quick.pager.shop.user.response.Response;
 public interface SystemConfigDetailService extends IService<SystemConfigDetail> {
 
 
-    /**
-     * 查看列表
-     */
-    Response<List<SystemConfigDetailResponse>> queryList(SystemConfigDetailOtherRequest request);
+  /**
+   * 查看列表
+   */
+  Response<List<SystemConfigDetailResponse>> queryList(SystemConfigDetailOtherRequest request);
 
-    /**
-     * 新增
-     */
-    Response<Long> create(SystemConfigDetailSaveRequest request);
+  /**
+   * 新增
+   */
+  Response<Long> create(SystemConfigDetailSaveRequest request);
 
-    /**
-     * 编辑
-     */
-    Response<Long> modify(SystemConfigDetailSaveRequest request);
+  /**
+   * 编辑
+   */
+  Response<Long> modify(SystemConfigDetailSaveRequest request);
 }

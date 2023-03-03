@@ -12,14 +12,14 @@ import quick.pager.shop.user.request.PageRequest;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class FormPageRequest extends PageRequest {
-    private static final long serialVersionUID = -6984222441885803742L;
+  private static final long serialVersionUID = -6984222441885803742L;
 
-    /**
-     * 表单模型
-     */
-    private String bizType;
-    /**
-     * 表单模型名称
-     */
-    private String name;
+  /**
+   * 表单模型
+   */
+  private String bizType;
+  /**
+   * 表单模型名称
+   */
+  private String name;
 }

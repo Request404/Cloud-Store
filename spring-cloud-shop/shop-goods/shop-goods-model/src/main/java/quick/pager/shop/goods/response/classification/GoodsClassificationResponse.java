@@ -12,19 +12,19 @@ import quick.pager.shop.user.response.BasicResponse;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsClassificationResponse extends BasicResponse {
-    private static final long serialVersionUID = -3807725086026024155L;
+  private static final long serialVersionUID = -3807725086026024155L;
 
-    private Long id;
-    /**
-     * 分类名称
-     */
-    private String className;
+  private Long id;
+  /**
+   * 分类名称
+   */
+  private String className;
 
-    private Long spuId;
+  private Long spuId;
 
-    private String spuName;
-    /**
-     * 序号
-     */
-    private Integer sequence;
+  private String spuName;
+  /**
+   * 序号
+   */
+  private Integer sequence;
 }

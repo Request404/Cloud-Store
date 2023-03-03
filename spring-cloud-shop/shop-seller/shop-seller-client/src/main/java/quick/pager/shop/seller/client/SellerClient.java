@@ -17,11 +17,11 @@ import quick.pager.shop.response.SellerInfoResponse;
 @FeignClient(value = ConstantsClient.SELLER_CLIENT, path = ConstantsClient.SELLER, fallbackFactory = SellerFallbackFactory.class)
 public interface SellerClient {
 
-    /**
-     * 查询商家
-     *
-     * @param sellerId 商家Id
-     */
-    @RequestMapping(value = "/{sellerId}/info", method = RequestMethod.POST)
-    Response<SellerInfoResponse> querySeller(@PathVariable("sellerId") Long sellerId);
+  /**
+   * 查询商家
+   *
+   * @param sellerId 商家Id
+   */
+  @RequestMapping(value = "/{sellerId}/info", method = RequestMethod.POST)
+  Response<SellerInfoResponse> querySeller(@PathVariable("sellerId") Long sellerId);
 }

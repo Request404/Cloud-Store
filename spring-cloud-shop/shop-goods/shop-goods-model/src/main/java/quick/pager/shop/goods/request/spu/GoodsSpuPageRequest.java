@@ -13,10 +13,10 @@ import quick.pager.shop.user.request.PageRequest;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsSpuPageRequest extends PageRequest {
-    private static final long serialVersionUID = -4144846306668353162L;
+  private static final long serialVersionUID = -4144846306668353162L;
 
-    /**
-     * spu名称
-     */
-    private String spuName;
+  /**
+   * spu名称
+   */
+  private String spuName;
 }

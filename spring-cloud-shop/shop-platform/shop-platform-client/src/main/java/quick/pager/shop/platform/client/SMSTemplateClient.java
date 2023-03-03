@@ -1,6 +1,7 @@
 package quick.pager.shop.platform.client;
 
 import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,40 +23,40 @@ import quick.pager.shop.user.response.Response;
 @FeignClient(value = ConstantsClient.PLATFORM_CLIENT, path = ConstantsClient.PLATFORM, fallbackFactory = SMSTemplateFallback.class)
 public interface SMSTemplateClient {
 
-    /**
-     * 创建
-     *
-     * @param request 请求参数
-     * @return 短信模板主键
-     */
-    @PostMapping("/sms/create")
-    Response<Long> create(@RequestBody SMSTemplateSaveRequest request);
+  /**
+   * 创建
+   *
+   * @param request 请求参数
+   * @return 短信模板主键
+   */
+  @PostMapping("/sms/create")
+  Response<Long> create(@RequestBody SMSTemplateSaveRequest request);
 
-    /**
-     * 编辑
-     *
-     * @param request 请求参数
-     * @return 短信模板主键
-     */
-    @PutMapping("/sms/modify")
-    Response<Long> modify(@RequestBody SMSTemplateSaveRequest request);
+  /**
+   * 编辑
+   *
+   * @param request 请求参数
+   * @return 短信模板主键
+   */
+  @PutMapping("/sms/modify")
+  Response<Long> modify(@RequestBody SMSTemplateSaveRequest request);
 
-    /**
-     * 创建
-     *
-     * @param request 请求参数
-     * @return 短信模板集
-     */
-    @GetMapping("/sms/page")
-    Response<List<SMSTemplateResponse>> page(SMSTemplatePageRequest request);
+  /**
+   * 创建
+   *
+   * @param request 请求参数
+   * @return 短信模板集
+   */
+  @GetMapping("/sms/page")
+  Response<List<SMSTemplateResponse>> page(SMSTemplatePageRequest request);
 
 
-    /**
-     * 根据短信标识查询短信模板内容
-     *
-     * @param smsTemplateCode 短信标识码
-     * @return 短信模板
-     */
-    @GetMapping("/sms/{smsTemplateCode}/info")
-    Response<SMSTemplateResponse> sms(@PathVariable("smsTemplateCode") String smsTemplateCode);
+  /**
+   * 根据短信标识查询短信模板内容
+   *
+   * @param smsTemplateCode 短信标识码
+   * @return 短信模板
+   */
+  @GetMapping("/sms/{smsTemplateCode}/info")
+  Response<SMSTemplateResponse> sms(@PathVariable("smsTemplateCode") String smsTemplateCode);
 }

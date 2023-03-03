@@ -12,9 +12,9 @@ import quick.pager.shop.param.PageParam;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class MenuOtherParam extends PageParam {
-    private static final long serialVersionUID = -7242388842224416719L;
+  private static final long serialVersionUID = -7242388842224416719L;
 
-    private Integer menuType;
+  private Integer menuType;
 
-    private String name;
+  private String name;
 }

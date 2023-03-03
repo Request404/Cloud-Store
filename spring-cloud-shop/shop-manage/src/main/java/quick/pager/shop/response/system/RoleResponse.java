@@ -14,15 +14,15 @@ import quick.pager.shop.user.response.BasicResponse;
 @Data
 public class RoleResponse extends BasicResponse {
 
-    private static final long serialVersionUID = -4660253489132506580L;
+  private static final long serialVersionUID = -4660253489132506580L;
 
-    private Long id;
-    /**
-     * 角色名称
-     */
-    private String roleName;
-    /**
-     * 是否是超级管理员
-     */
-    private Boolean master;
+  private Long id;
+  /**
+   * 角色名称
+   */
+  private String roleName;
+  /**
+   * 是否是超级管理员
+   */
+  private Boolean master;
 }

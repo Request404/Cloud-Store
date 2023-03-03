@@ -12,10 +12,10 @@ import quick.pager.shop.user.request.Request;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsPropertyGroupOtherRequest extends Request {
-    private static final long serialVersionUID = 7592551387983131271L;
+  private static final long serialVersionUID = 7592551387983131271L;
 
-    /**
-     * 属性组名称
-     */
-    private String propertyGroupName;
+  /**
+   * 属性组名称
+   */
+  private String propertyGroupName;
 }

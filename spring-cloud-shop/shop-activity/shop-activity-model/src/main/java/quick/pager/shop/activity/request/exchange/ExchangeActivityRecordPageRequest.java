@@ -12,18 +12,18 @@ import quick.pager.shop.user.request.PageRequest;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class ExchangeActivityRecordPageRequest extends PageRequest {
-    private static final long serialVersionUID = -5833245800752351312L;
+  private static final long serialVersionUID = -5833245800752351312L;
 
-    /**
-     * 活动主键
-     */
-    private Long activityId;
-    /**
-     * 规则主键
-     */
-    private Long ruleId;
-    /**
-     * 用户手机号码
-     */
-    private String phone;
+  /**
+   * 活动主键
+   */
+  private Long activityId;
+  /**
+   * 规则主键
+   */
+  private Long ruleId;
+  /**
+   * 用户手机号码
+   */
+  private String phone;
 }

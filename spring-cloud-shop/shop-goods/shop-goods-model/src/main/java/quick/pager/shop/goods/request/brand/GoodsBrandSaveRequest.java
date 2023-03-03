@@ -14,28 +14,28 @@ import quick.pager.shop.user.request.Request;
 @Data
 public class GoodsBrandSaveRequest extends Request {
 
-    private static final long serialVersionUID = 2456020424577063678L;
-    /**
-     * t_goods_brand_group 主键
-     */
-    private Long brandGroupId;
-    /**
-     * 品牌名称
-     */
-    private String brandName;
+  private static final long serialVersionUID = 2456020424577063678L;
+  /**
+   * t_goods_brand_group 主键
+   */
+  private Long brandGroupId;
+  /**
+   * 品牌名称
+   */
+  private String brandName;
 
-    /**
-     * 品牌编码
-     */
-    private String brandCode;
+  /**
+   * 品牌编码
+   */
+  private String brandCode;
 
-    /**
-     * 品牌图标
-     */
-    private String icon;
+  /**
+   * 品牌图标
+   */
+  private String icon;
 
-    /**
-     * 序号
-     */
-    private Integer sequence;
+  /**
+   * 序号
+   */
+  private Integer sequence;
 }

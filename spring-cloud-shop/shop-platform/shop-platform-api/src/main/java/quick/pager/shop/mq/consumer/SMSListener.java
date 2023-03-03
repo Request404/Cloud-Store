@@ -15,9 +15,9 @@ import quick.pager.shop.mq.PlatformMQ;
 @Slf4j
 public class SMSListener {
 
-    @StreamListener(target = PlatformMQ.PLATFORM_SEND_SMS_INPUT)
-    public void process(@Payload String payload) {
-        log.info("发送短信接受消息 payload = {}", payload);
-        // fixme 对接第三方短信服务
-    }
+  @StreamListener(target = PlatformMQ.PLATFORM_SEND_SMS_INPUT)
+  public void process(@Payload String payload) {
+    log.info("发送短信接受消息 payload = {}", payload);
+    // fixme 对接第三方短信服务
+  }
 }

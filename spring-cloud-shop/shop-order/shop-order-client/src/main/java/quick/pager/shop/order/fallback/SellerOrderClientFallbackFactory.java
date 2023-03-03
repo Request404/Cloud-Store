@@ -8,8 +8,8 @@ import quick.pager.shop.order.client.SellerOrderClient;
 @Slf4j
 @Component
 public class SellerOrderClientFallbackFactory implements FallbackFactory<SellerOrderClient> {
-    @Override
-    public SellerOrderClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public SellerOrderClient create(Throwable cause) {
+    return null;
+  }
 }

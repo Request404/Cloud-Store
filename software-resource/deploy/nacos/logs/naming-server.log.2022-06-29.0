@@ -1,0 +1,130 @@
+2022-06-29 09:25:58,163 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2022-06-29 09:25:58,165 INFO listen for service meta change
+
+2022-06-29 09:28:24,233 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-activity
+
+2022-06-29 09:28:24,297 INFO [NEW-SERVICE] {"name":"shop@@shop-activity","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466104240,"checksum":"9e05a4b895cb2bed71e1ebc97b39b9aa","clusterMap":{},"empty":true}
+
+2022-06-29 09:28:24,307 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11100#DEFAULT#shop@@shop-activity","ip":"10.12.156.39","port":11100,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-activity","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466104212,"marked":false,"app":"shop-activity","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:28:24,393 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity, value: {"instanceList":[{"instanceId":"10.12.156.39#11100#DEFAULT#shop@@shop-activity","ip":"10.12.156.39","port":11100,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-activity","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466104212,"marked":false,"app":"shop-activity","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:29:13,515 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-auth
+
+2022-06-29 09:29:13,515 INFO [NEW-SERVICE] {"name":"shop@@shop-auth","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466153515,"checksum":"5982d34064c945a9aaf90e854dd7ee1e","clusterMap":{},"empty":true}
+
+2022-06-29 09:29:13,515 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#8095#DEFAULT#shop@@shop-auth","ip":"10.12.156.39","port":8095,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466153515,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:29:13,516 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth, value: {"instanceList":[{"instanceId":"10.12.156.39#8095#DEFAULT#shop@@shop-auth","ip":"10.12.156.39","port":8095,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-auth","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466153515,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:29:58,418 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-cart
+
+2022-06-29 09:29:58,419 INFO [NEW-SERVICE] {"name":"shop@@shop-cart","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466198418,"checksum":"0554da74ee543a2c9502d33b482a65e2","clusterMap":{},"empty":true}
+
+2022-06-29 09:29:58,419 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11150#DEFAULT#shop@@shop-cart","ip":"10.12.156.39","port":11150,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-cart","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466198418,"marked":false,"app":"shop-cart","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:29:58,421 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart, value: {"instanceList":[{"instanceId":"10.12.156.39#11150#DEFAULT#shop@@shop-cart","ip":"10.12.156.39","port":11150,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-cart","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466198418,"marked":false,"app":"shop-cart","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:30:05,489 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-gateway
+
+2022-06-29 09:30:05,489 INFO [NEW-SERVICE] {"name":"shop@@shop-gateway","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466205489,"checksum":"a19fa20075c5e363ddc71d01762370e1","clusterMap":{},"empty":true}
+
+2022-06-29 09:30:05,489 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#10000#DEFAULT#shop@@shop-gateway","ip":"10.12.156.39","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-gateway","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466205489,"marked":false,"app":"shop-gateway","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:30:05,492 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway, value: {"instanceList":[{"instanceId":"10.12.156.39#10000#DEFAULT#shop@@shop-gateway","ip":"10.12.156.39","port":10000,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-gateway","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466205489,"marked":false,"app":"shop-gateway","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:30:28,527 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-elasticsearch
+
+2022-06-29 09:30:28,527 INFO [NEW-SERVICE] {"name":"shop@@shop-elasticsearch","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466228527,"checksum":"7b77f96bd0d197f13499f124b1b9793b","clusterMap":{},"empty":true}
+
+2022-06-29 09:30:28,528 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11200#DEFAULT#shop@@shop-elasticsearch","ip":"10.12.156.39","port":11200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-elasticsearch","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466228527,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:30:28,528 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch, value: {"instanceList":[{"instanceId":"10.12.156.39#11200#DEFAULT#shop@@shop-elasticsearch","ip":"10.12.156.39","port":11200,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-elasticsearch","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466228527,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:30:49,979 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-goods
+
+2022-06-29 09:30:49,979 INFO [NEW-SERVICE] {"name":"shop@@shop-goods","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466249979,"checksum":"8587304abe97d8323cd5c878a3ad6446","clusterMap":{},"empty":true}
+
+2022-06-29 09:30:49,979 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11250#DEFAULT#shop@@shop-goods","ip":"10.12.156.39","port":11250,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-goods","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466249978,"marked":false,"app":"shop-goods","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:30:49,980 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods, value: {"instanceList":[{"instanceId":"10.12.156.39#11250#DEFAULT#shop@@shop-goods","ip":"10.12.156.39","port":11250,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-goods","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466249978,"marked":false,"app":"shop-goods","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:31:06,632 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-job
+
+2022-06-29 09:31:06,632 INFO [NEW-SERVICE] {"name":"shop@@shop-job","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466266632,"checksum":"602e67e708999b4f326484b5bf508be3","clusterMap":{},"empty":true}
+
+2022-06-29 09:31:06,633 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11300#DEFAULT#shop@@shop-job","ip":"10.12.156.39","port":11300,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-job","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466266632,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:31:06,634 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job, value: {"instanceList":[{"instanceId":"10.12.156.39#11300#DEFAULT#shop@@shop-job","ip":"10.12.156.39","port":11300,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-job","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466266632,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:31:40,739 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-manage
+
+2022-06-29 09:31:40,740 INFO [NEW-SERVICE] {"name":"shop@@shop-manage","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466300739,"checksum":"19418ecc1c8383a759fb31ac53bacfe8","clusterMap":{},"empty":true}
+
+2022-06-29 09:31:40,740 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11350#DEFAULT#shop@@shop-manage","ip":"10.12.156.39","port":11350,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-manage","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466300739,"marked":false,"app":"shop-manage","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:31:40,744 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage, value: {"instanceList":[{"instanceId":"10.12.156.39#11350#DEFAULT#shop@@shop-manage","ip":"10.12.156.39","port":11350,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-manage","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466300739,"marked":false,"app":"shop-manage","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:32:06,141 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-oss
+
+2022-06-29 09:32:06,141 INFO [NEW-SERVICE] {"name":"shop@@shop-oss","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466326141,"checksum":"74e1b990c6ee4490fb7da441cc532765","clusterMap":{},"empty":true}
+
+2022-06-29 09:32:06,142 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11450#DEFAULT#shop@@shop-oss","ip":"10.12.156.39","port":11450,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-oss","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466326141,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:32:06,142 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss, value: {"instanceList":[{"instanceId":"10.12.156.39#11450#DEFAULT#shop@@shop-oss","ip":"10.12.156.39","port":11450,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-oss","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466326141,"marked":false,"app":"unknown","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:32:15,828 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-order
+
+2022-06-29 09:32:15,837 INFO [NEW-SERVICE] {"name":"shop@@shop-order","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466335828,"checksum":"beeb9f6292fd4e31b7cb9b625f13689d","clusterMap":{},"empty":true}
+
+2022-06-29 09:32:15,837 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11400#DEFAULT#shop@@shop-order","ip":"10.12.156.39","port":11400,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-order","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466335828,"marked":false,"app":"shop-order","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:32:15,837 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order, value: {"instanceList":[{"instanceId":"10.12.156.39#11400#DEFAULT#shop@@shop-order","ip":"10.12.156.39","port":11400,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-order","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466335828,"marked":false,"app":"shop-order","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:32:57,349 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-platform
+
+2022-06-29 09:32:57,350 INFO [NEW-SERVICE] {"name":"shop@@shop-platform","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466377350,"checksum":"60a39259a4ece6229a42802e471ca873","clusterMap":{},"empty":true}
+
+2022-06-29 09:32:57,350 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11500#DEFAULT#shop@@shop-platform","ip":"10.12.156.39","port":11500,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-platform","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466377349,"marked":false,"app":"shop-platform","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:32:57,350 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform, value: {"instanceList":[{"instanceId":"10.12.156.39#11500#DEFAULT#shop@@shop-platform","ip":"10.12.156.39","port":11500,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-platform","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466377349,"marked":false,"app":"shop-platform","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:33:27,325 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-risk
+
+2022-06-29 09:33:27,325 INFO [NEW-SERVICE] {"name":"shop@@shop-risk","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466407325,"checksum":"55cd9370d65ec76a2fceea7c66b70dde","clusterMap":{},"empty":true}
+
+2022-06-29 09:33:27,325 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11550#DEFAULT#shop@@shop-risk","ip":"10.12.156.39","port":11550,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-risk","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466407324,"marked":false,"app":"shop-risk","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:33:27,325 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk, value: {"instanceList":[{"instanceId":"10.12.156.39#11550#DEFAULT#shop@@shop-risk","ip":"10.12.156.39","port":11550,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-risk","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466407324,"marked":false,"app":"shop-risk","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:33:56,793 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-seller
+
+2022-06-29 09:33:56,793 INFO [NEW-SERVICE] {"name":"shop@@shop-seller","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466436793,"checksum":"d05c6811226ebea352dca9f5911ab0db","clusterMap":{},"empty":true}
+
+2022-06-29 09:33:56,793 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11600#DEFAULT#shop@@shop-seller","ip":"10.12.156.39","port":11600,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-seller","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466436793,"marked":false,"app":"shop-seller","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:33:56,794 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller, value: {"instanceList":[{"instanceId":"10.12.156.39#11600#DEFAULT#shop@@shop-seller","ip":"10.12.156.39","port":11600,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-seller","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466436793,"marked":false,"app":"shop-seller","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 09:35:09,960 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-settlement
+
+2022-06-29 09:35:09,961 INFO [NEW-SERVICE] {"name":"shop@@shop-settlement","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656466509961,"checksum":"87c54bbadfab5210602779c10a47a3ce","clusterMap":{},"empty":true}
+
+2022-06-29 09:35:09,962 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11650#DEFAULT#shop@@shop-settlement","ip":"10.12.156.39","port":11650,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-settlement","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466509960,"marked":false,"app":"shop-settlement","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 09:35:09,962 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement, value: {"instanceList":[{"instanceId":"10.12.156.39#11650#DEFAULT#shop@@shop-settlement","ip":"10.12.156.39","port":11650,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-settlement","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656466509960,"marked":false,"app":"shop-settlement","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 10:18:58,563 INFO creating empty service 0759bc76-60b5-4f32-acd5-e5095cf2b93d:shop@@shop-user
+
+2022-06-29 10:18:58,563 INFO [NEW-SERVICE] {"name":"shop@@shop-user","protectThreshold":0.0,"groupName":"shop","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"0759bc76-60b5-4f32-acd5-e5095cf2b93d","ipDeleteTimeout":30000,"lastModifiedMillis":1656469138563,"checksum":"7eeb6fb7ae330f6ca1f94ceb63206780","clusterMap":{},"empty":true}
+
+2022-06-29 10:18:58,564 WARN cluster: DEFAULT not found, ip: {"instanceId":"10.12.156.39#11700#DEFAULT#shop@@shop-user","ip":"10.12.156.39","port":11700,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656469138562,"marked":false,"app":"shop-user","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2022-06-29 10:18:58,564 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user, value: {"instanceList":[{"instanceId":"10.12.156.39#11700#DEFAULT#shop@@shop-user","ip":"10.12.156.39","port":11700,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"shop@@shop-user","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1656469138562,"marked":false,"app":"shop-user","ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]}
+
+2022-06-29 11:01:07,344 WARN protect threshold reached, return all ips, service: shop@@shop-elasticsearch
+
+2022-06-29 11:41:15,558 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity, value: {"instanceList":[]}
+
+2022-06-29 11:41:34,864 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth, value: {"instanceList":[]}
+

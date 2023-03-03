@@ -9,17 +9,17 @@ import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
  */
 public class OAuth2SmsInvalidException extends OAuth2Exception {
 
-    public OAuth2SmsInvalidException(String msg, Throwable t) {
-        super(msg, t);
-    }
+  public OAuth2SmsInvalidException(String msg, Throwable t) {
+    super(msg, t);
+  }
 
-    public OAuth2SmsInvalidException(String msg) {
-        super(msg);
-    }
+  public OAuth2SmsInvalidException(String msg) {
+    super(msg);
+  }
 
-    @Override
-    public String getOAuth2ErrorCode() {
-        return "invalid_sms_code";
-    }
+  @Override
+  public String getOAuth2ErrorCode() {
+    return "invalid_sms_code";
+  }
 
 }

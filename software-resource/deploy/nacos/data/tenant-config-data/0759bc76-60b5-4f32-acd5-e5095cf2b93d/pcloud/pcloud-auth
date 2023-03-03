@@ -1,0 +1,18 @@
+# 基础配置
+server.port=10001
+spring.application.name=pcloud-auth
+spring.main.allow-bean-definition-overriding=true
+management.endpoints.web.exposure.include=refresh,health,info
+# 日志
+logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [${spring.application.name}] [traceId:%X{X-B3-TraceId}][spanId:%X{X-B3-SpanId}][parentSpanId:%X{X-B3-ParentSpanId}] --- [%t] - [%class:%method: %line] - %msg%n
+logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [${spring.application.name}] [traceId:%X{X-B3-TraceId}][spanId:%X{X-B3-SpanId}][parentSpanId:%X{X-B3-ParentSpanId}] --- [%t] - [%class:%method: %line] - %msg%n
+logging.file.path=./logs/${spring.application.name}
+logging.file.max-size=50MB
+logging.file.name=${spring.application.name}
+logging.level.org.springframework=error
+logging.level.com.alibaba=error
+
+# redis
+spring.redis.host=192.168.19.128
+spring.redis.port=6379
+spring.redis.password=123456

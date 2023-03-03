@@ -6,10 +6,10 @@ import quick.pager.shop.model.Seller;
 @Mapper
 public interface SellerMapper {
 
-    int insertSelective(Seller record);
+  int insertSelective(Seller record);
 
-    Seller selectByPrimaryKey(Long id);
+  Seller selectByPrimaryKey(Long id);
 
-    int updateByPrimaryKeySelective(Seller record);
+  int updateByPrimaryKeySelective(Seller record);
 
 }

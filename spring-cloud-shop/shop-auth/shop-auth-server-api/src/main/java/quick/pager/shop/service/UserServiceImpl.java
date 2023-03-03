@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.core.GrantedAuthority;
@@ -34,90 +35,90 @@ import quick.pager.shop.user.response.Response;
 @Service
 public class UserServiceImpl implements UserDetailsService {
 
-    @Autowired
-    private AuthClient authClient;
-    @Autowired
-    private UserClient userClient;
-    @Autowired
-    private RedisTemplate<String, Object> redisTemplate;
+  @Autowired
+  private AuthClient authClient;
+  @Autowired
+  private UserClient userClient;
+  @Autowired
+  private RedisTemplate<String, Object> redisTemplate;
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+  @Override
+  public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        Response<UserDTO> sysUserResponse = authClient.getSysUser(username);
-        if (!sysUserResponse.check() || Objects.isNull(sysUserResponse.getData())) {
-            throw new UsernameNotFoundException("用户不存在");
-        }
-
-        UserDTO sysUser = sysUserResponse.getData();
-
-        Collection<? extends GrantedAuthority> grantedAuthorities = this.getGrantedAuthority(sysUser.getId());
-
-        UserDTO userDTO = new UserDTO(username, sysUser.getPassword(), grantedAuthorities);
-        userDTO.setId(sysUser.getId());
-        userDTO.setNickName(sysUser.getNickName());
-        userDTO.setAvatar(sysUser.getAvatar());
-        return userDTO;
+    Response<UserDTO> sysUserResponse = authClient.getSysUser(username);
+    if (!sysUserResponse.check() || Objects.isNull(sysUserResponse.getData())) {
+      throw new UsernameNotFoundException("用户不存在");
     }
 
-    /**
-     * 根据手机号码查询人
-     *
-     * @param phone   手机号码
-     * @param smsCode 短信验证码
-     * @return 授权人
-     * @throws UsernameNotFoundException 未找到用户
-     */
-    public LoginUser loadUserBySMS(final String phone, final String smsCode) throws UsernameNotFoundException {
+    UserDTO sysUser = sysUserResponse.getData();
 
-        // 是否输入短信验证码
-        if (StringUtils.isEmpty(smsCode)) {
-            throw new OAuth2SmsInvalidException("请输入短信验证码");
-        }
-        String redisSmsCode = (String) redisTemplate.opsForValue().get(RedisKeys.REDIS_SMS_LOGIN_PREFIX + phone);
+    Collection<? extends GrantedAuthority> grantedAuthorities = this.getGrantedAuthority(sysUser.getId());
 
-        // redis 中短信验证码是否存在，过期
-        if (StringUtils.isEmpty(redisSmsCode)) {
-            throw new OAuth2SmsInvalidException("请先获取短信验证码");
-        }
+    UserDTO userDTO = new UserDTO(username, sysUser.getPassword(), grantedAuthorities);
+    userDTO.setId(sysUser.getId());
+    userDTO.setNickName(sysUser.getNickName());
+    userDTO.setAvatar(sysUser.getAvatar());
+    return userDTO;
+  }
 
-        // 验证短信验证码是否正确
-        if (!smsCode.equals(redisSmsCode)) {
-            throw new OAuth2SmsInvalidException("短信验证码不正确");
-        }
+  /**
+   * 根据手机号码查询人
+   *
+   * @param phone   手机号码
+   * @param smsCode 短信验证码
+   * @return 授权人
+   * @throws UsernameNotFoundException 未找到用户
+   */
+  public LoginUser loadUserBySMS(final String phone, final String smsCode) throws UsernameNotFoundException {
 
-        Response<AppUserProfileDTO> profileInfoRes = userClient.login(phone);
-        if (profileInfoRes.check()) {
-            AppUserProfileDTO resData = profileInfoRes.getData();
-            return LoginUser.builder()
-                    .id(resData.getId())
-                    .phone(resData.getPhone())
-                    .username(resData.getUsername())
-                    .avatar(resData.getAvatar())
-                    .gender(resData.getGender())
-                    .birthday(resData.getBirthday())
-                    .build();
-        }
-        throw new UsernameNotFoundException("用户不存在");
+    // 是否输入短信验证码
+    if (StringUtils.isEmpty(smsCode)) {
+      throw new OAuth2SmsInvalidException("请输入短信验证码");
+    }
+    String redisSmsCode = (String) redisTemplate.opsForValue().get(RedisKeys.REDIS_SMS_LOGIN_PREFIX + phone);
+
+    // redis 中短信验证码是否存在，过期
+    if (StringUtils.isEmpty(redisSmsCode)) {
+      throw new OAuth2SmsInvalidException("请先获取短信验证码");
     }
 
-
-    /**
-     * 获取权限
-     *
-     * @param sysUserId 系统用户主键
-     * @return 权限列表
-     */
-    private Collection<? extends GrantedAuthority> getGrantedAuthority(final Long sysUserId) {
-        List<SimpleGrantedAuthority> grantedAuthorities = new ArrayList<>();
-        Response<List<String>> roleResponse = authClient.getRolesBySysUserId(sysUserId);
-
-        if (200 == roleResponse.getCode()) {
-            grantedAuthorities = Optional.ofNullable(roleResponse.getData()).orElse(Collections.emptyList()).stream()
-                    .map(SimpleGrantedAuthority::new).collect(Collectors.toList());
-        }
-
-        return grantedAuthorities;
+    // 验证短信验证码是否正确
+    if (!smsCode.equals(redisSmsCode)) {
+      throw new OAuth2SmsInvalidException("短信验证码不正确");
     }
+
+    Response<AppUserProfileDTO> profileInfoRes = userClient.login(phone);
+    if (profileInfoRes.check()) {
+      AppUserProfileDTO resData = profileInfoRes.getData();
+      return LoginUser.builder()
+          .id(resData.getId())
+          .phone(resData.getPhone())
+          .username(resData.getUsername())
+          .avatar(resData.getAvatar())
+          .gender(resData.getGender())
+          .birthday(resData.getBirthday())
+          .build();
+    }
+    throw new UsernameNotFoundException("用户不存在");
+  }
+
+
+  /**
+   * 获取权限
+   *
+   * @param sysUserId 系统用户主键
+   * @return 权限列表
+   */
+  private Collection<? extends GrantedAuthority> getGrantedAuthority(final Long sysUserId) {
+    List<SimpleGrantedAuthority> grantedAuthorities = new ArrayList<>();
+    Response<List<String>> roleResponse = authClient.getRolesBySysUserId(sysUserId);
+
+    if (200 == roleResponse.getCode()) {
+      grantedAuthorities = Optional.ofNullable(roleResponse.getData()).orElse(Collections.emptyList()).stream()
+          .map(SimpleGrantedAuthority::new).collect(Collectors.toList());
+    }
+
+    return grantedAuthorities;
+  }
 
 }

@@ -14,10 +14,10 @@ import lombok.EqualsAndHashCode;
 @TableName("t_order_evaluate")
 public class OrderEvaluate extends Model {
 
-    private static final long serialVersionUID = 9104021175949931054L;
-    private Long id;
+  private static final long serialVersionUID = 9104021175949931054L;
+  private Long id;
 
-    private Long userId;
+  private Long userId;
 
-    private String content;
+  private String content;
 }

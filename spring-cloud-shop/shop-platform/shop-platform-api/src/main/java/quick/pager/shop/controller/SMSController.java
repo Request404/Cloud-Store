@@ -19,19 +19,19 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(ConstantsClient.PLATFORM)
 public class SMSController implements SMSClient {
 
-    @Autowired
-    private SMSService smsService;
+  @Autowired
+  private SMSService smsService;
 
-    /**
-     * 发送短信验证码
-     *
-     * @param phone  手机号码
-     * @param source 事件源
-     * @return 验证码
-     */
-    @PostMapping("/sms/send")
-    @Override
-    public Response<String> sendSms(@RequestParam("phone") final String phone, @RequestParam("source") final String source) {
-        return smsService.sendSms(phone, source);
-    }
+  /**
+   * 发送短信验证码
+   *
+   * @param phone  手机号码
+   * @param source 事件源
+   * @return 验证码
+   */
+  @PostMapping("/sms/send")
+  @Override
+  public Response<String> sendSms(@RequestParam("phone") final String phone, @RequestParam("source") final String source) {
+    return smsService.sendSms(phone, source);
+  }
 }

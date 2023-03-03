@@ -19,21 +19,21 @@ import quick.pager.shop.mq.GoodsMQ;
 @RestController
 public class Goods {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Goods.class, args);
+  public static void main(String[] args) {
+    SpringApplication.run(Goods.class, args);
+  }
+
+
+  @Autowired
+  private GoodsMQ goodsMQ;
+
+  @GetMapping("hello")
+  public String hello() {
+    boolean send = goodsMQ.greeting().send(MessageBuilder.withPayload("ewewewewewew").build());
+    if (send) {
+      System.out.println("fasongchengogn");
     }
-
-
-    @Autowired
-    private GoodsMQ goodsMQ;
-
-    @GetMapping("hello")
-    public String hello() {
-        boolean send = goodsMQ.greeting().send(MessageBuilder.withPayload("ewewewewewew").build());
-        if (send) {
-            System.out.println("fasongchengogn");
-        }
-        return "success";
-    }
+    return "success";
+  }
 }
 

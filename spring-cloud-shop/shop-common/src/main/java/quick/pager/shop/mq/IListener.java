@@ -12,30 +12,30 @@ import org.springframework.amqp.core.Message;
  */
 interface IListener<T> {
 
-    /**
-     * 接收消息监听的主方法
-     *
-     * @param obj     接收的消息
-     * @param message mq 消息
-     * @param channel 消息渠道
-     */
-    void process(T obj, Message message, Channel channel) throws Exception;
+  /**
+   * 接收消息监听的主方法
+   *
+   * @param obj     接收的消息
+   * @param message mq 消息
+   * @param channel 消息渠道
+   */
+  void process(T obj, Message message, Channel channel) throws Exception;
 
-    /**
-     * 核心发送到MQ 中处理的业务，由 quick.pager.shop.mq.IListener#process 回调
-     *
-     * @param obj     核心业务消息
-     * @param message mq 消息
-     * @param channel 消息渠道
-     * @return true 业务返回正常，false 业务返回异常现象，消息失败
-     */
-    boolean doProcess(T obj, Message message, Channel channel);
+  /**
+   * 核心发送到MQ 中处理的业务，由 quick.pager.shop.mq.IListener#process 回调
+   *
+   * @param obj     核心业务消息
+   * @param message mq 消息
+   * @param channel 消息渠道
+   * @return true 业务返回正常，false 业务返回异常现象，消息失败
+   */
+  boolean doProcess(T obj, Message message, Channel channel);
 
-    /**
-     * 确认消息机制
-     *
-     * @param channel     消息渠道
-     * @param deliveryTag deliveryTag
-     */
-    void basicAck(Channel channel, long deliveryTag);
+  /**
+   * 确认消息机制
+   *
+   * @param channel     消息渠道
+   * @param deliveryTag deliveryTag
+   */
+  void basicAck(Channel channel, long deliveryTag);
 }

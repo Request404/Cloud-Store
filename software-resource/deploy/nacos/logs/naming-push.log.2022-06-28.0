@@ -1,0 +1,98 @@
+2022-06-28 15:26:05,119 INFO shop@@shop-gateway is changed, add it to push queue.
+
+2022-06-28 15:26:05,545 INFO serviceName: shop@@shop-gateway changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,15181313874200
+
+2022-06-28 15:26:05,558 INFO send udp packet: 169.254.233.24,52055,15181313874200
+
+2022-06-28 15:26:05,596 INFO received ack: {"type": "push-ack", "lastRefTime":"15181313874200", "data":""} from: 169.254.233.24:52055, cost: 37 ms, unacked: 0, total push: 1
+
+2022-06-28 15:26:11,480 INFO shop@@shop-activity is changed, add it to push queue.
+
+2022-06-28 15:26:50,364 INFO shop@@shop-elasticsearch is changed, add it to push queue.
+
+2022-06-28 15:27:17,294 INFO shop@@shop-goods is changed, add it to push queue.
+
+2022-06-28 15:27:31,210 INFO shop@@shop-job is changed, add it to push queue.
+
+2022-06-28 15:28:09,900 INFO shop@@shop-manage is changed, add it to push queue.
+
+2022-06-28 15:28:21,131 INFO shop@@shop-oss is changed, add it to push queue.
+
+2022-06-28 15:28:39,143 INFO shop@@shop-order is changed, add it to push queue.
+
+2022-06-28 15:29:08,030 INFO shop@@shop-platform is changed, add it to push queue.
+
+2022-06-28 15:29:26,331 INFO shop@@shop-risk is changed, add it to push queue.
+
+2022-06-28 15:29:41,096 INFO shop@@shop-seller is changed, add it to push queue.
+
+2022-06-28 15:30:30,697 INFO shop@@shop-settlement is changed, add it to push queue.
+
+2022-06-28 15:30:50,784 INFO shop@@shop-auth is changed, add it to push queue.
+
+2022-06-28 15:31:28,700 INFO shop@@shop-cart is changed, add it to push queue.
+
+2022-06-28 15:31:28,700 INFO serviceName: shop@@shop-cart changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,15504485656300
+
+2022-06-28 15:31:28,700 INFO send udp packet: 169.254.233.24,52055,15504485656300
+
+2022-06-28 15:31:28,702 INFO received ack: {"type": "push-ack", "lastRefTime":"15504485656300", "data":""} from: 169.254.233.24:52055, cost: 2 ms, unacked: 0, total push: 2
+
+2022-06-28 15:31:30,458 INFO shop@@shop-user is changed, add it to push queue.
+
+2022-06-28 16:05:31,967 INFO shop@@shop-elasticsearch is changed, add it to push queue.
+
+2022-06-28 16:05:31,967 INFO serviceName: shop@@shop-elasticsearch changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,17547752942399
+
+2022-06-28 16:05:31,968 INFO send udp packet: 169.254.233.24,52055,17547752942399
+
+2022-06-28 16:05:31,990 INFO received ack: {"type": "push-ack", "lastRefTime":"17547752942399", "data":""} from: 169.254.233.24:52055, cost: 22 ms, unacked: 0, total push: 3
+
+2022-06-28 16:05:43,003 INFO shop@@shop-elasticsearch is changed, add it to push queue.
+
+2022-06-28 16:05:43,003 INFO serviceName: shop@@shop-elasticsearch changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,17558788312100
+
+2022-06-28 16:05:43,028 INFO send udp packet: 169.254.233.24,52055,17558788312100
+
+2022-06-28 16:05:43,029 INFO received ack: {"type": "push-ack", "lastRefTime":"17558788312100", "data":""} from: 169.254.233.24:52055, cost: 1 ms, unacked: 0, total push: 4
+
+2022-06-28 16:37:18,874 INFO shop@@shop-goods is changed, add it to push queue.
+
+2022-06-28 16:37:18,888 INFO serviceName: shop@@shop-goods changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,19454673811300
+
+2022-06-28 16:37:18,888 INFO send udp packet: 169.254.233.24,52055,19454673811300
+
+2022-06-28 16:37:18,973 INFO received ack: {"type": "push-ack", "lastRefTime":"19454673811300", "data":""} from: 169.254.233.24:52055, cost: 85 ms, unacked: 0, total push: 5
+
+2022-06-28 16:37:33,353 INFO shop@@shop-goods is changed, add it to push queue.
+
+2022-06-28 16:37:33,353 INFO serviceName: shop@@shop-goods changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,19469139483200
+
+2022-06-28 16:37:33,353 INFO send udp packet: 169.254.233.24,52055,19469139483200
+
+2022-06-28 16:37:33,354 INFO received ack: {"type": "push-ack", "lastRefTime":"19469139483200", "data":""} from: 169.254.233.24:52055, cost: 1 ms, unacked: 0, total push: 6
+
+2022-06-28 18:01:52,703 INFO shop@@shop-activity is changed, add it to push queue.
+
+2022-06-28 18:01:52,733 INFO serviceName: shop@@shop-activity changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,24528518136800
+
+2022-06-28 18:01:52,733 INFO send udp packet: 169.254.233.24,52055,24528518136800
+
+2022-06-28 18:01:53,351 INFO received ack: {"type": "push-ack", "lastRefTime":"24528518136800", "data":""} from: 169.254.233.24:52055, cost: 618 ms, unacked: 0, total push: 7
+
+2022-06-28 18:02:03,842 INFO shop@@shop-elasticsearch is changed, add it to push queue.
+
+2022-06-28 18:02:03,842 INFO serviceName: shop@@shop-elasticsearch changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,24539627638600
+
+2022-06-28 18:02:03,842 INFO send udp packet: 169.254.233.24,52055,24539627638600
+
+2022-06-28 18:02:03,882 INFO received ack: {"type": "push-ack", "lastRefTime":"24539627638600", "data":""} from: 169.254.233.24:52055, cost: 40 ms, unacked: 0, total push: 8
+
+2022-06-28 18:02:16,801 INFO shop@@shop-gateway is changed, add it to push queue.
+
+2022-06-28 18:02:16,801 INFO serviceName: shop@@shop-gateway changed, schedule push for: 169.254.233.24:52055, agent: Nacos-Java-Client:v1.2.1, key: 169.254.233.24,52055,24552586612100
+
+2022-06-28 18:02:16,801 INFO send udp packet: 169.254.233.24,52055,24552586612100
+
+2022-06-28 18:02:16,803 INFO received ack: {"type": "push-ack", "lastRefTime":"24552586612100", "data":""} from: 169.254.233.24:52055, cost: 2 ms, unacked: 0, total push: 9
+

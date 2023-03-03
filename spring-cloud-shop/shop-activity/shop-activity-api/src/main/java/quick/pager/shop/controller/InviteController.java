@@ -13,9 +13,9 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(ConstantsClient.ACTIVITY)
 public class InviteController {
 
-    @GetMapping("/testJob")
-    public Response<String> testJob() {
+  @GetMapping("/testJob")
+  public Response<String> testJob() {
 
-        return Response.toResponse("Hello World");
-    }
+    return Response.toResponse("Hello World");
+  }
 }

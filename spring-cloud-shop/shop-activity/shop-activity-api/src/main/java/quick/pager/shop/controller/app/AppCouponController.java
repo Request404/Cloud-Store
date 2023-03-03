@@ -1,6 +1,7 @@
 package quick.pager.shop.controller.app;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,16 +23,16 @@ import quick.pager.shop.util.AuthUtils;
 @RequestMapping(ConstantsClient.ACTIVITY)
 public class AppCouponController {
 
-    @Autowired
-    private AppDiscountCouponService appDiscountCouponService;
+  @Autowired
+  private AppDiscountCouponService appDiscountCouponService;
 
-    /**
-     * 用户优惠券列表
-     */
-    @PostMapping("/app/user/coupons")
-    public Response<List<CouponResponse>> coupons() {
+  /**
+   * 用户优惠券列表
+   */
+  @PostMapping("/app/user/coupons")
+  public Response<List<CouponResponse>> coupons() {
 
-        LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
-        return appDiscountCouponService.queryCoupons(principal.getId());
-    }
+    LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
+    return appDiscountCouponService.queryCoupons(principal.getId());
+  }
 }

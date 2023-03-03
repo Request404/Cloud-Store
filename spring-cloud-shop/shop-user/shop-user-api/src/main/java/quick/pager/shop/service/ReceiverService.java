@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class ReceiverService {
 
-    public void onMessage(String message) {
-        System.out.println("消息来了：" + message);
+  public void onMessage(String message) {
+    System.out.println("消息来了：" + message);
 
-    }
+  }
 }

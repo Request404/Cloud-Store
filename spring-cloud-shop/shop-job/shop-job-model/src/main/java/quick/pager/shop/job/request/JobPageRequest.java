@@ -13,18 +13,18 @@ import quick.pager.shop.user.request.PageRequest;
 @Data
 public class JobPageRequest extends PageRequest {
 
-    private static final long serialVersionUID = -3168321911092475163L;
-    /**
-     * job名称
-     */
-    private String jobName;
+  private static final long serialVersionUID = -3168321911092475163L;
+  /**
+   * job名称
+   */
+  private String jobName;
 
-    /**
-     * job组名称
-     */
-    private String jobGroup;
-    /**
-     * job 状态
-     */
-    private Integer jobStatus;
+  /**
+   * job组名称
+   */
+  private String jobGroup;
+  /**
+   * job 状态
+   */
+  private Integer jobStatus;
 }

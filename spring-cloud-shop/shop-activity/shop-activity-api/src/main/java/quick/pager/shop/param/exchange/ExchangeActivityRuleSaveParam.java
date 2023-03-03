@@ -13,11 +13,11 @@ import quick.pager.shop.param.Param;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class ExchangeActivityRuleSaveParam extends Param {
-    private static final long serialVersionUID = 6084702038191682697L;
+  private static final long serialVersionUID = 6084702038191682697L;
 
-    private Long id;
-    /**
-     * 活动主键
-     */
-    private Long activityId;
+  private Long id;
+  /**
+   * 活动主键
+   */
+  private Long activityId;
 }

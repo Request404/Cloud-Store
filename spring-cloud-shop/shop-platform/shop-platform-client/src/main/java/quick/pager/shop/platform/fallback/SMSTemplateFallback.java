@@ -13,8 +13,8 @@ import quick.pager.shop.platform.client.SMSTemplateClient;
 @Component
 @Slf4j
 public class SMSTemplateFallback implements FallbackFactory<SMSTemplateClient> {
-    @Override
-    public SMSTemplateClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public SMSTemplateClient create(Throwable cause) {
+    return null;
+  }
 }

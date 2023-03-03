@@ -10,5 +10,5 @@ import quick.pager.shop.user.request.Request;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsOtherRequest extends Request {
-    private static final long serialVersionUID = 3092261694559131521L;
+  private static final long serialVersionUID = 3092261694559131521L;
 }

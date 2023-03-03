@@ -15,12 +15,12 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(ConstantsClient.ACTIVITY)
 public class AppAssembleController {
 
-    /**
-     * 拼团活动列表
-     */
-    @GetMapping("/app/assemble/list")
-    public Response list() {
+  /**
+   * 拼团活动列表
+   */
+  @GetMapping("/app/assemble/list")
+  public Response list() {
 
-        return null;
-    }
+    return null;
+  }
 }

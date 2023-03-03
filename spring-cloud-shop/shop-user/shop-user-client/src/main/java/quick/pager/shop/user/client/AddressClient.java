@@ -18,20 +18,20 @@ import quick.pager.shop.user.response.Response;
 public interface AddressClient {
 
 
-    /**
-     * 查询用户默认地址
-     *
-     * @param userId 用户主键
-     */
-    @RequestMapping(value = "/address/default/{userId}", method = RequestMethod.POST)
-    Response<AddressResponse> address(@PathVariable("userId") Long userId);
+  /**
+   * 查询用户默认地址
+   *
+   * @param userId 用户主键
+   */
+  @RequestMapping(value = "/address/default/{userId}", method = RequestMethod.POST)
+  Response<AddressResponse> address(@PathVariable("userId") Long userId);
 
 
-    /**
-     * 获取地址信息
-     *
-     * @param addressId 地址主键
-     */
-    @RequestMapping(value = "/address/{addressId}/info", method = RequestMethod.POST)
-    Response<AddressResponse> info(@PathVariable("addressId") Long addressId);
+  /**
+   * 获取地址信息
+   *
+   * @param addressId 地址主键
+   */
+  @RequestMapping(value = "/address/{addressId}/info", method = RequestMethod.POST)
+  Response<AddressResponse> info(@PathVariable("addressId") Long addressId);
 }

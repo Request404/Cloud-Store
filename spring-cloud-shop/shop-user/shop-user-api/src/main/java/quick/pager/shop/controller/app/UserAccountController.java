@@ -24,29 +24,29 @@ import quick.pager.shop.util.AuthUtils;
 @RequestMapping(Constants.Module.USER)
 public class UserAccountController {
 
-    @Autowired
-    private UserAccountService userAccountService;
-    @Autowired
-    private UserService userService;
+  @Autowired
+  private UserAccountService userAccountService;
+  @Autowired
+  private UserService userService;
 
-    /**
-     * 根据用户主键查询用户账户信息
-     *
-     * @return 户账户信息
-     */
-    @PostMapping("/app/account/")
-    public Response<UserAccountResponse> account() {
-        LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
-        return userAccountService.account(principal.getId());
-    }
+  /**
+   * 根据用户主键查询用户账户信息
+   *
+   * @return 户账户信息
+   */
+  @PostMapping("/app/account/")
+  public Response<UserAccountResponse> account() {
+    LoginUser principal = (LoginUser) AuthUtils.getPrincipal().getPrincipal();
+    return userAccountService.account(principal.getId());
+  }
 
-    /**
-     * app 短信登录
-     *
-     * @param phone 短信登录手机号码
-     */
-    @PostMapping("/app/login/sms")
-    public Response<UserProfileResponse> login(@RequestParam("phone") String phone) {
-        return userService.login(phone);
-    }
+  /**
+   * app 短信登录
+   *
+   * @param phone 短信登录手机号码
+   */
+  @PostMapping("/app/login/sms")
+  public Response<UserProfileResponse> login(@RequestParam("phone") String phone) {
+    return userService.login(phone);
+  }
 }

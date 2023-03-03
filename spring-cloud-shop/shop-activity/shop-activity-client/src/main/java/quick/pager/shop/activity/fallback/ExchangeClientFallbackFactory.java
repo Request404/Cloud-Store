@@ -14,8 +14,8 @@ import quick.pager.shop.activity.client.ExchangeClient;
 @Component
 public class ExchangeClientFallbackFactory implements FallbackFactory<ExchangeClient> {
 
-    @Override
-    public ExchangeClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public ExchangeClient create(Throwable cause) {
+    return null;
+  }
 }

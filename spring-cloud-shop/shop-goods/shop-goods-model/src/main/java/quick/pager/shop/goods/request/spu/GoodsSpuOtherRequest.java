@@ -1,6 +1,7 @@
 package quick.pager.shop.goods.request.spu;
 
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
@@ -10,14 +11,14 @@ import lombok.Data;
  */
 @Data
 public class GoodsSpuOtherRequest implements Serializable {
-    private static final long serialVersionUID = 2028013977123929109L;
+  private static final long serialVersionUID = 2028013977123929109L;
 
-    /**
-     * spu名称
-     */
-    private String spuName;
-    /**
-     * 检索关键字
-     */
-    private String keyword;
+  /**
+   * spu名称
+   */
+  private String spuName;
+  /**
+   * 检索关键字
+   */
+  private String keyword;
 }

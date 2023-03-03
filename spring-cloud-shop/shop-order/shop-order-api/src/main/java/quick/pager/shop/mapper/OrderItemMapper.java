@@ -6,6 +6,7 @@ import quick.pager.shop.model.OrderItem;
 
 /**
  * 订单商品明细
+ *
  * @author request404
  */
 @Mapper

@@ -12,5 +12,5 @@ import quick.pager.shop.user.request.Request;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class BlackListSaveRequest extends Request {
-    private static final long serialVersionUID = 1796011177745256362L;
+  private static final long serialVersionUID = 1796011177745256362L;
 }

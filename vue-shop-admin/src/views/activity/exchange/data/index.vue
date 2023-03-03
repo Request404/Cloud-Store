@@ -4,7 +4,7 @@
       <el-input v-model="listQuery.activityName"
                 placeholder="活动名称"
                 style="width: 200px;"
-                class="filter-item"/>
+                class="filter-item" />
       <el-select v-model="listQuery.state"
                  placeholder="状态"
                  clearable
@@ -12,7 +12,7 @@
         <el-option v-for="(item,index) in stateOptions"
                    :key="index"
                    :label="item.value"
-                   :value="item.key"/>
+                   :value="item.key" />
       </el-select>
       <el-date-picker v-model="listQuery.range"
                       type="datetimerange"
@@ -121,18 +121,6 @@
                      size="small"
                      @click="handleCommand('RULE', scope.row)">规则
           </el-button>
-          <!--          &lt;!&ndash; 满赠商品&ndash;&gt;-->
-          <!--          <el-button v-waves-->
-          <!--                     v-permission="'PAGER_ACTIVITY_EXCHANGE_GOODS'"-->
-          <!--                     type="warning"-->
-          <!--                     size="small"-->
-          <!--                     @click="handleCommand('GOODS', scope.row)">满赠商品</el-button>-->
-          <!--          &lt;!&ndash; 购买记录&ndash;&gt;-->
-          <!--          <el-button v-waves-->
-          <!--                     v-permission="'PAGER_ACTIVITY_EXCHANGE_RECORD'"-->
-          <!--                     type="primary"-->
-          <!--                     size="small"-->
-          <!--                     @click="handleCommand('RECORD',scope.row)">购买记录</el-button>-->
         </template>
       </el-table-column>
       <el-table-column label="换购操作"
@@ -141,36 +129,6 @@
                        class-name="small-padding fixed-width"
                        align="center">
         <template slot-scope="scope">
-          <!-- 编辑-->
-          <!--          <el-button v-waves-->
-          <!--                     v-permission="'PAGER_ACTIVITY_EXCHANGE_MODIFY'"-->
-          <!--                     type="primary"-->
-          <!--                     size="small"-->
-          <!--                     @click="handleCommand('EDIT', scope.row)">编辑-->
-          <!--          </el-button>-->
-          <!--          &lt;!&ndash; 启用&ndash;&gt;-->
-          <!--          <el-button v-if="scope.row.state"-->
-          <!--                     v-waves-->
-          <!--                     v-permission="'PAGER_ACTIVITY_EXCHANGE_MODIFY'"-->
-          <!--                     type="success"-->
-          <!--                     size="small"-->
-          <!--                     @click="handleCommand('ENABLED', scope.row,false)">启用-->
-          <!--          </el-button>-->
-          <!--          &lt;!&ndash; 禁用&ndash;&gt;-->
-          <!--          <el-button v-else-->
-          <!--                     v-waves-->
-          <!--                     v-permission="'PAGER_ACTIVITY_EXCHANGE_RULE'"-->
-          <!--                     type="danger"-->
-          <!--                     size="small"-->
-          <!--                     @click="handleCommand('ENABLED', scope.row,true)">禁用-->
-          <!--          </el-button>-->
-          <!--          &lt;!&ndash; 满赠规则&ndash;&gt;-->
-          <!--          <el-button v-waves-->
-          <!--                     v-permission="'PAGER_ACTIVITY_EXCHANGE_RULE'"-->
-          <!--                     type="success"-->
-          <!--                     size="small"-->
-          <!--                     @click="handleCommand('RULE', scope.row)">规则</el-button>-->
-          <!-- 满赠商品-->
           <el-button v-waves
                      v-permission="'PAGER_ACTIVITY_EXCHANGE_GOODS'"
                      type="warning"
@@ -192,16 +150,16 @@
                 :total="total"
                 :page.sync="listQuery.page"
                 :limit.sync="listQuery.pageSize"
-                @pagination="getList"/>
+                @pagination="getList" />
 
     <i-form ref="dataForm"
-            :form-data="formData"/>
+            :form-data="formData" />
   </div>
 </template>
 
 <script>
-import {fetchList, modifyActivity} from '@/api/activity/activity'
-import {parseTime} from '@/utils'
+import { fetchList, modifyActivity } from '@/api/activity/activity'
+import { parseTime } from '@/utils'
 import waves from '@/directive/waves' // Waves directive
 import permission from '@/directive/permission'
 import Pagination from '@/components/Pagination' // Secondary package based on el-pagination
@@ -209,9 +167,9 @@ import IForm from './form'
 
 export default {
   name: 'ExchangeManage',
-  components: {Pagination, IForm},
-  directives: {waves, permission},
-  data() {
+  components: { Pagination, IForm },
+  directives: { waves, permission },
+  data () {
     return {
       tableKey: 0,
       list: null,
@@ -226,15 +184,15 @@ export default {
         beginTime: undefined,
         endTime: undefined
       },
-      stateOptions: [{key: false, value: '启用'}, {key: true, value: '禁用'}],
+      stateOptions: [{ key: false, value: '启用' }, { key: true, value: '禁用' }],
       formData: {}
     }
   },
-  created() {
+  created () {
     this.getList()
   },
   methods: {
-    getList() { // 活动列表
+    getList () { // 活动列表
       this.listLoading = true
       fetchList(this.listQuery).then(response => {
         this.list = response.data
@@ -247,23 +205,23 @@ export default {
         this.listLoading = false
       })
     },
-    handleFilter() { // 搜索
+    handleFilter () { // 搜索
       this.listQuery.page = 1
       this.getList()
     },
-    getActivityTime(row) {
+    getActivityTime (row) {
       const beginTime = row.beginTime
       const endTime = row.endTime
 
       return parseTime(beginTime, '{y}-{m}-{d}') + ' 至 ' + parseTime(endTime, '{y}-{m}-{d}')
     },
-    handleCreate() {
+    handleCreate () {
       this.formData = {}
       const _this = this.$refs['dataForm']
       _this.dialogStatus = 'create'
       _this.dialogFormVisible = true
     },
-    handleCommand(command, row, state) {
+    handleCommand (command, row, state) {
       switch (command) {
         case 'EDIT':
           this.handleUpdate(row)
@@ -282,16 +240,16 @@ export default {
           break
       }
     },
-    handleUpdate(row) {
+    handleUpdate (row) {
       this.formData = Object.assign({}, row)
       const _this = this.$refs['dataForm']
       _this.dialogStatus = 'update'
       _this.dialogFormVisible = true
     },
-    handleJump(router) { // 路由跳转
-      this.$router.push({path: router})
+    handleJump (router) { // 路由跳转
+      this.$router.push({ path: router })
     },
-    handleDisable(id, state) {
+    handleDisable (id, state) {
       const params = {
         id: id,
         state: state,

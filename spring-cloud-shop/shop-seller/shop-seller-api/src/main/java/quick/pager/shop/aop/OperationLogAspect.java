@@ -19,22 +19,22 @@ import quick.pager.shop.user.response.Response;
 @Slf4j
 public class OperationLogAspect {
 
-    @Around("execution(* quick.pager.shop.order.service.*.doService(..))")
-    public Response doOperation(ProceedingJoinPoint pjp) throws Throwable {
+  @Around("execution(* quick.pager.shop.order.service.*.doService(..))")
+  public Response doOperation(ProceedingJoinPoint pjp) throws Throwable {
 
-        log.info("========================================================================================");
-        Object[] args = pjp.getArgs();
-        Object target = pjp.getTarget();
+    log.info("========================================================================================");
+    Object[] args = pjp.getArgs();
+    Object target = pjp.getTarget();
 
-        // service 层有入参
-        if (args.length > 0) {
-            log.info("== {}.doService INVOKER SERVICE PARAMS : {} ", target.getClass().getName(), JSON.toJSONString(args[0]));
-        }
-
-        Response result = (Response) pjp.proceed();
-
-        log.info("= SERVICE RESPONSE : {}", JSON.toJSONString(result));
-        log.info("========================================================================================");
-        return result;
+    // service 层有入参
+    if (args.length > 0) {
+      log.info("== {}.doService INVOKER SERVICE PARAMS : {} ", target.getClass().getName(), JSON.toJSONString(args[0]));
     }
+
+    Response result = (Response) pjp.proceed();
+
+    log.info("= SERVICE RESPONSE : {}", JSON.toJSONString(result));
+    log.info("========================================================================================");
+    return result;
+  }
 }

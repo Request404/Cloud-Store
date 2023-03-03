@@ -12,5 +12,5 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class NativeMessagePageRequest extends PageRequest {
-    private static final long serialVersionUID = -1376351904746695505L;
+  private static final long serialVersionUID = -1376351904746695505L;
 }

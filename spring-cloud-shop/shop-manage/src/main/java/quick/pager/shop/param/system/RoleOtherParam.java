@@ -7,11 +7,11 @@ import quick.pager.shop.param.PageParam;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class RoleOtherParam extends PageParam {
-    private static final long serialVersionUID = 7463357139222297502L;
+  private static final long serialVersionUID = 7463357139222297502L;
 
-    /**
-     * 角色名称
-     */
-    private String roleName;
+  /**
+   * 角色名称
+   */
+  private String roleName;
 
 }

@@ -9,12 +9,12 @@ import quick.pager.shop.user.response.Response;
  */
 public interface IHandler<T> {
 
-    /**
-     * 调用方法
-     *
-     * @param obj 请求入参
-     * @return 数据结果返回
-     */
-    Response<T> doHandler(Object obj);
+  /**
+   * 调用方法
+   *
+   * @param obj 请求入参
+   * @return 数据结果返回
+   */
+  Response<T> doHandler(Object obj);
 
 }

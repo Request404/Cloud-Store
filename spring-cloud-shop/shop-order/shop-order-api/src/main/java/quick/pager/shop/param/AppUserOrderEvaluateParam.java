@@ -11,5 +11,5 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class AppUserOrderEvaluateParam extends Param {
-    private static final long serialVersionUID = -186701793990050027L;
+  private static final long serialVersionUID = -186701793990050027L;
 }

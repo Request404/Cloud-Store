@@ -11,11 +11,11 @@ import quick.pager.shop.user.request.FeedbackRequest;
  */
 public interface FeedbackService extends IService<Feedback> {
 
-    /**
-     * 提交意见反馈
-     *
-     * @param userId 用户主键
-     * @param param  保存内容
-     */
-    Response<Long> create(final Long userId, final FeedbackRequest param);
+  /**
+   * 提交意见反馈
+   *
+   * @param userId 用户主键
+   * @param param  保存内容
+   */
+  Response<Long> create(final Long userId, final FeedbackRequest param);
 }

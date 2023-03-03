@@ -15,14 +15,14 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(ConstantsClient.ACTIVITY)
 public class AppExchangeController {
 
-    /**
-     * 满赠换购活动列表
-     *
-     * @return
-     */
-    @GetMapping("/app/exchange/list")
-    public Response list() {
+  /**
+   * 满赠换购活动列表
+   *
+   * @return
+   */
+  @GetMapping("/app/exchange/list")
+  public Response list() {
 
-        return null;
-    }
+    return null;
+  }
 }

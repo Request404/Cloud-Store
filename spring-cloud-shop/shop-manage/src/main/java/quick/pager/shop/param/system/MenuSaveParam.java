@@ -13,31 +13,31 @@ import quick.pager.shop.param.Param;
 @Data
 public class MenuSaveParam extends Param {
 
-    private static final long serialVersionUID = 2086881622142051682L;
+  private static final long serialVersionUID = 2086881622142051682L;
 
-    private Long id;
+  private Long id;
 
-    private Long parentId;
+  private Long parentId;
 
-    private Integer sequence;
+  private Integer sequence;
 
-    private Integer menuType;
+  private Integer menuType;
 
-    private String name;
+  private String name;
 
-    private String path;
+  private String path;
 
-    private String component;
+  private String component;
 
-    private String redirect;
+  private String redirect;
 
-    private String icon;
+  private String icon;
 
-    private String permission;
+  private String permission;
 
-    private String permissionName;
+  private String permissionName;
 
-    private Boolean router;
+  private Boolean router;
 
-    private Boolean hidden;
+  private Boolean hidden;
 }

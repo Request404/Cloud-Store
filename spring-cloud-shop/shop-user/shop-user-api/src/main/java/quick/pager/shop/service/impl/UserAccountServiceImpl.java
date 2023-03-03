@@ -12,24 +12,24 @@ import quick.pager.shop.user.response.UserAccountResponse;
 @Service
 public class UserAccountServiceImpl implements UserAccountService {
 
-    @Autowired
-    private UserAccountMapper userAccountMapper;
+  @Autowired
+  private UserAccountMapper userAccountMapper;
 
-    @Override
-    public Response<UserAccountResponse> account(final Long userId) {
+  @Override
+  public Response<UserAccountResponse> account(final Long userId) {
 
-        UserAccount userAccount = userAccountMapper.selectOne(new LambdaQueryWrapper<UserAccount>()
-                .eq(UserAccount::getUserId, userId));
+    UserAccount userAccount = userAccountMapper.selectOne(new LambdaQueryWrapper<UserAccount>()
+        .eq(UserAccount::getUserId, userId));
 
-        return Response.toResponse(this.convert(userAccount));
-    }
+    return Response.toResponse(this.convert(userAccount));
+  }
 
 
-    private UserAccountResponse convert(final UserAccount userAccount) {
-        UserAccountResponse ur = new UserAccountResponse();
-        ur.setId(userAccount.getId());
-        ur.setUserId(userAccount.getUserId());
-        ur.setIntegral(userAccount.getIntegral());
-        return ur;
-    }
+  private UserAccountResponse convert(final UserAccount userAccount) {
+    UserAccountResponse ur = new UserAccountResponse();
+    ur.setId(userAccount.getId());
+    ur.setUserId(userAccount.getUserId());
+    ur.setIntegral(userAccount.getIntegral());
+    return ur;
+  }
 }

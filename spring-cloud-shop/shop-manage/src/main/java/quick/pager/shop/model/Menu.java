@@ -17,28 +17,28 @@ import quick.pager.shop.model.Model;
 @TableName("t_menu")
 public class Menu extends Model {
 
-    private static final long serialVersionUID = -3246720425417855255L;
+  private static final long serialVersionUID = -3246720425417855255L;
 
-    private Long parentId;
+  private Long parentId;
 
-    private Integer sequence;
+  private Integer sequence;
 
-    private Integer menuType;
+  private Integer menuType;
 
-    private String name;
+  private String name;
 
-    private String path;
+  private String path;
 
-    private String component;
+  private String component;
 
-    private String redirect;
+  private String redirect;
 
-    private String icon;
+  private String icon;
 
-    private String permission;
+  private String permission;
 
-    private Boolean router;
+  private Boolean router;
 
-    private Boolean hidden;
+  private Boolean hidden;
 
 }

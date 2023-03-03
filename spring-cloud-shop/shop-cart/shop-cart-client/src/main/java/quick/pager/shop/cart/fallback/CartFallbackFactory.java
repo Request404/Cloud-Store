@@ -6,8 +6,8 @@ import quick.pager.shop.cart.client.CartClient;
 
 @Component
 public class CartFallbackFactory implements FallbackFactory<CartClient> {
-    @Override
-    public CartClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public CartClient create(Throwable cause) {
+    return null;
+  }
 }

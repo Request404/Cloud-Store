@@ -13,7 +13,7 @@ import lombok.EqualsAndHashCode;
 @Data
 @TableName("t_sec_kill_rule")
 public class SecKillRule extends Model {
-    private static final long serialVersionUID = -7652908619807230502L;
+  private static final long serialVersionUID = -7652908619807230502L;
 
 
 }

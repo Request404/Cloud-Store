@@ -1,6 +1,7 @@
 package quick.pager.shop.platform.client;
 
 import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,27 +23,27 @@ import quick.pager.shop.user.response.Response;
 @FeignClient(value = ConstantsClient.PLATFORM_CLIENT, path = ConstantsClient.PLATFORM, fallbackFactory = SystemConfigClientFallback.class)
 public interface SystemConfigClient {
 
-    /**
-     * 创建
-     */
-    @RequestMapping(value = "/config/create", method = RequestMethod.POST)
-    Response<Long> create(@RequestBody SystemConfigSaveRequest request);
+  /**
+   * 创建
+   */
+  @RequestMapping(value = "/config/create", method = RequestMethod.POST)
+  Response<Long> create(@RequestBody SystemConfigSaveRequest request);
 
-    /**
-     * 创建配置
-     */
-    @RequestMapping(value = "/config/modify", method = RequestMethod.PUT)
-    Response<Long> modify(@RequestBody SystemConfigSaveRequest request);
+  /**
+   * 创建配置
+   */
+  @RequestMapping(value = "/config/modify", method = RequestMethod.PUT)
+  Response<Long> modify(@RequestBody SystemConfigSaveRequest request);
 
-    /**
-     * 查询配置列表，无分页
-     */
-    @RequestMapping(value = "/config/list", method = RequestMethod.GET)
-    Response<List<SystemConfigResponse>> queryList(SystemConfigOtherRequest request);
+  /**
+   * 查询配置列表，无分页
+   */
+  @RequestMapping(value = "/config/list", method = RequestMethod.GET)
+  Response<List<SystemConfigResponse>> queryList(SystemConfigOtherRequest request);
 
-    /**
-     * 查询配置列表分页
-     */
-    @RequestMapping(value = "/config/page", method = RequestMethod.POST)
-    Response<List<SystemConfigResponse>> queryPage(@RequestBody SystemConfigPageRequest request);
+  /**
+   * 查询配置列表分页
+   */
+  @RequestMapping(value = "/config/page", method = RequestMethod.POST)
+  Response<List<SystemConfigResponse>> queryPage(@RequestBody SystemConfigPageRequest request);
 }

@@ -10,11 +10,11 @@ import quick.pager.shop.user.response.Response;
  */
 public interface OrderTradeService {
 
-    /**
-     * 新增
-     *
-     * @param request 请求参数
-     * @return 返回数据
-     */
-    Response<Long> create(final OrderTradeSaveRequest request);
+  /**
+   * 新增
+   *
+   * @param request 请求参数
+   * @return 返回数据
+   */
+  Response<Long> create(final OrderTradeSaveRequest request);
 }

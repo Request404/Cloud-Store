@@ -12,33 +12,33 @@ import quick.pager.shop.user.response.BasicResponse;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsSpuResponse extends BasicResponse {
-    private static final long serialVersionUID = 8393377609491652196L;
+  private static final long serialVersionUID = 8393377609491652196L;
 
-    /**
-     * 主键
-     */
-    private Long id;
-    /**
-     * 分类 t_goods_class id 这个分类必须是二级分类，不可是顶级分类
-     */
-    private Long classificationId;
-    /**
-     * 分类名称
-     */
-    private String classificationName;
+  /**
+   * 主键
+   */
+  private Long id;
+  /**
+   * 分类 t_goods_class id 这个分类必须是二级分类，不可是顶级分类
+   */
+  private Long classificationId;
+  /**
+   * 分类名称
+   */
+  private String classificationName;
 
-    /**
-     * spu 名称
-     */
-    private String spuName;
+  /**
+   * spu 名称
+   */
+  private String spuName;
 
-    /**
-     * spu 图片
-     */
-    private String spuImage;
+  /**
+   * spu 图片
+   */
+  private String spuImage;
 
-    /**
-     * 序号
-     */
-    private Integer sequence;
+  /**
+   * 序号
+   */
+  private Integer sequence;
 }

@@ -2,6 +2,7 @@ package quick.pager.shop.goods.response.spu;
 
 import java.io.Serializable;
 import java.util.List;
+
 import lombok.Data;
 
 /**
@@ -11,17 +12,17 @@ import lombok.Data;
  */
 @Data
 public class GoodsSpuTreeResponse implements Serializable {
-    private static final long serialVersionUID = -2529525559374120112L;
+  private static final long serialVersionUID = -2529525559374120112L;
 
-    /**
-     * 主键
-     */
-    private Long id;
+  /**
+   * 主键
+   */
+  private Long id;
 
-    private String name;
+  private String name;
 
-    /**
-     * 树形结构子节点
-     */
-    private List<GoodsSpuTreeResponse> children;
+  /**
+   * 树形结构子节点
+   */
+  private List<GoodsSpuTreeResponse> children;
 }

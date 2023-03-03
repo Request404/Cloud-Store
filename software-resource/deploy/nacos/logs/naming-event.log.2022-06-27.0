@@ -1,0 +1,404 @@
+2022-06-27 09:01:07,447 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
+2022-06-27 09:03:26,656 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
+
+2022-06-27 09:10:43,295 INFO shop@@shop-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:8095:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:10:43,334 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-auth, ips: 172.20.10.9:8095_true,
+
+2022-06-27 09:11:06,612 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:11:06,612 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 09:11:15,028 INFO shop@@shop-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:10000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:11:15,028 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-gateway, ips: 172.20.10.9:10000_true,
+
+2022-06-27 09:11:25,636 INFO shop@@shop-cart {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11150:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:11:25,636 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-cart, ips: 172.20.10.9:11150_true,
+
+2022-06-27 09:11:53,438 INFO shop@@shop-elasticsearch {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11200:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:11:53,438 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-elasticsearch, ips: 172.20.10.9:11200_true,
+
+2022-06-27 09:12:24,590 INFO shop@@shop-goods {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11250:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:12:24,590 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-goods, ips: 172.20.10.9:11250_true,
+
+2022-06-27 09:12:25,446 INFO shop@@shop-job {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11300:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:12:25,446 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-job, ips: 172.20.10.9:11300_true,
+
+2022-06-27 09:12:33,898 INFO shop@@shop-manage {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11350:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:12:33,898 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-manage, ips: 172.20.10.9:11350_true,
+
+2022-06-27 09:12:35,397 INFO shop@@shop-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11450:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:12:35,397 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-oss, ips: 172.20.10.9:11450_true,
+
+2022-06-27 09:12:51,664 INFO shop@@shop-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11400:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:12:51,664 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-order, ips: 172.20.10.9:11400_true,
+
+2022-06-27 09:13:38,918 INFO shop@@shop-platform {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:13:38,919 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-platform, ips: 172.20.10.9:11500_true,
+
+2022-06-27 09:13:41,769 INFO shop@@shop-risk {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11550:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:13:41,769 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-risk, ips: 172.20.10.9:11550_true,
+
+2022-06-27 09:13:50,311 INFO shop@@shop-seller {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11600:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:13:50,311 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-seller, ips: 172.20.10.9:11600_true,
+
+2022-06-27 09:13:56,571 INFO shop@@shop-settlement {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11650:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:13:56,571 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-settlement, ips: 172.20.10.9:11650_true,
+
+2022-06-27 09:14:11,701 INFO shop@@shop-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11700:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:14:11,701 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-user, ips: 172.20.10.9:11700_true,
+
+2022-06-27 09:22:57,690 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:22:57,690 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 09:23:36,688 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:23:36,688 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 09:27:30,108 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:30,108 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 09:27:30,236 INFO shop@@shop-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:8095:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:30,236 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-auth, ips: 
+
+2022-06-27 09:27:30,358 INFO shop@@shop-cart {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11150:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:30,358 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-cart, ips: 
+
+2022-06-27 09:27:30,516 INFO shop@@shop-elasticsearch {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11200:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:30,516 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-elasticsearch, ips: 
+
+2022-06-27 09:27:30,631 INFO shop@@shop-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:10000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:30,631 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-gateway, ips: 
+
+2022-06-27 09:27:31,011 INFO shop@@shop-goods {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11250:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:31,011 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-goods, ips: 
+
+2022-06-27 09:27:31,192 INFO shop@@shop-job {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11300:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:31,192 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-job, ips: 
+
+2022-06-27 09:27:31,491 INFO shop@@shop-manage {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11350:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:31,491 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-manage, ips: 
+
+2022-06-27 09:27:31,705 INFO shop@@shop-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11400:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:31,705 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-order, ips: 
+
+2022-06-27 09:27:31,958 INFO shop@@shop-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11450:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:31,958 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-oss, ips: 
+
+2022-06-27 09:27:32,447 INFO shop@@shop-risk {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11550:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:32,447 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-risk, ips: 
+
+2022-06-27 09:27:32,577 INFO shop@@shop-platform {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:32,577 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-platform, ips: 
+
+2022-06-27 09:27:32,749 INFO shop@@shop-seller {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11600:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:32,749 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-seller, ips: 
+
+2022-06-27 09:27:33,082 INFO shop@@shop-settlement {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11650:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:33,082 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-settlement, ips: 
+
+2022-06-27 09:27:33,437 INFO shop@@shop-user {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11700:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:27:33,437 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-user, ips: 
+
+2022-06-27 09:28:04,572 INFO shop@@shop-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:10000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:28:04,572 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-gateway, ips: 172.20.10.9:10000_true,
+
+2022-06-27 09:28:25,562 INFO shop@@shop-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:8095:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:28:25,562 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-auth, ips: 172.20.10.9:8095_true,
+
+2022-06-27 09:28:40,981 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:28:40,981 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 09:28:54,355 INFO shop@@shop-risk {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11550:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:28:54,355 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-risk, ips: 172.20.10.9:11550_true,
+
+2022-06-27 09:29:23,956 INFO shop@@shop-settlement {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11650:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:29:23,956 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-settlement, ips: 172.20.10.9:11650_true,
+
+2022-06-27 09:29:48,984 INFO shop@@shop-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11700:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:29:48,984 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-user, ips: 172.20.10.9:11700_true,
+
+2022-06-27 09:30:07,176 INFO shop@@shop-cart {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11150:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:30:07,176 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-cart, ips: 172.20.10.9:11150_true,
+
+2022-06-27 09:30:41,507 INFO shop@@shop-goods {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11250:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:30:41,507 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-goods, ips: 172.20.10.9:11250_true,
+
+2022-06-27 09:30:52,554 INFO shop@@shop-elasticsearch {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11200:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:30:52,554 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-elasticsearch, ips: 172.20.10.9:11200_true,
+
+2022-06-27 09:30:54,699 INFO shop@@shop-job {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11300:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:30:54,699 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-job, ips: 172.20.10.9:11300_true,
+
+2022-06-27 09:31:22,862 INFO shop@@shop-manage {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11350:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:31:22,862 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-manage, ips: 172.20.10.9:11350_true,
+
+2022-06-27 09:31:44,275 INFO shop@@shop-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11450:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:31:44,275 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-oss, ips: 172.20.10.9:11450_true,
+
+2022-06-27 09:32:06,579 INFO shop@@shop-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11400:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:32:06,579 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-order, ips: 172.20.10.9:11400_true,
+
+2022-06-27 09:32:23,357 INFO shop@@shop-platform {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:32:23,357 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-platform, ips: 172.20.10.9:11500_true,
+
+2022-06-27 09:32:32,568 INFO shop@@shop-seller {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11600:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:32:32,568 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-seller, ips: 172.20.10.9:11600_true,
+
+2022-06-27 09:33:32,280 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:33:32,280 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 09:34:15,851 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:34:15,851 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 09:34:27,327 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:34:27,328 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 09:35:05,487 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:35:05,487 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 09:36:57,989 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:36:57,989 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 09:37:41,648 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:37:41,648 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 09:37:52,172 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:37:52,172 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 09:38:34,839 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:38:34,840 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 09:41:42,885 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:42,885 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 09:41:43,028 INFO shop@@shop-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:8095:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:43,028 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-auth, ips: 
+
+2022-06-27 09:41:43,259 INFO shop@@shop-cart {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11150:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:43,259 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-cart, ips: 
+
+2022-06-27 09:41:43,440 INFO shop@@shop-elasticsearch {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11200:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:43,440 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-elasticsearch, ips: 
+
+2022-06-27 09:41:43,729 INFO shop@@shop-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:10000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:43,729 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-gateway, ips: 
+
+2022-06-27 09:41:44,079 INFO shop@@shop-goods {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11250:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:44,079 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-goods, ips: 
+
+2022-06-27 09:41:44,392 INFO shop@@shop-job {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11300:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:44,392 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-job, ips: 
+
+2022-06-27 09:41:44,738 INFO shop@@shop-manage {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11350:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:44,738 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-manage, ips: 
+
+2022-06-27 09:41:45,002 INFO shop@@shop-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11400:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:45,002 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-order, ips: 
+
+2022-06-27 09:41:45,556 INFO shop@@shop-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11450:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:45,556 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-oss, ips: 
+
+2022-06-27 09:41:46,167 INFO shop@@shop-risk {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11550:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:46,167 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-risk, ips: 
+
+2022-06-27 09:41:46,646 INFO shop@@shop-platform {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:46,646 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-platform, ips: 
+
+2022-06-27 09:41:46,749 INFO shop@@shop-seller {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11600:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:46,749 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-seller, ips: 
+
+2022-06-27 09:41:47,015 INFO shop@@shop-settlement {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11650:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:47,015 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-settlement, ips: 
+
+2022-06-27 09:41:47,240 INFO shop@@shop-user {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11700:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:41:47,240 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-user, ips: 
+
+2022-06-27 09:42:41,523 INFO shop@@shop-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:10000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:42:41,523 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-gateway, ips: 172.20.10.9:10000_true,
+
+2022-06-27 09:42:51,932 INFO shop@@shop-cart {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11150:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:42:51,932 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-cart, ips: 172.20.10.9:11150_true,
+
+2022-06-27 09:43:16,004 INFO shop@@shop-elasticsearch {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11200:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:43:16,004 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-elasticsearch, ips: 172.20.10.9:11200_true,
+
+2022-06-27 09:43:17,483 INFO shop@@shop-goods {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11250:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:43:17,483 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-goods, ips: 172.20.10.9:11250_true,
+
+2022-06-27 09:43:22,200 INFO shop@@shop-job {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11300:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:43:22,200 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-job, ips: 172.20.10.9:11300_true,
+
+2022-06-27 09:43:59,531 INFO shop@@shop-manage {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11350:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:43:59,531 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-manage, ips: 172.20.10.9:11350_true,
+
+2022-06-27 09:44:07,230 INFO shop@@shop-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11450:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:44:07,230 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-oss, ips: 172.20.10.9:11450_true,
+
+2022-06-27 09:44:25,724 INFO shop@@shop-order {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11400:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:44:25,724 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-order, ips: 172.20.10.9:11400_true,
+
+2022-06-27 09:44:54,571 INFO shop@@shop-platform {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:44:54,571 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-platform, ips: 172.20.10.9:11500_true,
+
+2022-06-27 09:45:05,493 INFO shop@@shop-risk {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11550:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:45:05,493 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-risk, ips: 172.20.10.9:11550_true,
+
+2022-06-27 09:45:27,828 INFO shop@@shop-seller {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11600:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:45:27,828 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-seller, ips: 172.20.10.9:11600_true,
+
+2022-06-27 09:45:48,582 INFO shop@@shop-settlement {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11650:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:45:48,582 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-settlement, ips: 172.20.10.9:11650_true,
+
+2022-06-27 09:46:05,043 INFO shop@@shop-user {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11700:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:46:05,043 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-user, ips: 172.20.10.9:11700_true,
+
+2022-06-27 09:46:19,638 INFO shop@@shop-auth {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:8095:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:46:19,638 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-auth, ips: 172.20.10.9:8095_true,
+
+2022-06-27 09:46:25,081 INFO shop@@shop-activity {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 09:46:25,081 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 172.20.10.9:11100_true,
+
+2022-06-27 11:36:59,270 INFO shop@@shop-activity {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11100:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:36:59,270 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-activity, ips: 
+
+2022-06-27 11:37:05,004 INFO shop@@shop-auth {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:8095:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:37:05,004 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-auth, ips: 
+
+2022-06-27 11:37:12,052 INFO shop@@shop-cart {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11150:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:37:12,052 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-cart, ips: 
+
+2022-06-27 11:37:22,848 INFO shop@@shop-elasticsearch {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11200:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:37:22,848 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-elasticsearch, ips: 
+
+2022-06-27 11:37:37,066 INFO shop@@shop-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:10000:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:37:37,066 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-gateway, ips: 
+
+2022-06-27 11:37:47,169 INFO shop@@shop-goods {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11250:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:37:47,169 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-goods, ips: 
+
+2022-06-27 11:37:53,149 INFO shop@@shop-job {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11300:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:37:53,149 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-job, ips: 
+
+2022-06-27 11:37:57,038 INFO shop@@shop-manage {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11350:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:37:57,038 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-manage, ips: 
+
+2022-06-27 11:38:02,257 INFO shop@@shop-order {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11400:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:38:02,257 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-order, ips: 
+
+2022-06-27 11:38:04,870 INFO shop@@shop-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11450:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:38:04,870 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-oss, ips: 
+
+2022-06-27 11:38:08,886 INFO shop@@shop-platform {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11500:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:38:08,886 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-platform, ips: 
+
+2022-06-27 11:38:13,108 INFO shop@@shop-risk {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11550:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:38:13,108 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-risk, ips: 
+
+2022-06-27 11:38:17,443 INFO shop@@shop-seller {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11600:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:38:17,443 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-seller, ips: 
+
+2022-06-27 11:38:20,780 INFO shop@@shop-settlement {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11650:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:38:20,780 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-settlement, ips: 
+
+2022-06-27 11:38:24,384 INFO shop@@shop-user {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [172.20.10.9:11700:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-06-27 11:38:24,384 INFO [IP-UPDATED] namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d, service: shop@@shop-user, ips: 
+

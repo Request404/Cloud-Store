@@ -2,10 +2,12 @@ package quick.pager.shop.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,10 +24,10 @@ import quick.pager.shop.utils.BeanCopier;
 @Service
 public class AssembleServiceImpl implements AssembleService {
 
-    @Autowired
-    private AssembleActivityMemberMapper assembleActivityMemberMapper;
-    @Autowired
-    private ActivityService activityService;
+  @Autowired
+  private AssembleActivityMemberMapper assembleActivityMemberMapper;
+  @Autowired
+  private ActivityService activityService;
 
 //    @Override
 //    public Response assembleGoods(AssembleDTO request) {
@@ -48,38 +50,38 @@ public class AssembleServiceImpl implements AssembleService {
 //        return new Response();
 //    }
 
-    @Override
-    public Response<List<AssembleMemberResponse>> members(AssembleMemberPageRequest request) {
+  @Override
+  public Response<List<AssembleMemberResponse>> members(AssembleMemberPageRequest request) {
 
-        if (activityService.nonExists(request.getActivityId())) {
-            return Response.toError(ResponseStatus.Code.FAIL_CODE, "活动不存在");
-        }
-
-        LambdaQueryWrapper<AssembleActivityMember> qw = new LambdaQueryWrapper<AssembleActivityMember>()
-                .eq(AssembleActivityMember::getDeleteStatus, Boolean.FALSE)
-                .eq(Objects.nonNull(request.getActivityId()), AssembleActivityMember::getActivityId, request.getActivityId())
-                .eq(StringUtils.isNotEmpty(request.getPhone()), AssembleActivityMember::getPhone, request.getPhone())
-                .orderByDesc(AssembleActivityMember::getUpdateTime);
-
-        int total = assembleActivityMemberMapper.selectCount(qw);
-        List<AssembleMemberResponse> result = Collections.emptyList();
-        if (0 < total) {
-
-            List<AssembleActivityMember> records = assembleActivityMemberMapper.selectPage(new Page<>(request.getPage(), request.getPageSize(), false), qw)
-                    .getRecords();
-            result = records.stream().map(this::convert).collect(Collectors.toList());
-        }
-        return Response.toResponse(result, total);
+    if (activityService.nonExists(request.getActivityId())) {
+      return Response.toError(ResponseStatus.Code.FAIL_CODE, "活动不存在");
     }
 
-    /**
-     * AssembleActivityMember -> AssembleMemberResponse
-     *
-     * @param member 成员
-     */
-    private AssembleMemberResponse convert(AssembleActivityMember member) {
-        AssembleMemberResponse response = new AssembleMemberResponse();
-        BeanCopier.copy(member, response);
-        return response;
+    LambdaQueryWrapper<AssembleActivityMember> qw = new LambdaQueryWrapper<AssembleActivityMember>()
+        .eq(AssembleActivityMember::getDeleteStatus, Boolean.FALSE)
+        .eq(Objects.nonNull(request.getActivityId()), AssembleActivityMember::getActivityId, request.getActivityId())
+        .eq(StringUtils.isNotEmpty(request.getPhone()), AssembleActivityMember::getPhone, request.getPhone())
+        .orderByDesc(AssembleActivityMember::getUpdateTime);
+
+    int total = assembleActivityMemberMapper.selectCount(qw);
+    List<AssembleMemberResponse> result = Collections.emptyList();
+    if (0 < total) {
+
+      List<AssembleActivityMember> records = assembleActivityMemberMapper.selectPage(new Page<>(request.getPage(), request.getPageSize(), false), qw)
+          .getRecords();
+      result = records.stream().map(this::convert).collect(Collectors.toList());
     }
+    return Response.toResponse(result, total);
+  }
+
+  /**
+   * AssembleActivityMember -> AssembleMemberResponse
+   *
+   * @param member 成员
+   */
+  private AssembleMemberResponse convert(AssembleActivityMember member) {
+    AssembleMemberResponse response = new AssembleMemberResponse();
+    BeanCopier.copy(member, response);
+    return response;
+  }
 }

@@ -18,23 +18,23 @@ import quick.pager.shop.service.dashboard.DashboardService;
 @RequestMapping(Constants.Module.MANAGE)
 public class DashboardController {
 
-    @Autowired
-    private DashboardService dashboardService;
+  @Autowired
+  private DashboardService dashboardService;
 
-    /**
-     * 首页周期统计数据
-     */
-    @PostMapping("/dashboard/cycle/statistics")
-    public Response cycleStatistics(@RequestParam("event") String event) {
+  /**
+   * 首页周期统计数据
+   */
+  @PostMapping("/dashboard/cycle/statistics")
+  public Response cycleStatistics(@RequestParam("event") String event) {
 
-        return null;
-    }
+    return null;
+  }
 
-    /**
-     * 首页统计数据
-     */
-    @PostMapping("/dashboard/statistics")
-    public Response statistics() {
-        return null;
-    }
+  /**
+   * 首页统计数据
+   */
+  @PostMapping("/dashboard/statistics")
+  public Response statistics() {
+    return null;
+  }
 }

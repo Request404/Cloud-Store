@@ -13,14 +13,14 @@ import lombok.EqualsAndHashCode;
 @Data
 @TableName("t_system_config")
 public class SystemConfig extends Model {
-    private static final long serialVersionUID = 975311331952447054L;
+  private static final long serialVersionUID = 975311331952447054L;
 
-    private String configName;
+  private String configName;
 
-    private String configType;
+  private String configType;
 
-    private String description;
+  private String description;
 
-    private Boolean configStatus;
+  private Boolean configStatus;
 
 }

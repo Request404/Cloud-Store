@@ -1,6 +1,7 @@
 package quick.pager.shop.controller;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,27 +26,27 @@ import quick.pager.shop.service.UserOrderService;
 @RequestMapping(Constants.Module.ORDER)
 public class UserOrderController {
 
-    @Autowired
-    private UserOrderService userOrderService;
+  @Autowired
+  private UserOrderService userOrderService;
 
-    /**
-     * 用户订单列表
-     *
-     * @param request 请求参数
-     */
-    @PostMapping(value = "/user/page")
-    public Response<List<UserOrderResponse>> page(@RequestBody OrderPageRequest request) {
+  /**
+   * 用户订单列表
+   *
+   * @param request 请求参数
+   */
+  @PostMapping(value = "/user/page")
+  public Response<List<UserOrderResponse>> page(@RequestBody OrderPageRequest request) {
 
-        return userOrderService.queryPage(request);
-    }
+    return userOrderService.queryPage(request);
+  }
 
-    /**
-     * App订单详情
-     *
-     * @param orderId 订单主键
-     */
-    @RequestMapping(value = "/user/{orderId}/detail")
-    public Response<Object> detail(@PathVariable("orderId") Long orderId) {
-        return userOrderService.detail(orderId);
-    }
+  /**
+   * App订单详情
+   *
+   * @param orderId 订单主键
+   */
+  @RequestMapping(value = "/user/{orderId}/detail")
+  public Response<Object> detail(@PathVariable("orderId") Long orderId) {
+    return userOrderService.detail(orderId);
+  }
 }

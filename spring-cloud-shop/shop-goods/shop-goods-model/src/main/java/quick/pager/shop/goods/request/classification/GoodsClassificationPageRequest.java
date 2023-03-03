@@ -13,9 +13,9 @@ import quick.pager.shop.user.request.PageRequest;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsClassificationPageRequest extends PageRequest {
-    private static final long serialVersionUID = -2963591326963007336L;
-    /**
-     * 分类名称
-     */
-    private String className;
+  private static final long serialVersionUID = -2963591326963007336L;
+  /**
+   * 分类名称
+   */
+  private String className;
 }

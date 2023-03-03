@@ -22,35 +22,35 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(Constants.Module.MANAGE)
 public class GeneratorController {
 
-    @Autowired
-    private GeneratorService generatorService;
+  @Autowired
+  private GeneratorService generatorService;
 
-    /**
-     * 所有表
-     */
-    @PreAuthorize("hasAuthority('PAGER_SYSTEM_GENERATE')")
-    @PostMapping("/generator/tables")
-    public Response tables(@RequestBody GeneratorPageParam dto) {
+  /**
+   * 所有表
+   */
+  @PreAuthorize("hasAuthority('PAGER_SYSTEM_GENERATE')")
+  @PostMapping("/generator/tables")
+  public Response tables(@RequestBody GeneratorPageParam dto) {
 
-        return generatorService.tables(dto);
-    }
+    return generatorService.tables(dto);
+  }
 
-    /**
-     * 表的元素信息
-     */
-    @PreAuthorize("hasAuthority('PAGER_SYSTEM_GENERATE')")
-    @GetMapping("generator/tables")
-    public Response tables(@RequestParam String tableSchema, @RequestParam String tableName) {
+  /**
+   * 表的元素信息
+   */
+  @PreAuthorize("hasAuthority('PAGER_SYSTEM_GENERATE')")
+  @GetMapping("generator/tables")
+  public Response tables(@RequestParam String tableSchema, @RequestParam String tableName) {
 
-        return generatorService.tables(tableSchema, tableName);
-    }
+    return generatorService.tables(tableSchema, tableName);
+  }
 
-    /**
-     * 代码自动生成
-     */
-    @PreAuthorize("hasAuthority('PAGER_SYSTEM_GENERATE')")
-    @PostMapping("/generator")
-    public Response generator(@RequestBody GeneratorPageParam dto) {
-        return generatorService.generator(dto.getTableSchema(), dto.getTableName());
-    }
+  /**
+   * 代码自动生成
+   */
+  @PreAuthorize("hasAuthority('PAGER_SYSTEM_GENERATE')")
+  @PostMapping("/generator")
+  public Response generator(@RequestBody GeneratorPageParam dto) {
+    return generatorService.generator(dto.getTableSchema(), dto.getTableName());
+  }
 }

@@ -11,25 +11,25 @@ import quick.pager.shop.enums.IEnum;
 @Getter
 public enum NativeMessageStatusEnums implements IEnum<Integer> {
 
-    NON_READ(0, "未读"),
-    READ(1, "已读");
+  NON_READ(0, "未读"),
+  READ(1, "已读");
 
-    private final Integer code;
+  private final Integer code;
 
-    private final String desc;
+  private final String desc;
 
-    NativeMessageStatusEnums(Integer code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
+  NativeMessageStatusEnums(Integer code, String desc) {
+    this.code = code;
+    this.desc = desc;
+  }
 
-    @Override
-    public Integer getCode() {
-        return this.code;
-    }
+  @Override
+  public Integer getCode() {
+    return this.code;
+  }
 
-    @Override
-    public String getDesc() {
-        return this.desc;
-    }
+  @Override
+  public String getDesc() {
+    return this.desc;
+  }
 }

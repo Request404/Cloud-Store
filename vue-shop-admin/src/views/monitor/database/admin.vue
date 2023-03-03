@@ -7,13 +7,13 @@
   </div>
 </template>
 <script>
-import { getServiceUrl } from '@/api/common'
+// import { getServiceUrl } from '@/api/common'
 
 export default {
   name: 'AdminDatabase',
   data () {
     return {
-      url: 'https://www.baidu.com/'
+      url: 'http://127.0.0.1:8080'
     }
   },
   mounted () {
@@ -24,16 +24,16 @@ export default {
     admin.style.height = (Number(deviceHeight) - 120) + 'px' // 数字是页面布局高度差
   },
   created () {
-    this.getServiceUrl()
+    // this.getServiceUrl()
   },
   methods: {
-    getServiceUrl () {
-      const params = {}
-      params.serviceId = 'shop-manage'
-      getServiceUrl(params).then(response => {
-        this.url = response.data + '/druid'
-      })
-    }
+    // getServiceUrl () {
+    //   const params = {}
+    //   params.serviceId = 'shop-manage'
+    //   getServiceUrl(params).then(response => {
+    //     this.url = response.data + '/druid'
+    //   })
+    // }
   }
 }
 </script>

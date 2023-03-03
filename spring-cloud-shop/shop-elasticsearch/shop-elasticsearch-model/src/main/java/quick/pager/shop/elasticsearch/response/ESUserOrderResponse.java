@@ -12,5 +12,5 @@ import quick.pager.shop.user.response.BasicResponse;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class ESUserOrderResponse extends BasicResponse {
-    private static final long serialVersionUID = -7121250332569972501L;
+  private static final long serialVersionUID = -7121250332569972501L;
 }

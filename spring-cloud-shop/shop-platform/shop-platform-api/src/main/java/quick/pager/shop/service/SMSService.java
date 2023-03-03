@@ -9,12 +9,12 @@ import quick.pager.shop.user.response.Response;
  */
 public interface SMSService {
 
-    /**
-     * 发送短信
-     *
-     * @param phone 手机号码
-     * @param source 事件源
-     * @return 验证码
-     */
-    Response<String> sendSms(final String phone,final String source);
+  /**
+   * 发送短信
+   *
+   * @param phone  手机号码
+   * @param source 事件源
+   * @return 验证码
+   */
+  Response<String> sendSms(final String phone, final String source);
 }

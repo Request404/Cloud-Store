@@ -1,6 +1,7 @@
 package quick.pager.shop.service.impl;
 
 import java.util.List;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,30 +18,30 @@ import quick.pager.shop.utils.DateUtils;
 @Slf4j
 public class OrderCartServiceImpl implements OrderCartService {
 
-    @Autowired
-    private OrderCartMapper orderCartMapper;
+  @Autowired
+  private OrderCartMapper orderCartMapper;
 
 
-    @Override
-    public Response<OrderCartResponse> orders(final OrderCartSaveRequest request) {
+  @Override
+  public Response<OrderCartResponse> orders(final OrderCartSaveRequest request) {
 
-        List<OrderCartRequest> orderCarts = request.getOrderCarts();
+    List<OrderCartRequest> orderCarts = request.getOrderCarts();
 
-        orderCarts.forEach(item -> {
-            OrderCart orderCart = new OrderCart();
-            orderCart.setUserId(request.getUserId());
-            orderCart.setSellerId(request.getSellerId());
-            orderCart.setSkuId(item.getSkuId());
-            orderCart.setQuantity(item.getQuantity());
-            orderCart.setDiscountAmount(item.getDiscountAmount());
-            orderCart.setSkuAmount(item.getSkuAmount());
-            orderCart.setUserOrderId(request.getUserOrderId());
-            orderCart.setSellerOrderId(request.getSellerOrderId());
-            orderCart.setCreateTime(DateUtils.dateTime());
-            orderCart.setUpdateTime(DateUtils.dateTime());
-            this.orderCartMapper.insert(orderCart);
-        });
+    orderCarts.forEach(item -> {
+      OrderCart orderCart = new OrderCart();
+      orderCart.setUserId(request.getUserId());
+      orderCart.setSellerId(request.getSellerId());
+      orderCart.setSkuId(item.getSkuId());
+      orderCart.setQuantity(item.getQuantity());
+      orderCart.setDiscountAmount(item.getDiscountAmount());
+      orderCart.setSkuAmount(item.getSkuAmount());
+      orderCart.setUserOrderId(request.getUserOrderId());
+      orderCart.setSellerOrderId(request.getSellerOrderId());
+      orderCart.setCreateTime(DateUtils.dateTime());
+      orderCart.setUpdateTime(DateUtils.dateTime());
+      this.orderCartMapper.insert(orderCart);
+    });
 
-        return Response.toResponse();
-    }
+    return Response.toResponse();
+  }
 }

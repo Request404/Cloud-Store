@@ -2,6 +2,7 @@ package quick.pager.shop.controller;
 
 import java.util.List;
 import java.util.Objects;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,51 +29,51 @@ import quick.pager.shop.utils.Assert;
 @RequestMapping(Constants.Module.RISK)
 public class BlacklistController {
 
-    @Autowired
-    private BlacklistService blacklistService;
+  @Autowired
+  private BlacklistService blacklistService;
 
-    /**
-     * 列表
-     */
-    @PostMapping(value = "/blacklist/page")
-    public Response<List<WhiteBlacklistResponse>> list(@RequestBody WhiteBlacklistPageRequest request) {
-        return blacklistService.queryPage(request);
-    }
+  /**
+   * 列表
+   */
+  @PostMapping(value = "/blacklist/page")
+  public Response<List<WhiteBlacklistResponse>> list(@RequestBody WhiteBlacklistPageRequest request) {
+    return blacklistService.queryPage(request);
+  }
 
-    /**
-     * 新增
-     */
-    @PostMapping(value = "/blacklist")
-    public Response<Long> create(@RequestBody WhiteBlacklistSaveRequest request) {
-        return blacklistService.create(request);
-    }
+  /**
+   * 新增
+   */
+  @PostMapping(value = "/blacklist")
+  public Response<Long> create(@RequestBody WhiteBlacklistSaveRequest request) {
+    return blacklistService.create(request);
+  }
 
-    /**
-     * 修改
-     */
-    @PutMapping(value = "/blacklist")
-    public Response<Long> modify(@RequestBody WhiteBlacklistSaveRequest request) {
+  /**
+   * 修改
+   */
+  @PutMapping(value = "/blacklist")
+  public Response<Long> modify(@RequestBody WhiteBlacklistSaveRequest request) {
 
-        Assert.isTrue(Objects.nonNull(request.getId()), () -> ResponseStatus.PARAMS_EXCEPTION);
+    Assert.isTrue(Objects.nonNull(request.getId()), () -> ResponseStatus.PARAMS_EXCEPTION);
 
-        return blacklistService.modify(request);
-    }
+    return blacklistService.modify(request);
+  }
 
-    /**
-     * 批量添加黑名单
-     *
-     * @param file 文件
-     */
-    @PostMapping("/blacklist/upload")
-    public Response<Long> upload(MultipartFile file) {
-        return Response.toResponse();
-    }
+  /**
+   * 批量添加黑名单
+   *
+   * @param file 文件
+   */
+  @PostMapping("/blacklist/upload")
+  public Response<Long> upload(MultipartFile file) {
+    return Response.toResponse();
+  }
 
-    /**
-     * 删除
-     */
-    @DeleteMapping(value = "/blacklist/{id}")
-    public Response<Long> delete(@PathVariable("id") Long id) {
-        return blacklistService.delete(id);
-    }
+  /**
+   * 删除
+   */
+  @DeleteMapping(value = "/blacklist/{id}")
+  public Response<Long> delete(@PathVariable("id") Long id) {
+    return blacklistService.delete(id);
+  }
 }

@@ -11,11 +11,11 @@ import lombok.experimental.Accessors;
 @TableName("t_invite_code")
 public class InviteCode extends Model {
 
-    private static final long serialVersionUID = -7808875282757202205L;
-    private Long userId;
+  private static final long serialVersionUID = -7808875282757202205L;
+  private Long userId;
 
-    private Long templateId;
+  private Long templateId;
 
-    private String code;
+  private String code;
 
 }

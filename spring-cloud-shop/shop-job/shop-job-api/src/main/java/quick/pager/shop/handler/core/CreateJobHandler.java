@@ -19,30 +19,30 @@ import quick.pager.shop.trigger.JobTrigger;
  */
 @Slf4j
 public class CreateJobHandler extends AbstractHandler {
-    @Override
-    public boolean support(JobEnums jobEnums) {
-        return JobEnums.CREATE.equals(jobEnums);
+  @Override
+  public boolean support(JobEnums jobEnums) {
+    return JobEnums.CREATE.equals(jobEnums);
+  }
+
+  @Override
+  public void execute(String jobName, String jobGroup) {
+
+    log.info("新增job任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
+
+    // 1. 获取数据库执行的job任务
+    JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
+    JobInfo jobInfo = new JobInfo();
+    jobInfo.setJobName(jobName);
+    jobInfo.setJobGroup(jobGroup);
+    jobInfo.setJobStatus(JobStatusEnums.NORMAL.getCode());
+    JobInfo selectJobInfo = jobInfoMapper.selectOne(new QueryWrapper<>(jobInfo));
+    Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
+    try {
+      // 2. 获取数据库执行的job任务
+      JobTrigger.createJob(scheduler, selectJobInfo);
+    } catch (SchedulerException e) {
+      log.error("创建定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
     }
 
-    @Override
-    public void execute(String jobName, String jobGroup) {
-
-        log.info("新增job任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
-
-        // 1. 获取数据库执行的job任务
-        JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
-        JobInfo jobInfo = new JobInfo();
-        jobInfo.setJobName(jobName);
-        jobInfo.setJobGroup(jobGroup);
-        jobInfo.setJobStatus(JobStatusEnums.NORMAL.getCode());
-        JobInfo selectJobInfo = jobInfoMapper.selectOne(new QueryWrapper<>(jobInfo));
-        Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
-        try {
-            // 2. 获取数据库执行的job任务
-            JobTrigger.createJob(scheduler, selectJobInfo);
-        } catch (SchedulerException e) {
-            log.error("创建定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
-        }
-
-    }
+  }
 }

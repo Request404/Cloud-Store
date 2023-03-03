@@ -13,8 +13,8 @@ import quick.pager.shop.mq.ActivityMQ;
 public class SendStationMessageListener {
 
 
-    @StreamListener(ActivityMQ.SEND_STATION_MESSAGE)
-    public void sendStationMessage() {
+  @StreamListener(ActivityMQ.SEND_STATION_MESSAGE)
+  public void sendStationMessage() {
 
-    }
+  }
 }

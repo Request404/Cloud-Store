@@ -2,6 +2,7 @@ package quick.pager.shop.controller.common;
 
 import java.util.List;
 import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +19,11 @@ import quick.pager.shop.response.EnumResponse;
 @RequestMapping(Constants.Module.MANAGE)
 public class CommonEnumController {
 
-    @Autowired
-    private CommonEnumService commonEnumService;
+  @Autowired
+  private CommonEnumService commonEnumService;
 
-    @PostMapping("/common/enumInfo")
-    public Response<Map<String, List<EnumResponse>>> commonEnumInfo() {
-        return commonEnumService.getCommonEnumInfo();
-    }
+  @PostMapping("/common/enumInfo")
+  public Response<Map<String, List<EnumResponse>>> commonEnumInfo() {
+    return commonEnumService.getCommonEnumInfo();
+  }
 }

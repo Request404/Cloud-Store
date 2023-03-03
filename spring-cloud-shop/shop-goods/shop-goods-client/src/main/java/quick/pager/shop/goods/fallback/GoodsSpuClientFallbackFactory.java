@@ -6,8 +6,8 @@ import quick.pager.shop.goods.client.GoodsSpuClient;
 
 @Component
 public class GoodsSpuClientFallbackFactory implements FallbackFactory<GoodsSpuClient> {
-    @Override
-    public GoodsSpuClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public GoodsSpuClient create(Throwable cause) {
+    return null;
+  }
 }

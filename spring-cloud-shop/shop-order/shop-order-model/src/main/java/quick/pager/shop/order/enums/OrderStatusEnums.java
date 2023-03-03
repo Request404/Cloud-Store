@@ -22,36 +22,36 @@ import quick.pager.shop.enums.IEnum;
  * @author request404
  */
 public enum OrderStatusEnums implements IEnum<String> {
-    BS001("BS001", "待付款"),
-    BS002("BS002", "待发货"),
-    BS003("BS003", "已发货"),
-    BS004("BS004", "待收获"),
-    BS005("BS005", "已签收"),
-    BS006("BS006", "待评价"),
-    BS007("BS007", "待自提"),
-    BS008("BS008", "已完成"),
-    BS009("BS009", "已取消"),
-    BS010("BS010", "退款中"),
-    BS011("BS011", "已退款"),
-    BS012("BS012", "退货中"),
-    BS013("BS013", "已关闭");
+  BS001("BS001", "待付款"),
+  BS002("BS002", "待发货"),
+  BS003("BS003", "已发货"),
+  BS004("BS004", "待收获"),
+  BS005("BS005", "已签收"),
+  BS006("BS006", "待评价"),
+  BS007("BS007", "待自提"),
+  BS008("BS008", "已完成"),
+  BS009("BS009", "已取消"),
+  BS010("BS010", "退款中"),
+  BS011("BS011", "已退款"),
+  BS012("BS012", "退货中"),
+  BS013("BS013", "已关闭");
 
-    private String code;
+  private String code;
 
-    private String desc;
+  private String desc;
 
-    OrderStatusEnums(String code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
+  OrderStatusEnums(String code, String desc) {
+    this.code = code;
+    this.desc = desc;
+  }
 
-    @Override
-    public String getCode() {
-        return this.code;
-    }
+  @Override
+  public String getCode() {
+    return this.code;
+  }
 
-    @Override
-    public String getDesc() {
-        return this.desc;
-    }
+  @Override
+  public String getDesc() {
+    return this.desc;
+  }
 }

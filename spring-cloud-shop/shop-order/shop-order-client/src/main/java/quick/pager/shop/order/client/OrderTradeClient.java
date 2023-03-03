@@ -17,12 +17,12 @@ import quick.pager.shop.user.response.Response;
 @FeignClient(value = ConstantsClient.ORDER_CLIENT, path = ConstantsClient.ORDER, fallbackFactory = SellerOrderClientFallbackFactory.class)
 public interface OrderTradeClient {
 
-    /**
-     * 交易流水新增
-     *
-     * @param request 请求参数
-     * @return 返回数据
-     */
-    @RequestMapping(value = "/trade/create", method = RequestMethod.POST)
-    Response<Long> create(@RequestBody OrderTradeSaveRequest request);
+  /**
+   * 交易流水新增
+   *
+   * @param request 请求参数
+   * @return 返回数据
+   */
+  @RequestMapping(value = "/trade/create", method = RequestMethod.POST)
+  Response<Long> create(@RequestBody OrderTradeSaveRequest request);
 }

@@ -1,6 +1,7 @@
 package quick.pager.shop.user.request;
 
 import java.util.List;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,9 +13,9 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class AppNativeMessageRequest extends Request {
-    private static final long serialVersionUID = 473556005516138206L;
+  private static final long serialVersionUID = 473556005516138206L;
 
-    private Long userId;
+  private Long userId;
 
-    private List<Long> messageIds;
+  private List<Long> messageIds;
 }

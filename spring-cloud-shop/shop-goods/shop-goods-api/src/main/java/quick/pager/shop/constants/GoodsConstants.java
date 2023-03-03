@@ -6,12 +6,12 @@ package quick.pager.shop.constants;
  * @author request404
  */
 public interface GoodsConstants {
-    /**
-     * 根据商品分类搜索
-     */
-    String SEARCH_CLASSIFICATION_EVENT = "goodsSearchByClassification";
-    /**
-     * 根据商品名称模糊搜索
-     */
-    String SEARCH_GOODS_SEARCH_EVENT = "goodsSearch";
+  /**
+   * 根据商品分类搜索
+   */
+  String SEARCH_CLASSIFICATION_EVENT = "goodsSearchByClassification";
+  /**
+   * 根据商品名称模糊搜索
+   */
+  String SEARCH_GOODS_SEARCH_EVENT = "goodsSearch";
 }

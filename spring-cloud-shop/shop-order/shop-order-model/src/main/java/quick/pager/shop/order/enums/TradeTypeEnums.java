@@ -9,34 +9,34 @@ import quick.pager.shop.enums.IEnum;
  */
 public enum TradeTypeEnums implements IEnum<Integer> {
 
-    PAY(0, "支付下单"),
-    REFUSE(1, "退款");
+  PAY(0, "支付下单"),
+  REFUSE(1, "退款");
 
-    private Integer code;
+  private Integer code;
 
-    private String desc;
+  private String desc;
 
-    TradeTypeEnums(Integer code, String desc) {
-        this.code = code;
-        this.desc = desc;
+  TradeTypeEnums(Integer code, String desc) {
+    this.code = code;
+    this.desc = desc;
+  }
+
+  @Override
+  public Integer getCode() {
+    return this.code;
+  }
+
+  @Override
+  public String getDesc() {
+    return this.desc;
+  }
+
+  public static TradeTypeEnums parse(int code) {
+    for (TradeTypeEnums typeEnums : TradeTypeEnums.values()) {
+      if (typeEnums.code == code) {
+        return typeEnums;
+      }
     }
-
-    @Override
-    public Integer getCode() {
-        return this.code;
-    }
-
-    @Override
-    public String getDesc() {
-        return this.desc;
-    }
-
-    public static TradeTypeEnums parse(int code) {
-        for (TradeTypeEnums typeEnums : TradeTypeEnums.values()) {
-            if (typeEnums.code == code) {
-                return typeEnums;
-            }
-        }
-        return null;
-    }
+    return null;
+  }
 }

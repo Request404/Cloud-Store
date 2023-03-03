@@ -18,9 +18,9 @@ import quick.pager.shop.user.request.Request;
 @AllArgsConstructor
 @Builder
 public class SubmitOrderRequest extends Request {
-    private static final long serialVersionUID = 7428710264559112811L;
-    /**
-     * 支付方式
-     */
-    private Integer payType;
+  private static final long serialVersionUID = 7428710264559112811L;
+  /**
+   * 支付方式
+   */
+  private Integer payType;
 }

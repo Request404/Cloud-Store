@@ -1,0 +1,424 @@
+2022-06-25 12:25:10,747 INFO [dump-all-ok] transport.type+SEATA_GROUP, 1599181081000, length=3, md5=b136ef5f6a01d816991fe3cf7a6ac763
+
+2022-06-25 12:25:10,752 INFO [dump-all-ok] transport.server+SEATA_GROUP, 1599181081000, length=3, md5=b6d9dfc0fb54277321cebc0fff55df2f
+
+2022-06-25 12:25:10,753 INFO [dump-all-ok] transport.heartbeat+SEATA_GROUP, 1599181081000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 12:25:10,754 INFO [dump-all-ok] transport.enableClientBatchSendRequest+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,757 INFO [dump-all-ok] transport.threadFactory.bossThreadPrefix+SEATA_GROUP, 1599181081000, length=9, md5=0f8db59a3b7f2823f38a70c308361836
+
+2022-06-25 12:25:10,758 INFO [dump-all-ok] transport.threadFactory.workerThreadPrefix+SEATA_GROUP, 1599181081000, length=20, md5=a78ec7ef5d1631754c4e72ae8a3e9205
+
+2022-06-25 12:25:10,761 INFO [dump-all-ok] transport.threadFactory.serverExecutorThreadPrefix+SEATA_GROUP, 1599181081000, length=21, md5=11a36309f3d9df84fa8b59cf071fa2da
+
+2022-06-25 12:25:10,762 INFO [dump-all-ok] transport.threadFactory.shareBossWorker+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,763 INFO [dump-all-ok] transport.threadFactory.clientSelectorThreadPrefix+SEATA_GROUP, 1599181081000, length=19, md5=cd7ec5a06541e75f5a7913752322c3af
+
+2022-06-25 12:25:10,766 INFO [dump-all-ok] transport.threadFactory.clientSelectorThreadSize+SEATA_GROUP, 1599181081000, length=1, md5=c4ca4238a0b923820dcc509a6f75849b
+
+2022-06-25 12:25:10,768 INFO [dump-all-ok] transport.threadFactory.clientWorkerThreadPrefix+SEATA_GROUP, 1599181081000, length=23, md5=61cf4e69a56354cf72f46dc86414a57e
+
+2022-06-25 12:25:10,769 INFO [dump-all-ok] transport.threadFactory.bossThreadSize+SEATA_GROUP, 1599181081000, length=1, md5=c4ca4238a0b923820dcc509a6f75849b
+
+2022-06-25 12:25:10,775 INFO [dump-all-ok] transport.threadFactory.workerThreadSize+SEATA_GROUP, 1599181081000, length=7, md5=c21f969b5f03d33d43e04f8f136e7682
+
+2022-06-25 12:25:10,776 INFO [dump-all-ok] transport.shutdown.wait+SEATA_GROUP, 1599181081000, length=1, md5=eccbc87e4b5ce2fe28308fd9f2a7baf3
+
+2022-06-25 12:25:10,777 INFO [dump-all-ok] service.vgroupMapping.my_test_tx_group+SEATA_GROUP, 1599181081000, length=7, md5=c21f969b5f03d33d43e04f8f136e7682
+
+2022-06-25 12:25:10,778 INFO [dump-all-ok] service.default.grouplist+SEATA_GROUP, 1599181081000, length=14, md5=c32ce0d3e264525dcdada751f98143a3
+
+2022-06-25 12:25:10,779 INFO [dump-all-ok] service.enableDegrade+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,780 INFO [dump-all-ok] service.disableGlobalTransaction+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,782 INFO [dump-all-ok] client.rm.asyncCommitBufferLimit+SEATA_GROUP, 1599181081000, length=5, md5=b7a782741f667201b54880c925faec4b
+
+2022-06-25 12:25:10,783 INFO [dump-all-ok] client.rm.lock.retryInterval+SEATA_GROUP, 1599181081000, length=2, md5=d3d9446802a44259755d38e6d163e820
+
+2022-06-25 12:25:10,784 INFO [dump-all-ok] client.rm.lock.retryTimes+SEATA_GROUP, 1599181082000, length=2, md5=34173cb38f07f89ddbebc2ac9128303f
+
+2022-06-25 12:25:10,785 INFO [dump-all-ok] client.rm.lock.retryPolicyBranchRollbackOnConflict+SEATA_GROUP, 1599181082000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 12:25:10,786 INFO [dump-all-ok] client.rm.reportRetryCount+SEATA_GROUP, 1599181082000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 12:25:10,790 INFO [dump-all-ok] client.rm.tableMetaCheckEnable+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,792 INFO [dump-all-ok] client.rm.sqlParserType+SEATA_GROUP, 1599181082000, length=5, md5=3d650fb8a5df01600281d48c47c9fa60
+
+2022-06-25 12:25:10,793 INFO [dump-all-ok] client.rm.reportSuccessEnable+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,794 INFO [dump-all-ok] client.rm.sagaBranchRegisterEnable+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,795 INFO [dump-all-ok] client.tm.commitRetryCount+SEATA_GROUP, 1599181082000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 12:25:10,795 INFO [dump-all-ok] client.tm.rollbackRetryCount+SEATA_GROUP, 1599181082000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 12:25:10,796 INFO [dump-all-ok] client.tm.degradeCheck+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,797 INFO [dump-all-ok] client.tm.degradeCheckAllowTimes+SEATA_GROUP, 1599181082000, length=2, md5=d3d9446802a44259755d38e6d163e820
+
+2022-06-25 12:25:10,798 INFO [dump-all-ok] client.tm.degradeCheckPeriod+SEATA_GROUP, 1599181082000, length=4, md5=08f90c1a417155361a5c4b8d297e0d78
+
+2022-06-25 12:25:10,799 INFO [dump-all-ok] store.mode+SEATA_GROUP, 1599181102000, length=2, md5=d77d5e503ad1439f585ac494268b351b
+
+2022-06-25 12:25:10,800 INFO [dump-all-ok] store.file.dir+SEATA_GROUP, 1599181082000, length=15, md5=6a8dec07c44c33a8a9247cba5710bbb2
+
+2022-06-25 12:25:10,801 INFO [dump-all-ok] store.file.maxBranchSessionSize+SEATA_GROUP, 1599181082000, length=5, md5=c76fe1d8e08462434d800487585be217
+
+2022-06-25 12:25:10,802 INFO [dump-all-ok] store.file.maxGlobalSessionSize+SEATA_GROUP, 1599181082000, length=3, md5=10a7cdd970fe135cf4f7bb55c0e3b59f
+
+2022-06-25 12:25:10,803 INFO [dump-all-ok] store.file.fileWriteBufferCacheSize+SEATA_GROUP, 1599181082000, length=5, md5=c76fe1d8e08462434d800487585be217
+
+2022-06-25 12:25:10,808 INFO [dump-all-ok] store.file.flushDiskMode+SEATA_GROUP, 1599181082000, length=5, md5=0df93e34273b367bb63bad28c94c78d5
+
+2022-06-25 12:25:10,809 INFO [dump-all-ok] store.file.sessionReloadReadSize+SEATA_GROUP, 1599181082000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 12:25:10,810 INFO [dump-all-ok] store.db.datasource+SEATA_GROUP, 1599181082000, length=5, md5=3d650fb8a5df01600281d48c47c9fa60
+
+2022-06-25 12:25:10,811 INFO [dump-all-ok] store.db.dbType+SEATA_GROUP, 1599181082000, length=5, md5=81c3b080dad537de7e10e0987a4bf52e
+
+2022-06-25 12:25:10,812 INFO [dump-all-ok] store.db.driverClassName+SEATA_GROUP, 1599181212000, length=24, md5=33763409bb7f4838bde4fae9540433e4
+
+2022-06-25 12:25:10,813 INFO [dump-all-ok] store.db.url+SEATA_GROUP, 1605621833000, length=66, md5=6c4944e4fea09f3b8d25520f39b2ab1e
+
+2022-06-25 12:25:10,814 INFO [dump-all-ok] store.db.user+SEATA_GROUP, 1599181121000, length=4, md5=63a9f0ea7bb98050796b649e85481845
+
+2022-06-25 12:25:10,815 INFO [dump-all-ok] store.db.password+SEATA_GROUP, 1599181283000, length=9, md5=7a0b8d7d2223fc0726844fd871cb781d
+
+2022-06-25 12:25:10,816 INFO [dump-all-ok] store.db.minConn+SEATA_GROUP, 1599181083000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 12:25:10,817 INFO [dump-all-ok] store.db.maxConn+SEATA_GROUP, 1599181083000, length=2, md5=34173cb38f07f89ddbebc2ac9128303f
+
+2022-06-25 12:25:10,817 INFO [dump-all-ok] store.db.globalTable+SEATA_GROUP, 1599181083000, length=12, md5=8b28fb6bb4c4f984df2709381f8eba2b
+
+2022-06-25 12:25:10,818 INFO [dump-all-ok] store.db.branchTable+SEATA_GROUP, 1599181083000, length=12, md5=54bcdac38cf62e103fe115bcf46a660c
+
+2022-06-25 12:25:10,819 INFO [dump-all-ok] store.db.queryLimit+SEATA_GROUP, 1599181083000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 12:25:10,821 INFO [dump-all-ok] store.db.lockTable+SEATA_GROUP, 1599181083000, length=10, md5=55e0cae3b6dc6696b768db90098b8f2f
+
+2022-06-25 12:25:10,825 INFO [dump-all-ok] store.db.maxWait+SEATA_GROUP, 1599181084000, length=4, md5=a35fe7f7fe8217b4369a0af4244d1fca
+
+2022-06-25 12:25:10,826 INFO [dump-all-ok] store.redis.host+SEATA_GROUP, 1599181084000, length=9, md5=f528764d624db129b32c21fbca0cb8d6
+
+2022-06-25 12:25:10,827 INFO [dump-all-ok] store.redis.port+SEATA_GROUP, 1599181084000, length=4, md5=92c3b916311a5517d9290576e3ea37ad
+
+2022-06-25 12:25:10,828 INFO [dump-all-ok] store.redis.maxConn+SEATA_GROUP, 1599181084000, length=2, md5=d3d9446802a44259755d38e6d163e820
+
+2022-06-25 12:25:10,829 INFO [dump-all-ok] store.redis.minConn+SEATA_GROUP, 1599181084000, length=1, md5=c4ca4238a0b923820dcc509a6f75849b
+
+2022-06-25 12:25:10,830 INFO [dump-all-ok] store.redis.database+SEATA_GROUP, 1599181084000, length=1, md5=cfcd208495d565ef66e7dff9f98764da
+
+2022-06-25 12:25:10,831 INFO [dump-all-ok] store.redis.password+SEATA_GROUP, 1599181084000, length=4, md5=37a6259cc0c1dae299a7866489dff0bd
+
+2022-06-25 12:25:10,832 INFO [dump-all-ok] store.redis.queryLimit+SEATA_GROUP, 1599181084000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 12:25:10,833 INFO [dump-all-ok] server.recovery.committingRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 12:25:10,834 INFO [dump-all-ok] server.recovery.asynCommittingRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 12:25:10,835 INFO [dump-all-ok] server.recovery.rollbackingRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 12:25:10,835 INFO [dump-all-ok] server.recovery.timeoutRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 12:25:10,836 INFO [dump-all-ok] server.maxCommitRetryTimeout+SEATA_GROUP, 1599181084000, length=2, md5=6bb61e3b7bce0931da574d19d1d82c88
+
+2022-06-25 12:25:10,841 INFO [dump-all-ok] server.maxRollbackRetryTimeout+SEATA_GROUP, 1599181084000, length=2, md5=6bb61e3b7bce0931da574d19d1d82c88
+
+2022-06-25 12:25:10,842 INFO [dump-all-ok] server.rollbackRetryTimeoutUnlockEnable+SEATA_GROUP, 1599181085000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,843 INFO [dump-all-ok] client.undo.dataValidation+SEATA_GROUP, 1599181085000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 12:25:10,844 INFO [dump-all-ok] client.undo.logSerialization+SEATA_GROUP, 1599181085000, length=7, md5=b41779690b83f182acc67d6388c7bac9
+
+2022-06-25 12:25:10,845 INFO [dump-all-ok] client.undo.onlyCareUpdateColumns+SEATA_GROUP, 1599181085000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 12:25:10,846 INFO [dump-all-ok] server.undo.logSaveDays+SEATA_GROUP, 1599181085000, length=1, md5=8f14e45fceea167a5a36dedd4bea2543
+
+2022-06-25 12:25:10,847 INFO [dump-all-ok] server.undo.logDeletePeriod+SEATA_GROUP, 1599181085000, length=8, md5=f4c122804fe9076cb2710f55c3c6e346
+
+2022-06-25 12:25:10,848 INFO [dump-all-ok] client.undo.logTable+SEATA_GROUP, 1599181085000, length=8, md5=2842d229c24afe9e61437135e8306614
+
+2022-06-25 12:25:10,849 INFO [dump-all-ok] client.log.exceptionRate+SEATA_GROUP, 1599181085000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 12:25:10,850 INFO [dump-all-ok] transport.serialization+SEATA_GROUP, 1599181085000, length=5, md5=b943081c423b9a5416a706524ee05d40
+
+2022-06-25 12:25:10,850 INFO [dump-all-ok] transport.compressor+SEATA_GROUP, 1599181085000, length=4, md5=334c4a4c42fdb79d7ebc3e73b517e6f8
+
+2022-06-25 12:25:10,851 INFO [dump-all-ok] metrics.enabled+SEATA_GROUP, 1599181085000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 12:25:10,852 INFO [dump-all-ok] metrics.registryType+SEATA_GROUP, 1599181085000, length=7, md5=7cf74ca49c304df8150205fc915cd465
+
+2022-06-25 12:25:10,858 INFO [dump-all-ok] metrics.exporterList+SEATA_GROUP, 1599181085000, length=10, md5=e4f00638b8a10e6994e67af2f832d51c
+
+2022-06-25 12:25:10,859 INFO [dump-all-ok] metrics.exporterPrometheusPort+SEATA_GROUP, 1599181085000, length=4, md5=7b9dc501afe4ee11c56a4831e20cee71
+
+2022-06-25 12:25:10,862 INFO [dump-all-ok] education-manage-dev.properties+education, 1656081520000, length=1740, md5=fdb4cae8db0815089917835f0eb3ee96
+
+2022-06-25 12:25:10,867 INFO [dump-all-ok] education-report-dev.properties+education, 1656082674000, length=1735, md5=606118dc512acbfa58e0cd7a39ac6cf5
+
+2022-06-25 12:25:10,868 INFO [dump-all-ok] education-gateway-dev.properties+education, 1656082717000, length=119, md5=5175489494fcbed4f7543138b159d217
+
+2022-06-25 12:25:10,876 INFO [dump-all-ok] education-portal-dev.properties+education, 1656082775000, length=1735, md5=606118dc512acbfa58e0cd7a39ac6cf5
+
+2022-06-25 12:25:10,877 INFO [dump-all-ok] education-sso-dev.properties+education, 1656082791000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 12:25:10,878 INFO [dump-all-ok] shop-activity.properties+shop, 1656082855000, length=1878, md5=ca8cb137d89f027b1222d35544233b9c
+
+2022-06-25 12:25:10,879 INFO [dump-all-ok] shop-auth.properties+shop, 1656082962000, length=1874, md5=f95e27b6c843fc7694b6b7ba2b293c0b
+
+2022-06-25 12:25:10,880 INFO [dump-all-ok] shop-cart.properties+shop, 1656083063000, length=1739, md5=8657e0d3fa2a15cde2fa1ff96a185bfc
+
+2022-06-25 12:25:10,881 INFO [dump-all-ok] shop-gateway.properties+shop, 1656083076000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 12:25:10,883 INFO [dump-all-ok] shop-goods.properties+shop, 1656083129000, length=2587, md5=83e3e13e8730b9d9dcffe33094716ce0
+
+2022-06-25 12:25:10,885 INFO [dump-all-ok] shop-job.properties+shop, 1656082538000, length=1733, md5=a12863c36d3ddbae73903c0f02332d47
+
+2022-06-25 12:25:10,886 INFO [dump-all-ok] shop-manage.properties+shop, 1656082501000, length=1738, md5=63e043baca62a6863d8d97ade305cbcd
+
+2022-06-25 12:25:10,887 INFO [dump-all-ok] shop-order.properties+shop, 1656082434000, length=1411, md5=172f2ee2e722a40b3af84492ca7a9e64
+
+2022-06-25 12:25:10,889 INFO [dump-all-ok] shop-oss.properties+shop, 1656082396000, length=416, md5=03e0eff524839fbd14b09afe1673f831
+
+2022-06-25 12:25:10,892 INFO [dump-all-ok] shop-platform.properties+shop, 1656082371000, length=2308, md5=f454d4ae225e5ce93b008d02fae14b4b
+
+2022-06-25 12:25:11,199 INFO [dump-all-ok] shop-risk.properties+shop, 1656082283000, length=1873, md5=d22f6de3b3177a734a919f8a17ea7dcf
+
+2022-06-25 12:25:11,232 INFO [dump-all-ok] shop-seller.properties+shop, 1656082178000, length=1874, md5=fac5be2d606052d50648110ccd0d0a26
+
+2022-06-25 12:25:11,261 INFO [dump-all-ok] shop-settlement.properties+shop, 1656082111000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 12:25:11,285 INFO [dump-all-ok] shop-user.properties+shop, 1656082093000, length=1874, md5=2c957dcf68815c7e29c3a1a93f67cd9e
+
+2022-06-25 12:25:11,292 INFO [dump-all-ok] education-org-dev.properties+education, 1656081769000, length=2014, md5=66f3ee59629185373e36a1fe646fb85e
+
+2022-06-25 12:25:11,294 INFO [dump-all-ok] education-oss-dev.properties+education, 1656081623000, length=280, md5=cffff9f3e6b827ce647b46ff1ae3064d
+
+2022-06-25 12:25:11,295 INFO [dump-all-ok] education-mq-dev.properties+education, 1656081591000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 12:25:11,297 INFO [dump-all-ok] shop-mq.properties+shop, 1656081573000, length=1380, md5=5f511bac08512e85afe37fff3294d892
+
+2022-06-25 12:25:11,298 INFO [dump-all-ok] pcloud-user-api+pcloud, 1656081479000, length=2947, md5=7db3516f65064b5e44e34b6e9b287965
+
+2022-06-25 12:25:11,300 INFO [dump-all-ok] pcloud-auth+pcloud, 1656081399000, length=906, md5=caa23e6607cf410c9f3ea00e4079c856
+
+2022-06-25 12:25:11,301 INFO [dump-all-ok] pcloud-gateway+pcloud, 1656081381000, length=848, md5=cd67dfa0759ebaad2341a957fa65ee8d
+
+2022-06-25 12:25:11,322 INFO [dump-all-ok] pcloud-admin-api+pcloud, 1656081899000, length=3046, md5=7b240e502106f7f783260dd0d4301d39
+
+2022-06-25 18:20:21,735 INFO [dump-all-ok] transport.type+SEATA_GROUP, 1599181081000, length=3, md5=b136ef5f6a01d816991fe3cf7a6ac763
+
+2022-06-25 18:20:21,805 INFO [dump-all-ok] transport.server+SEATA_GROUP, 1599181081000, length=3, md5=b6d9dfc0fb54277321cebc0fff55df2f
+
+2022-06-25 18:20:21,806 INFO [dump-all-ok] transport.heartbeat+SEATA_GROUP, 1599181081000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 18:20:21,807 INFO [dump-all-ok] transport.enableClientBatchSendRequest+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,821 INFO [dump-all-ok] transport.threadFactory.bossThreadPrefix+SEATA_GROUP, 1599181081000, length=9, md5=0f8db59a3b7f2823f38a70c308361836
+
+2022-06-25 18:20:21,823 INFO [dump-all-ok] transport.threadFactory.workerThreadPrefix+SEATA_GROUP, 1599181081000, length=20, md5=a78ec7ef5d1631754c4e72ae8a3e9205
+
+2022-06-25 18:20:21,824 INFO [dump-all-ok] transport.threadFactory.serverExecutorThreadPrefix+SEATA_GROUP, 1599181081000, length=21, md5=11a36309f3d9df84fa8b59cf071fa2da
+
+2022-06-25 18:20:21,825 INFO [dump-all-ok] transport.threadFactory.shareBossWorker+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,826 INFO [dump-all-ok] transport.threadFactory.clientSelectorThreadPrefix+SEATA_GROUP, 1599181081000, length=19, md5=cd7ec5a06541e75f5a7913752322c3af
+
+2022-06-25 18:20:21,827 INFO [dump-all-ok] transport.threadFactory.clientSelectorThreadSize+SEATA_GROUP, 1599181081000, length=1, md5=c4ca4238a0b923820dcc509a6f75849b
+
+2022-06-25 18:20:21,828 INFO [dump-all-ok] transport.threadFactory.clientWorkerThreadPrefix+SEATA_GROUP, 1599181081000, length=23, md5=61cf4e69a56354cf72f46dc86414a57e
+
+2022-06-25 18:20:21,829 INFO [dump-all-ok] transport.threadFactory.bossThreadSize+SEATA_GROUP, 1599181081000, length=1, md5=c4ca4238a0b923820dcc509a6f75849b
+
+2022-06-25 18:20:21,831 INFO [dump-all-ok] transport.threadFactory.workerThreadSize+SEATA_GROUP, 1599181081000, length=7, md5=c21f969b5f03d33d43e04f8f136e7682
+
+2022-06-25 18:20:21,831 INFO [dump-all-ok] transport.shutdown.wait+SEATA_GROUP, 1599181081000, length=1, md5=eccbc87e4b5ce2fe28308fd9f2a7baf3
+
+2022-06-25 18:20:21,833 INFO [dump-all-ok] service.vgroupMapping.my_test_tx_group+SEATA_GROUP, 1599181081000, length=7, md5=c21f969b5f03d33d43e04f8f136e7682
+
+2022-06-25 18:20:21,834 INFO [dump-all-ok] service.default.grouplist+SEATA_GROUP, 1599181081000, length=14, md5=c32ce0d3e264525dcdada751f98143a3
+
+2022-06-25 18:20:21,835 INFO [dump-all-ok] service.enableDegrade+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,836 INFO [dump-all-ok] service.disableGlobalTransaction+SEATA_GROUP, 1599181081000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,838 INFO [dump-all-ok] client.rm.asyncCommitBufferLimit+SEATA_GROUP, 1599181081000, length=5, md5=b7a782741f667201b54880c925faec4b
+
+2022-06-25 18:20:21,839 INFO [dump-all-ok] client.rm.lock.retryInterval+SEATA_GROUP, 1599181081000, length=2, md5=d3d9446802a44259755d38e6d163e820
+
+2022-06-25 18:20:21,840 INFO [dump-all-ok] client.rm.lock.retryTimes+SEATA_GROUP, 1599181082000, length=2, md5=34173cb38f07f89ddbebc2ac9128303f
+
+2022-06-25 18:20:21,841 INFO [dump-all-ok] client.rm.lock.retryPolicyBranchRollbackOnConflict+SEATA_GROUP, 1599181082000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 18:20:21,842 INFO [dump-all-ok] client.rm.reportRetryCount+SEATA_GROUP, 1599181082000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 18:20:21,844 INFO [dump-all-ok] client.rm.tableMetaCheckEnable+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,845 INFO [dump-all-ok] client.rm.sqlParserType+SEATA_GROUP, 1599181082000, length=5, md5=3d650fb8a5df01600281d48c47c9fa60
+
+2022-06-25 18:20:21,846 INFO [dump-all-ok] client.rm.reportSuccessEnable+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,879 INFO [dump-all-ok] client.rm.sagaBranchRegisterEnable+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,880 INFO [dump-all-ok] client.tm.commitRetryCount+SEATA_GROUP, 1599181082000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 18:20:21,882 INFO [dump-all-ok] client.tm.rollbackRetryCount+SEATA_GROUP, 1599181082000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 18:20:21,883 INFO [dump-all-ok] client.tm.degradeCheck+SEATA_GROUP, 1599181082000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,884 INFO [dump-all-ok] client.tm.degradeCheckAllowTimes+SEATA_GROUP, 1599181082000, length=2, md5=d3d9446802a44259755d38e6d163e820
+
+2022-06-25 18:20:21,886 INFO [dump-all-ok] client.tm.degradeCheckPeriod+SEATA_GROUP, 1599181082000, length=4, md5=08f90c1a417155361a5c4b8d297e0d78
+
+2022-06-25 18:20:21,887 INFO [dump-all-ok] store.mode+SEATA_GROUP, 1599181102000, length=2, md5=d77d5e503ad1439f585ac494268b351b
+
+2022-06-25 18:20:21,889 INFO [dump-all-ok] store.file.dir+SEATA_GROUP, 1599181082000, length=15, md5=6a8dec07c44c33a8a9247cba5710bbb2
+
+2022-06-25 18:20:21,891 INFO [dump-all-ok] store.file.maxBranchSessionSize+SEATA_GROUP, 1599181082000, length=5, md5=c76fe1d8e08462434d800487585be217
+
+2022-06-25 18:20:21,892 INFO [dump-all-ok] store.file.maxGlobalSessionSize+SEATA_GROUP, 1599181082000, length=3, md5=10a7cdd970fe135cf4f7bb55c0e3b59f
+
+2022-06-25 18:20:21,893 INFO [dump-all-ok] store.file.fileWriteBufferCacheSize+SEATA_GROUP, 1599181082000, length=5, md5=c76fe1d8e08462434d800487585be217
+
+2022-06-25 18:20:21,895 INFO [dump-all-ok] store.file.flushDiskMode+SEATA_GROUP, 1599181082000, length=5, md5=0df93e34273b367bb63bad28c94c78d5
+
+2022-06-25 18:20:21,895 INFO [dump-all-ok] store.file.sessionReloadReadSize+SEATA_GROUP, 1599181082000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 18:20:21,897 INFO [dump-all-ok] store.db.datasource+SEATA_GROUP, 1599181082000, length=5, md5=3d650fb8a5df01600281d48c47c9fa60
+
+2022-06-25 18:20:21,898 INFO [dump-all-ok] store.db.dbType+SEATA_GROUP, 1599181082000, length=5, md5=81c3b080dad537de7e10e0987a4bf52e
+
+2022-06-25 18:20:21,943 INFO [dump-all-ok] store.db.driverClassName+SEATA_GROUP, 1599181212000, length=24, md5=33763409bb7f4838bde4fae9540433e4
+
+2022-06-25 18:20:21,944 INFO [dump-all-ok] store.db.url+SEATA_GROUP, 1605621833000, length=66, md5=6c4944e4fea09f3b8d25520f39b2ab1e
+
+2022-06-25 18:20:21,945 INFO [dump-all-ok] store.db.user+SEATA_GROUP, 1599181121000, length=4, md5=63a9f0ea7bb98050796b649e85481845
+
+2022-06-25 18:20:21,946 INFO [dump-all-ok] store.db.password+SEATA_GROUP, 1599181283000, length=9, md5=7a0b8d7d2223fc0726844fd871cb781d
+
+2022-06-25 18:20:21,948 INFO [dump-all-ok] store.db.minConn+SEATA_GROUP, 1599181083000, length=1, md5=e4da3b7fbbce2345d7772b0674a318d5
+
+2022-06-25 18:20:21,948 INFO [dump-all-ok] store.db.maxConn+SEATA_GROUP, 1599181083000, length=2, md5=34173cb38f07f89ddbebc2ac9128303f
+
+2022-06-25 18:20:21,949 INFO [dump-all-ok] store.db.globalTable+SEATA_GROUP, 1599181083000, length=12, md5=8b28fb6bb4c4f984df2709381f8eba2b
+
+2022-06-25 18:20:21,950 INFO [dump-all-ok] store.db.branchTable+SEATA_GROUP, 1599181083000, length=12, md5=54bcdac38cf62e103fe115bcf46a660c
+
+2022-06-25 18:20:21,952 INFO [dump-all-ok] store.db.queryLimit+SEATA_GROUP, 1599181083000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 18:20:21,953 INFO [dump-all-ok] store.db.lockTable+SEATA_GROUP, 1599181083000, length=10, md5=55e0cae3b6dc6696b768db90098b8f2f
+
+2022-06-25 18:20:21,953 INFO [dump-all-ok] store.db.maxWait+SEATA_GROUP, 1599181084000, length=4, md5=a35fe7f7fe8217b4369a0af4244d1fca
+
+2022-06-25 18:20:21,955 INFO [dump-all-ok] store.redis.host+SEATA_GROUP, 1599181084000, length=9, md5=f528764d624db129b32c21fbca0cb8d6
+
+2022-06-25 18:20:21,955 INFO [dump-all-ok] store.redis.port+SEATA_GROUP, 1599181084000, length=4, md5=92c3b916311a5517d9290576e3ea37ad
+
+2022-06-25 18:20:21,957 INFO [dump-all-ok] store.redis.maxConn+SEATA_GROUP, 1599181084000, length=2, md5=d3d9446802a44259755d38e6d163e820
+
+2022-06-25 18:20:21,957 INFO [dump-all-ok] store.redis.minConn+SEATA_GROUP, 1599181084000, length=1, md5=c4ca4238a0b923820dcc509a6f75849b
+
+2022-06-25 18:20:21,959 INFO [dump-all-ok] store.redis.database+SEATA_GROUP, 1599181084000, length=1, md5=cfcd208495d565ef66e7dff9f98764da
+
+2022-06-25 18:20:21,959 INFO [dump-all-ok] store.redis.password+SEATA_GROUP, 1599181084000, length=4, md5=37a6259cc0c1dae299a7866489dff0bd
+
+2022-06-25 18:20:21,961 INFO [dump-all-ok] store.redis.queryLimit+SEATA_GROUP, 1599181084000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 18:20:21,963 INFO [dump-all-ok] server.recovery.committingRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 18:20:21,964 INFO [dump-all-ok] server.recovery.asynCommittingRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 18:20:21,965 INFO [dump-all-ok] server.recovery.rollbackingRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 18:20:21,967 INFO [dump-all-ok] server.recovery.timeoutRetryPeriod+SEATA_GROUP, 1599181084000, length=4, md5=a9b7ba70783b617e9998dc4dd82eb3c5
+
+2022-06-25 18:20:21,968 INFO [dump-all-ok] server.maxCommitRetryTimeout+SEATA_GROUP, 1599181084000, length=2, md5=6bb61e3b7bce0931da574d19d1d82c88
+
+2022-06-25 18:20:21,970 INFO [dump-all-ok] server.maxRollbackRetryTimeout+SEATA_GROUP, 1599181084000, length=2, md5=6bb61e3b7bce0931da574d19d1d82c88
+
+2022-06-25 18:20:21,971 INFO [dump-all-ok] server.rollbackRetryTimeoutUnlockEnable+SEATA_GROUP, 1599181085000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,972 INFO [dump-all-ok] client.undo.dataValidation+SEATA_GROUP, 1599181085000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 18:20:21,974 INFO [dump-all-ok] client.undo.logSerialization+SEATA_GROUP, 1599181085000, length=7, md5=b41779690b83f182acc67d6388c7bac9
+
+2022-06-25 18:20:21,975 INFO [dump-all-ok] client.undo.onlyCareUpdateColumns+SEATA_GROUP, 1599181085000, length=4, md5=b326b5062b2f0e69046810717534cb09
+
+2022-06-25 18:20:21,977 INFO [dump-all-ok] server.undo.logSaveDays+SEATA_GROUP, 1599181085000, length=1, md5=8f14e45fceea167a5a36dedd4bea2543
+
+2022-06-25 18:20:21,977 INFO [dump-all-ok] server.undo.logDeletePeriod+SEATA_GROUP, 1599181085000, length=8, md5=f4c122804fe9076cb2710f55c3c6e346
+
+2022-06-25 18:20:21,979 INFO [dump-all-ok] client.undo.logTable+SEATA_GROUP, 1599181085000, length=8, md5=2842d229c24afe9e61437135e8306614
+
+2022-06-25 18:20:21,980 INFO [dump-all-ok] client.log.exceptionRate+SEATA_GROUP, 1599181085000, length=3, md5=f899139df5e1059396431415e770c6dd
+
+2022-06-25 18:20:21,981 INFO [dump-all-ok] transport.serialization+SEATA_GROUP, 1599181085000, length=5, md5=b943081c423b9a5416a706524ee05d40
+
+2022-06-25 18:20:21,982 INFO [dump-all-ok] transport.compressor+SEATA_GROUP, 1599181085000, length=4, md5=334c4a4c42fdb79d7ebc3e73b517e6f8
+
+2022-06-25 18:20:21,984 INFO [dump-all-ok] metrics.enabled+SEATA_GROUP, 1599181085000, length=5, md5=68934a3e9455fa72420237eb05902327
+
+2022-06-25 18:20:21,985 INFO [dump-all-ok] metrics.registryType+SEATA_GROUP, 1599181085000, length=7, md5=7cf74ca49c304df8150205fc915cd465
+
+2022-06-25 18:20:21,986 INFO [dump-all-ok] metrics.exporterList+SEATA_GROUP, 1599181085000, length=10, md5=e4f00638b8a10e6994e67af2f832d51c
+
+2022-06-25 18:20:21,987 INFO [dump-all-ok] metrics.exporterPrometheusPort+SEATA_GROUP, 1599181085000, length=4, md5=7b9dc501afe4ee11c56a4831e20cee71
+
+2022-06-25 18:20:21,990 INFO [dump-all-ok] education-manage-dev.properties+education, 1656081520000, length=1740, md5=fdb4cae8db0815089917835f0eb3ee96
+
+2022-06-25 18:20:21,992 INFO [dump-all-ok] education-report-dev.properties+education, 1656082674000, length=1735, md5=606118dc512acbfa58e0cd7a39ac6cf5
+
+2022-06-25 18:20:21,993 INFO [dump-all-ok] education-gateway-dev.properties+education, 1656082717000, length=119, md5=5175489494fcbed4f7543138b159d217
+
+2022-06-25 18:20:21,994 INFO [dump-all-ok] education-portal-dev.properties+education, 1656082775000, length=1735, md5=606118dc512acbfa58e0cd7a39ac6cf5
+
+2022-06-25 18:20:21,996 INFO [dump-all-ok] education-sso-dev.properties+education, 1656082791000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 18:20:21,998 INFO [dump-all-ok] shop-activity.properties+shop, 1656082855000, length=1878, md5=ca8cb137d89f027b1222d35544233b9c
+
+2022-06-25 18:20:21,999 INFO [dump-all-ok] shop-auth.properties+shop, 1656082962000, length=1874, md5=f95e27b6c843fc7694b6b7ba2b293c0b
+
+2022-06-25 18:20:22,000 INFO [dump-all-ok] shop-cart.properties+shop, 1656083063000, length=1739, md5=8657e0d3fa2a15cde2fa1ff96a185bfc
+
+2022-06-25 18:20:22,001 INFO [dump-all-ok] shop-gateway.properties+shop, 1656083076000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 18:20:22,003 INFO [dump-all-ok] shop-goods.properties+shop, 1656083129000, length=2587, md5=83e3e13e8730b9d9dcffe33094716ce0
+
+2022-06-25 18:20:22,006 INFO [dump-all-ok] shop-job.properties+shop, 1656082538000, length=1733, md5=a12863c36d3ddbae73903c0f02332d47
+
+2022-06-25 18:20:22,008 INFO [dump-all-ok] shop-manage.properties+shop, 1656082501000, length=1738, md5=63e043baca62a6863d8d97ade305cbcd
+
+2022-06-25 18:20:22,009 INFO [dump-all-ok] shop-order.properties+shop, 1656082434000, length=1411, md5=172f2ee2e722a40b3af84492ca7a9e64
+
+2022-06-25 18:20:22,010 INFO [dump-all-ok] shop-oss.properties+shop, 1656082396000, length=416, md5=03e0eff524839fbd14b09afe1673f831
+
+2022-06-25 18:20:22,011 INFO [dump-all-ok] shop-platform.properties+shop, 1656082371000, length=2308, md5=f454d4ae225e5ce93b008d02fae14b4b
+
+2022-06-25 18:20:22,012 INFO [dump-all-ok] shop-risk.properties+shop, 1656082283000, length=1873, md5=d22f6de3b3177a734a919f8a17ea7dcf
+
+2022-06-25 18:20:22,014 INFO [dump-all-ok] shop-seller.properties+shop, 1656082178000, length=1874, md5=fac5be2d606052d50648110ccd0d0a26
+
+2022-06-25 18:20:22,015 INFO [dump-all-ok] shop-settlement.properties+shop, 1656082111000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 18:20:22,016 INFO [dump-all-ok] shop-user.properties+shop, 1656082093000, length=1874, md5=2c957dcf68815c7e29c3a1a93f67cd9e
+
+2022-06-25 18:20:22,017 INFO [dump-all-ok] education-org-dev.properties+education, 1656081769000, length=2014, md5=66f3ee59629185373e36a1fe646fb85e
+
+2022-06-25 18:20:22,019 INFO [dump-all-ok] education-oss-dev.properties+education, 1656081623000, length=280, md5=cffff9f3e6b827ce647b46ff1ae3064d
+
+2022-06-25 18:20:22,020 INFO [dump-all-ok] education-mq-dev.properties+education, 1656081591000, length=84, md5=3c9d91e050079f2132ee0ccac826feb7
+
+2022-06-25 18:20:22,021 INFO [dump-all-ok] shop-mq.properties+shop, 1656081573000, length=1380, md5=5f511bac08512e85afe37fff3294d892
+
+2022-06-25 18:20:22,083 INFO [dump-all-ok] pcloud-user-api+pcloud, 1656081479000, length=2947, md5=7db3516f65064b5e44e34b6e9b287965
+
+2022-06-25 18:20:22,084 INFO [dump-all-ok] pcloud-auth+pcloud, 1656081399000, length=906, md5=caa23e6607cf410c9f3ea00e4079c856
+
+2022-06-25 18:20:22,085 INFO [dump-all-ok] pcloud-gateway+pcloud, 1656081381000, length=848, md5=cd67dfa0759ebaad2341a957fa65ee8d
+
+2022-06-25 18:20:22,087 INFO [dump-all-ok] pcloud-admin-api+pcloud, 1656081899000, length=3046, md5=7b240e502106f7f783260dd0d4301d39
+

@@ -19,29 +19,29 @@ import quick.pager.shop.param.SellerSubscribeParam;
 @RequestMapping(Constants.Module.SELLER)
 public class SellerController {
 
-    /**
-     * 登陆
-     */
-    @PostMapping("/login")
-    public Response login(SellerLoginParam param) {
-        return Response.toResponse();
-    }
+  /**
+   * 登陆
+   */
+  @PostMapping("/login")
+  public Response login(SellerLoginParam param) {
+    return Response.toResponse();
+  }
 
-    /**
-     * 注册申请
-     */
-    @PostMapping("/subscribe")
-    public Response subscribe(SellerSubscribeParam param) {
-        return null;
-    }
+  /**
+   * 注册申请
+   */
+  @PostMapping("/subscribe")
+  public Response subscribe(SellerSubscribeParam param) {
+    return null;
+  }
 
-    /**
-     * 查询商家
-     *
-     * @param sellerId 商家Id
-     */
-    @PostMapping("/info/{sellerId}")
-    public Response<SellerInfo> querySeller(@PathVariable("sellerId") Long sellerId) {
-        return Response.toResponse();
-    }
+  /**
+   * 查询商家
+   *
+   * @param sellerId 商家Id
+   */
+  @PostMapping("/info/{sellerId}")
+  public Response<SellerInfo> querySeller(@PathVariable("sellerId") Long sellerId) {
+    return Response.toResponse();
+  }
 }

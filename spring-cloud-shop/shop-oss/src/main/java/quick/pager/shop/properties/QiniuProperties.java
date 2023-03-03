@@ -13,11 +13,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Data
 public class QiniuProperties {
 
-    private String accessKey;
+  private String accessKey;
 
-    private String secretKey;
+  private String secretKey;
 
-    private String bucket;
+  private String bucket;
 
-    private String endpoint;
+  private String endpoint;
 }

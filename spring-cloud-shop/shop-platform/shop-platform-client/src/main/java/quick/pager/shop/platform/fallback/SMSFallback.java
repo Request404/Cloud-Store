@@ -11,15 +11,15 @@ import quick.pager.shop.user.response.Response;
 @Slf4j
 public class SMSFallback implements FallbackFactory<SMSClient> {
 
-    @Override
-    public SMSClient create(Throwable cause) {
-        return new SMSClient() {
-            @Override
-            public Response<String> sendSms(String phone, String source) {
-                System.out.println(cause);
-                log.error("进入熔断 SMSFallback.sendSms: phone = {}, source = {}", phone, source);
-                return Response.toError(ResponseStatus.TELNET_EXCEPTION);
-            }
-        };
-    }
+  @Override
+  public SMSClient create(Throwable cause) {
+    return new SMSClient() {
+      @Override
+      public Response<String> sendSms(String phone, String source) {
+        System.out.println(cause);
+        log.error("进入熔断 SMSFallback.sendSms: phone = {}, source = {}", phone, source);
+        return Response.toError(ResponseStatus.TELNET_EXCEPTION);
+      }
+    };
+  }
 }

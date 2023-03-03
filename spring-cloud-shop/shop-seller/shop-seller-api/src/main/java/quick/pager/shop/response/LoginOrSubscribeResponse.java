@@ -1,6 +1,7 @@
 package quick.pager.shop.response;
 
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
@@ -10,16 +11,16 @@ import lombok.Data;
  */
 @Data
 public class LoginOrSubscribeResponse implements Serializable {
-    private static final long serialVersionUID = -521432465210624041L;
+  private static final long serialVersionUID = -521432465210624041L;
 
-    private Long userId;
+  private Long userId;
 
-    private String username;
+  private String username;
 
-    private String phone;
+  private String phone;
 
-    private String avatar;
+  private String avatar;
 
-    private String token;
+  private String token;
 
 }

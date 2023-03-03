@@ -2,6 +2,7 @@ package quick.pager.shop.user.request;
 
 import java.io.Serializable;
 import java.util.List;
+
 import lombok.Data;
 
 /**
@@ -12,15 +13,15 @@ import lombok.Data;
  */
 @Data
 public class UserRequest implements Serializable {
-    private static final long serialVersionUID = -8269998162761261662L;
+  private static final long serialVersionUID = -8269998162761261662L;
 
-    /**
-     * 用户主键集
-     */
-    private List<Long> userIds;
+  /**
+   * 用户主键集
+   */
+  private List<Long> userIds;
 
-    /**
-     * 手机号码集
-     */
-    private List<String> phones;
+  /**
+   * 手机号码集
+   */
+  private List<String> phones;
 }

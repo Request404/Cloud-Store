@@ -14,11 +14,11 @@ import quick.pager.shop.service.SystemConfigService;
 @Component
 public class PlatformRunner implements CommandLineRunner {
 
-    @Autowired
-    private SystemConfigService systemConfigService;
+  @Autowired
+  private SystemConfigService systemConfigService;
 
-    @Override
-    public void run(String... args) throws Exception {
-        systemConfigService.executeTask();
-    }
+  @Override
+  public void run(String... args) throws Exception {
+    systemConfigService.executeTask();
+  }
 }

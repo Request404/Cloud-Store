@@ -7,8 +7,8 @@ package quick.pager.shop.constants;
  */
 public interface RedisKeys {
 
-    /**
-     * 短信验证码前缀
-     */
-    String REDIS_SMS_LOGIN_PREFIX = "sms:login:code:";
+  /**
+   * 短信验证码前缀
+   */
+  String REDIS_SMS_LOGIN_PREFIX = "sms:login:code:";
 }

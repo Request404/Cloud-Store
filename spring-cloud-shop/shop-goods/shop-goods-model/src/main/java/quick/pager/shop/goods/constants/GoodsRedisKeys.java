@@ -7,12 +7,12 @@ package quick.pager.shop.goods.constants;
  */
 public interface GoodsRedisKeys {
 
-    /**
-     * redis spu 缓存
-     */
-    String REDIS_SPU_PREFIX = "redis:app:spu";
-    /**
-     * redis 分类缓存
-     */
-    String REDIS_CLASSIFICATION_PREFIX = "redis:app:classification";
+  /**
+   * redis spu 缓存
+   */
+  String REDIS_SPU_PREFIX = "redis:app:spu";
+  /**
+   * redis 分类缓存
+   */
+  String REDIS_CLASSIFICATION_PREFIX = "redis:app:classification";
 }

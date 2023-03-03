@@ -1,5 +1,5 @@
 # Cloud-Shop
-#### Spirng Cloud商城项目
+#### 一个基于 Spirng Cloud 的分布式商城项目
 
 后端接口：spring-cloud-shop
 

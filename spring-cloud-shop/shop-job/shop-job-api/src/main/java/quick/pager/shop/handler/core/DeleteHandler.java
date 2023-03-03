@@ -20,25 +20,25 @@ import quick.pager.shop.trigger.JobTrigger;
 @Slf4j
 public class DeleteHandler extends AbstractHandler {
 
-    @Override
-    public boolean support(final JobEnums jobEnums) {
-        return JobEnums.DELETE.equals(jobEnums);
-    }
+  @Override
+  public boolean support(final JobEnums jobEnums) {
+    return JobEnums.DELETE.equals(jobEnums);
+  }
 
-    @Override
-    public void execute(final String jobName, final String jobGroup) {
+  @Override
+  public void execute(final String jobName, final String jobGroup) {
 
-        log.info("执行删除任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
-        Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
-        try {
-            JobTrigger.deleteJob(scheduler, jobName, jobGroup);
-            // 执行删除成功后，执行暂定业务代码是
-            JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
-            JobInfo jobInfo = new JobInfo();
-            jobInfo.setJobStatus(JobStatusEnums.DELETE.getCode());
-            jobInfoMapper.update(jobInfo, new LambdaQueryWrapper<JobInfo>().eq(JobInfo::getJobName, jobName).eq(JobInfo::getJobGroup, jobGroup));
-        } catch (SchedulerException e) {
-            log.error("删除定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
-        }
+    log.info("执行删除任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
+    Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
+    try {
+      JobTrigger.deleteJob(scheduler, jobName, jobGroup);
+      // 执行删除成功后，执行暂定业务代码是
+      JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
+      JobInfo jobInfo = new JobInfo();
+      jobInfo.setJobStatus(JobStatusEnums.DELETE.getCode());
+      jobInfoMapper.update(jobInfo, new LambdaQueryWrapper<JobInfo>().eq(JobInfo::getJobName, jobName).eq(JobInfo::getJobGroup, jobGroup));
+    } catch (SchedulerException e) {
+      log.error("删除定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
     }
+  }
 }

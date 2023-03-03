@@ -14,14 +14,14 @@ import quick.pager.shop.service.SystemConfigService;
 @Component
 @EnableScheduling
 public class RedisCacheTask {
-    @Autowired
-    private SystemConfigService systemConfigService;
+  @Autowired
+  private SystemConfigService systemConfigService;
 
-    /**
-     * 每天凌晨更新缓存
-     */
-    @Scheduled(cron = "0 0 0 * * ?")
-    public void execute() {
-        systemConfigService.executeTask();
-    }
+  /**
+   * 每天凌晨更新缓存
+   */
+  @Scheduled(cron = "0 0 0 * * ?")
+  public void execute() {
+    systemConfigService.executeTask();
+  }
 }

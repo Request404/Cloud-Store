@@ -17,13 +17,13 @@ import quick.pager.shop.user.response.Response;
 @FeignClient(value = ConstantsClient.PLATFORM_CLIENT, path = ConstantsClient.PLATFORM, fallbackFactory = SMSFallback.class)
 public interface SMSClient {
 
-    /**
-     * 发送短信
-     *
-     * @param phone  手机号码
-     * @param source 事件源
-     * @return 响应对象
-     */
-    @RequestMapping(value = "/sms/send", method = RequestMethod.POST)
-    Response<String> sendSms(@RequestParam("phone") final String phone, @RequestParam("source") final String source);
+  /**
+   * 发送短信
+   *
+   * @param phone  手机号码
+   * @param source 事件源
+   * @return 响应对象
+   */
+  @RequestMapping(value = "/sms/send", method = RequestMethod.POST)
+  Response<String> sendSms(@RequestParam("phone") final String phone, @RequestParam("source") final String source);
 }

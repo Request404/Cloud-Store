@@ -1,6 +1,7 @@
 package quick.pager.shop.activity.request.coupon;
 
 import java.math.BigDecimal;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import quick.pager.shop.user.request.PageRequest;
@@ -13,17 +14,17 @@ import quick.pager.shop.user.request.PageRequest;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class DiscountCouponTemplatePageRequest extends PageRequest {
-    private static final long serialVersionUID = -4545073771563223799L;
+  private static final long serialVersionUID = -4545073771563223799L;
 
-    private BigDecimal orderAmount;
+  private BigDecimal orderAmount;
 
-    private BigDecimal couponAmount;
+  private BigDecimal couponAmount;
 
-    private BigDecimal discountStrength;
+  private BigDecimal discountStrength;
 
-    private Integer templateType;
+  private Integer templateType;
 
-    private String templateName;
+  private String templateName;
 
-    private String description;
+  private String description;
 }

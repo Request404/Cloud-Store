@@ -23,21 +23,21 @@ import quick.pager.shop.utils.Assert;
 @RequestMapping(Constants.Module.USER)
 public class AppUserCodeController {
 
-    @Autowired
-    private SMSCodeService smsCodeService;
+  @Autowired
+  private SMSCodeService smsCodeService;
 
-    /**
-     * 发送短信验证码
-     *
-     * @param request 请求参数
-     */
-    @PostMapping("/app/send/code/sms")
-    public Response sendSMS(@RequestBody SmsRequest request) {
+  /**
+   * 发送短信验证码
+   *
+   * @param request 请求参数
+   */
+  @PostMapping("/app/send/code/sms")
+  public Response sendSMS(@RequestBody SmsRequest request) {
 
-        Assert.isTrue(StringUtils.isNoneEmpty(request.getPhone()), () -> "手机号不能为空");
-        Assert.isTrue(Validator.isMobile(request.getPhone()), () -> "手机号码不正确");
-        Assert.isTrue(StringUtils.isNoneEmpty(request.getSource()), () -> "事件源不能为空");
+    Assert.isTrue(StringUtils.isNoneEmpty(request.getPhone()), () -> "手机号不能为空");
+    Assert.isTrue(Validator.isMobile(request.getPhone()), () -> "手机号码不正确");
+    Assert.isTrue(StringUtils.isNoneEmpty(request.getSource()), () -> "事件源不能为空");
 
-        return smsCodeService.send(request);
-    }
+    return smsCodeService.send(request);
+  }
 }

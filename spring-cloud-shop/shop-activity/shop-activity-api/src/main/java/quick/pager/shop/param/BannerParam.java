@@ -11,18 +11,18 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class BannerParam extends Param {
-    private static final long serialVersionUID = 2378276818835084161L;
+  private static final long serialVersionUID = 2378276818835084161L;
 
-    /**
-     * 活动标题
-     */
-    private String title;
+  /**
+   * 活动标题
+   */
+  private String title;
 
-    private String bannerType;
+  private String bannerType;
 
-    /**
-     * 分享渠道
-     */
-    private String shareChannel;
+  /**
+   * 分享渠道
+   */
+  private String shareChannel;
 
 }

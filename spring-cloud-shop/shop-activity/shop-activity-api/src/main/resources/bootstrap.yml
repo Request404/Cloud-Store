@@ -16,7 +16,7 @@ feign:
   okhttp:
     enabled: true
   httpclient:
-      enabled: false
+    enabled: false
 mybatis-plus:
   type-aliases-package: quick.pager.shop.model
   configuration:

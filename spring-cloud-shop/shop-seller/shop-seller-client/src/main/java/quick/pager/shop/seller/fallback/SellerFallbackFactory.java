@@ -11,13 +11,13 @@ import quick.pager.shop.response.SellerInfoResponse;
 @Slf4j
 @Component
 public class SellerFallbackFactory implements FallbackFactory<SellerClient> {
-    @Override
-    public SellerClient create(Throwable cause) {
-        return new SellerClient() {
-            @Override
-            public Response<SellerInfoResponse> querySeller(Long sellerId) {
-                return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.PARAMS_EXCEPTION);
-            }
-        };
-    }
+  @Override
+  public SellerClient create(Throwable cause) {
+    return new SellerClient() {
+      @Override
+      public Response<SellerInfoResponse> querySeller(Long sellerId) {
+        return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.PARAMS_EXCEPTION);
+      }
+    };
+  }
 }

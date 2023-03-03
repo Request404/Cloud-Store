@@ -12,14 +12,14 @@ import quick.pager.shop.user.response.BasicResponse;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class GoodsPropertyGroupResponse extends BasicResponse {
-    private static final long serialVersionUID = -6273283144166377067L;
+  private static final long serialVersionUID = -6273283144166377067L;
 
-    /**
-     * 主键
-     */
-    private Long id;
-    /**
-     * 商品属性组名称
-     */
-    private String propertyGroupName;
+  /**
+   * 主键
+   */
+  private Long id;
+  /**
+   * 商品属性组名称
+   */
+  private String propertyGroupName;
 }

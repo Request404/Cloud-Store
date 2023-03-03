@@ -17,17 +17,17 @@ import quick.pager.shop.service.SellerOrderService;
 @RequestMapping(Constants.Module.ORDER)
 public class SellerOrderController {
 
-    @Autowired
-    private SellerOrderService sellerOrderService;
+  @Autowired
+  private SellerOrderService sellerOrderService;
 
-    /**
-     * 创建商户订单
-     *
-     * @param request 订单
-     */
-    @PostMapping("/seller/create")
-    public Response sellerOrderCreate(@RequestBody SellerOrderSaveRequest request) {
+  /**
+   * 创建商户订单
+   *
+   * @param request 订单
+   */
+  @PostMapping("/seller/create")
+  public Response sellerOrderCreate(@RequestBody SellerOrderSaveRequest request) {
 
-        return sellerOrderService.create(request);
-    }
+    return sellerOrderService.create(request);
+  }
 }

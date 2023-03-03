@@ -20,18 +20,18 @@ import quick.pager.shop.user.response.Response;
 public class OrderTradeController {
 
 
-    @Autowired
-    private OrderTradeService orderTradeService;
+  @Autowired
+  private OrderTradeService orderTradeService;
 
-    /**
-     * 交易流水新增
-     *
-     * @param request 请求参数
-     * @return 返回数据
-     */
-    @PostMapping("/trade/create")
-    public Response<Long> create(@RequestBody OrderTradeSaveRequest request) {
+  /**
+   * 交易流水新增
+   *
+   * @param request 请求参数
+   * @return 返回数据
+   */
+  @PostMapping("/trade/create")
+  public Response<Long> create(@RequestBody OrderTradeSaveRequest request) {
 
-        return orderTradeService.create(request);
-    }
+    return orderTradeService.create(request);
+  }
 }

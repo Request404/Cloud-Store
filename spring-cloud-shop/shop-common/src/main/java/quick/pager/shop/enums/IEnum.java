@@ -10,17 +10,17 @@ package quick.pager.shop.enums;
  */
 public interface IEnum<T> {
 
-    /**
-     * 返回枚举类型
-     *
-     * @return T
-     */
-    T getCode();
+  /**
+   * 返回枚举类型
+   *
+   * @return T
+   */
+  T getCode();
 
-    /**
-     * 枚举对应的说明
-     *
-     * @return 说明
-     */
-    String getDesc();
+  /**
+   * 枚举对应的说明
+   *
+   * @return 说明
+   */
+  String getDesc();
 }

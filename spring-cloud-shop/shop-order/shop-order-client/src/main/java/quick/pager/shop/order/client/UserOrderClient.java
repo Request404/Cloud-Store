@@ -19,30 +19,30 @@ import quick.pager.shop.user.response.Response;
 @FeignClient(value = ConstantsClient.ORDER_CLIENT, path = ConstantsClient.ORDER, fallbackFactory = UserOrderClientFallbackFactory.class)
 public interface UserOrderClient {
 
-    /**
-     * 订单列表
-     *
-     * @param request 请求参数
-     * @return 订单列表
-     */
-    @RequestMapping(value = "/user/orders", method = RequestMethod.POST)
-    Response orders(@RequestBody OrderPageRequest request);
+  /**
+   * 订单列表
+   *
+   * @param request 请求参数
+   * @return 订单列表
+   */
+  @RequestMapping(value = "/user/orders", method = RequestMethod.POST)
+  Response orders(@RequestBody OrderPageRequest request);
 
-    /**
-     * 订单详情
-     *
-     * @param orderId 订单主键
-     * @return 订单详情
-     */
-    @RequestMapping(value = "/user/{orderId}/detail", method = RequestMethod.POST)
-    Response orderInfo(@PathVariable("orderId") Long orderId);
+  /**
+   * 订单详情
+   *
+   * @param orderId 订单主键
+   * @return 订单详情
+   */
+  @RequestMapping(value = "/user/{orderId}/detail", method = RequestMethod.POST)
+  Response orderInfo(@PathVariable("orderId") Long orderId);
 
-    /**
-     * 创建用户订单
-     *
-     * @param request 订单
-     * @return 订单主键
-     */
-    @RequestMapping(value = "/user/create", method = RequestMethod.POST)
-    Response<Long> create(@RequestBody UserOrderSaveRequest request);
+  /**
+   * 创建用户订单
+   *
+   * @param request 订单
+   * @return 订单主键
+   */
+  @RequestMapping(value = "/user/create", method = RequestMethod.POST)
+  Response<Long> create(@RequestBody UserOrderSaveRequest request);
 }

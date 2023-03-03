@@ -1,0 +1,1 @@
+jdbc:mysql://106.54.251.32:3306/seata?useUnicode=true&useSSL=false

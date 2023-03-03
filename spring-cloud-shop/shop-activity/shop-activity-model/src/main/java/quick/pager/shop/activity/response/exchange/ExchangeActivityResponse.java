@@ -1,6 +1,7 @@
 package quick.pager.shop.activity.response.exchange;
 
 import java.time.LocalDateTime;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import quick.pager.shop.user.response.BasicResponse;
@@ -14,22 +15,22 @@ import quick.pager.shop.user.response.BasicResponse;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class ExchangeActivityResponse extends BasicResponse {
-    private static final long serialVersionUID = 1160417053081709146L;
+  private static final long serialVersionUID = 1160417053081709146L;
 
-    private Long id;
-    /**
-     * 活动名称
-     */
-    private String activityName;
-    /**
-     * 活动图片
-     */
-    private String activityImg;
+  private Long id;
+  /**
+   * 活动名称
+   */
+  private String activityName;
+  /**
+   * 活动图片
+   */
+  private String activityImg;
 
-    private Boolean serverStatus;
+  private Boolean serverStatus;
 
-    private LocalDateTime beginTime;
+  private LocalDateTime beginTime;
 
-    private LocalDateTime endTime;
+  private LocalDateTime endTime;
 
 }

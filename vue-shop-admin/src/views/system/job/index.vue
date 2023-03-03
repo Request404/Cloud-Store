@@ -99,7 +99,7 @@
       </el-table-column>
       <el-table-column label="操作"
                        class-name="small-padding fixed-width"
-                       width="260"
+                       width="180"
                        fixed="right"
                        align="center">
         <template slot-scope="scope">
@@ -107,6 +107,14 @@
                      @click="handleQuery(scope.row)">编辑</el-button>
           <el-button type="danger"
                      @click="handleDel(scope.row)">删除</el-button>
+        </template>
+      </el-table-column>
+      <el-table-column label="任务操作"
+                       class-name="small-padding fixed-width"
+                       width="300"
+                       fixed="right"
+                       align="center">
+        <template slot-scope="scope">
           <el-button type="default"
                      @click="handlePause(scope.row)">暂停</el-button>
           <el-button type="warning"

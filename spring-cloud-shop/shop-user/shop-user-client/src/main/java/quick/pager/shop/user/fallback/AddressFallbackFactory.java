@@ -6,8 +6,8 @@ import quick.pager.shop.user.client.AddressClient;
 
 @Component
 public class AddressFallbackFactory implements FallbackFactory<AddressClient> {
-    @Override
-    public AddressClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public AddressClient create(Throwable cause) {
+    return null;
+  }
 }

@@ -11,8 +11,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class Settlement {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Settlement.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Settlement.class, args);
+  }
 }
 

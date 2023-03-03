@@ -11,7 +11,7 @@ import quick.pager.shop.mq.PlatformMQ;
 @EnableBinding(PlatformMQ.class)
 public class Platform {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Platform.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Platform.class, args);
+  }
 }

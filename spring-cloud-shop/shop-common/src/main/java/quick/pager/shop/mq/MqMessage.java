@@ -1,6 +1,7 @@
 package quick.pager.shop.mq;
 
 import java.io.Serializable;
+
 import lombok.Builder;
 import lombok.Data;
 
@@ -12,24 +13,24 @@ import lombok.Data;
 @Data
 @Builder
 public class MqMessage implements Serializable {
-    private static final long serialVersionUID = -106569581268748240L;
+  private static final long serialVersionUID = -106569581268748240L;
 
-    /**
-     * mq routingKey
-     */
-    private String routingKey;
-    /**
-     * mq 队列名称
-     */
-    private String queueName;
-    /**
-     * mq exchange 通道
-     */
-    private String exchange;
+  /**
+   * mq routingKey
+   */
+  private String routingKey;
+  /**
+   * mq 队列名称
+   */
+  private String queueName;
+  /**
+   * mq exchange 通道
+   */
+  private String exchange;
 
-    /**
-     * 发送消息的内容
-     */
-    private Serializable payLoad;
+  /**
+   * 发送消息的内容
+   */
+  private Serializable payLoad;
 
 }

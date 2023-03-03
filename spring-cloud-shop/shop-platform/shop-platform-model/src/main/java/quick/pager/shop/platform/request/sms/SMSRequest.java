@@ -12,15 +12,15 @@ import quick.pager.shop.user.request.Request;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SMSRequest extends Request {
-    private static final long serialVersionUID = 6787169876401808776L;
+  private static final long serialVersionUID = 6787169876401808776L;
 
-    /**
-     * 手机号码
-     */
-    private String phone;
+  /**
+   * 手机号码
+   */
+  private String phone;
 
-    /**
-     * 事件源
-     */
-    private String event;
+  /**
+   * 事件源
+   */
+  private String event;
 }

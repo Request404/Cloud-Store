@@ -9,25 +9,25 @@ import quick.pager.shop.enums.IEnum;
  */
 public enum OSSTypeEnum implements IEnum<String> {
 
-    ALIYUN("ALIYUN", "阿里云"),
-    QINIU("QINIU", "七牛云");
+  ALIYUN("ALIYUN", "阿里云"),
+  QINIU("QINIU", "七牛云");
 
-    private String code;
+  private String code;
 
-    private String desc;
+  private String desc;
 
-    OSSTypeEnum(String code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
+  OSSTypeEnum(String code, String desc) {
+    this.code = code;
+    this.desc = desc;
+  }
 
-    @Override
-    public String getCode() {
-        return this.code;
-    }
+  @Override
+  public String getCode() {
+    return this.code;
+  }
 
-    @Override
-    public String getDesc() {
-        return this.desc;
-    }
+  @Override
+  public String getDesc() {
+    return this.desc;
+  }
 }

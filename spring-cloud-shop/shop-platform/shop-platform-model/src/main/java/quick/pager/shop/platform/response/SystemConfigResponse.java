@@ -13,15 +13,15 @@ import quick.pager.shop.user.response.BasicResponse;
 @Data
 public class SystemConfigResponse extends BasicResponse {
 
-    private static final long serialVersionUID = -2876381839457142973L;
+  private static final long serialVersionUID = -2876381839457142973L;
 
-    private Long id;
+  private Long id;
 
-    private String configName;
+  private String configName;
 
-    private String configType;
+  private String configType;
 
-    private String description;
+  private String description;
 
-    private Boolean configStatus;
+  private Boolean configStatus;
 }

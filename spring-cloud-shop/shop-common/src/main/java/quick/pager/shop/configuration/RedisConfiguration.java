@@ -1,7 +1,9 @@
 package quick.pager.shop.configuration;
 
 import com.alibaba.fastjson.support.spring.GenericFastJsonRedisSerializer;
+
 import java.nio.charset.StandardCharsets;
+
 import org.redisson.spring.starter.RedissonAutoConfiguration;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
@@ -24,19 +26,19 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 public class RedisConfiguration {
 
 
-    @Bean("redisTemplate")
-    public RedisTemplate<String,Object> redisTemplate(RedisConnectionFactory factory) {
-        RedisTemplate<String,Object> redisTemplate = new RedisTemplate<>();
-        RedisSerializer stringSerializer = new StringRedisSerializer(StandardCharsets.UTF_8);
-        RedisSerializer genericFastJsonRedisSerializer = new GenericFastJsonRedisSerializer();
-        redisTemplate.setKeySerializer(stringSerializer);
-        redisTemplate.setValueSerializer(genericFastJsonRedisSerializer);
-        redisTemplate.setHashKeySerializer(genericFastJsonRedisSerializer);
-        redisTemplate.setHashValueSerializer(genericFastJsonRedisSerializer);
-        redisTemplate.setConnectionFactory(factory);
+  @Bean("redisTemplate")
+  public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory factory) {
+    RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
+    RedisSerializer stringSerializer = new StringRedisSerializer(StandardCharsets.UTF_8);
+    RedisSerializer genericFastJsonRedisSerializer = new GenericFastJsonRedisSerializer();
+    redisTemplate.setKeySerializer(stringSerializer);
+    redisTemplate.setValueSerializer(genericFastJsonRedisSerializer);
+    redisTemplate.setHashKeySerializer(genericFastJsonRedisSerializer);
+    redisTemplate.setHashValueSerializer(genericFastJsonRedisSerializer);
+    redisTemplate.setConnectionFactory(factory);
 
-        redisTemplate.afterPropertiesSet();
+    redisTemplate.afterPropertiesSet();
 
-        return redisTemplate;
-    }
+    return redisTemplate;
+  }
 }

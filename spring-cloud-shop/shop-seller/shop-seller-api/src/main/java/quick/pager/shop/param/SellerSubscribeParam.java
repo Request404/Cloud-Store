@@ -6,5 +6,5 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SellerSubscribeParam extends Param {
-    private static final long serialVersionUID = -5172706989468210073L;
+  private static final long serialVersionUID = -5172706989468210073L;
 }

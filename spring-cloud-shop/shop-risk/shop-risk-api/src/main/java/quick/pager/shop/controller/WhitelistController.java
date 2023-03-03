@@ -2,6 +2,7 @@ package quick.pager.shop.controller;
 
 import java.util.List;
 import java.util.Objects;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,41 +30,41 @@ import quick.pager.shop.utils.Assert;
 @RequestMapping(Constants.Module.RISK)
 public class WhitelistController {
 
-    @Autowired
-    private WhitelistService whitelistService;
+  @Autowired
+  private WhitelistService whitelistService;
 
-    /**
-     * 列表
-     */
-    @PostMapping(value = "/whitelist/page")
-    public Response<List<WhiteBlacklistResponse>> list(@RequestBody WhiteBlacklistPageRequest request) {
-        return whitelistService.queryPage(request);
-    }
+  /**
+   * 列表
+   */
+  @PostMapping(value = "/whitelist/page")
+  public Response<List<WhiteBlacklistResponse>> list(@RequestBody WhiteBlacklistPageRequest request) {
+    return whitelistService.queryPage(request);
+  }
 
-    /**
-     * 新增
-     */
-    @PostMapping(value = "/whitelist")
-    public Response<Long> create(@RequestBody WhiteBlacklistSaveRequest request) {
-        return whitelistService.create(request);
-    }
+  /**
+   * 新增
+   */
+  @PostMapping(value = "/whitelist")
+  public Response<Long> create(@RequestBody WhiteBlacklistSaveRequest request) {
+    return whitelistService.create(request);
+  }
 
-    /**
-     * 修改
-     */
-    @PutMapping(value = "/whitelist")
-    public Response<Long> modify(@RequestBody WhiteBlacklistSaveRequest request) {
+  /**
+   * 修改
+   */
+  @PutMapping(value = "/whitelist")
+  public Response<Long> modify(@RequestBody WhiteBlacklistSaveRequest request) {
 
-        Assert.isTrue(Objects.nonNull(request.getId()), () -> ResponseStatus.PARAMS_EXCEPTION);
+    Assert.isTrue(Objects.nonNull(request.getId()), () -> ResponseStatus.PARAMS_EXCEPTION);
 
-        return whitelistService.modify(request);
-    }
+    return whitelistService.modify(request);
+  }
 
-    /**
-     * 删除
-     */
-    @DeleteMapping(value = "/whitelist/{id}")
-    public Response<Long> delete(@PathVariable("id") Long id) {
-        return whitelistService.delete(id);
-    }
+  /**
+   * 删除
+   */
+  @DeleteMapping(value = "/whitelist/{id}")
+  public Response<Long> delete(@PathVariable("id") Long id) {
+    return whitelistService.delete(id);
+  }
 }

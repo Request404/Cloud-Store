@@ -11,8 +11,8 @@ import org.springframework.cloud.client.SpringCloudApplication;
 @SpringCloudApplication
 public class Gateway {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Gateway.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Gateway.class, args);
+  }
 }
 

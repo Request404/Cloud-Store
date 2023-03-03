@@ -1,6 +1,7 @@
 package quick.pager.shop.cart.client;
 
 import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,11 +21,11 @@ import quick.pager.shop.user.response.Response;
 public interface OrderCartClient {
 
 
-    /**
-     * 订单商品购物车
-     *
-     * @param request 请求参数
-     */
-    @RequestMapping(value = "/app/orders/create", method = RequestMethod.POST)
-    Response<List<GoodsCartResponse>> create(@RequestBody OrderCartSaveRequest request);
+  /**
+   * 订单商品购物车
+   *
+   * @param request 请求参数
+   */
+  @RequestMapping(value = "/app/orders/create", method = RequestMethod.POST)
+  Response<List<GoodsCartResponse>> create(@RequestBody OrderCartSaveRequest request);
 }

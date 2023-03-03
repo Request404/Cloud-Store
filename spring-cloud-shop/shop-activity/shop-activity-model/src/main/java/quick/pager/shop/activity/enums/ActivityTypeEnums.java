@@ -9,26 +9,26 @@ import quick.pager.shop.enums.IEnum;
  */
 public enum ActivityTypeEnums implements IEnum<Integer> {
 
-    EXCHANGE(1, "满赠换购活动"),
-    ASSEMBLE(2, "拼团活动"),
-    SECKILL(3, "秒杀活动");
+  EXCHANGE(1, "满赠换购活动"),
+  ASSEMBLE(2, "拼团活动"),
+  SECKILL(3, "秒杀活动");
 
-    private final Integer code;
+  private final Integer code;
 
-    private final String desc;
+  private final String desc;
 
-    ActivityTypeEnums(Integer code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
+  ActivityTypeEnums(Integer code, String desc) {
+    this.code = code;
+    this.desc = desc;
+  }
 
-    @Override
-    public Integer getCode() {
-        return this.code;
-    }
+  @Override
+  public Integer getCode() {
+    return this.code;
+  }
 
-    @Override
-    public String getDesc() {
-        return this.desc;
-    }
+  @Override
+  public String getDesc() {
+    return this.desc;
+  }
 }

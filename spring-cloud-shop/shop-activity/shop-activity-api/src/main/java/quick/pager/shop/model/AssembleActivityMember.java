@@ -10,18 +10,18 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("t_assemble_activity_member")
 public class AssembleActivityMember extends Model {
-    private static final long serialVersionUID = -2987561966562272975L;
+  private static final long serialVersionUID = -2987561966562272975L;
 
-    private Long activityId;
+  private Long activityId;
 
-    private Long recordId;
+  private Long recordId;
 
-    private Long userId;
+  private Long userId;
 
-    private String phone;
+  private String phone;
 
-    private String username;
+  private String username;
 
-    private Boolean master;
+  private Boolean master;
 
 }

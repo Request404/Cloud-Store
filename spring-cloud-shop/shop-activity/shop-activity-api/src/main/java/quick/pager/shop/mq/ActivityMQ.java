@@ -5,11 +5,11 @@ import org.springframework.messaging.MessageChannel;
 
 public interface ActivityMQ {
 
-    String SEND_STATION_MESSAGE = "SEND_STATION_MESSAGE";
+  String SEND_STATION_MESSAGE = "SEND_STATION_MESSAGE";
 
-    /**
-     * 发送优惠券站内信队列
-     */
-    @Output(SEND_STATION_MESSAGE)
-    MessageChannel sendStationMessage();
+  /**
+   * 发送优惠券站内信队列
+   */
+  @Output(SEND_STATION_MESSAGE)
+  MessageChannel sendStationMessage();
 }

@@ -11,9 +11,9 @@ import lombok.experimental.Accessors;
 @TableName("t_assemble_activity_record")
 public class AssembleActivityRecord extends Model {
 
-    private static final long serialVersionUID = -626383581837906008L;
+  private static final long serialVersionUID = -626383581837906008L;
 
-    private Long activityId;
+  private Long activityId;
 
-    private Integer status;
+  private Integer status;
 }

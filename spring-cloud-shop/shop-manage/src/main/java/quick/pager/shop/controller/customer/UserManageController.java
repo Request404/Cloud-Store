@@ -15,11 +15,11 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(Constants.Module.MANAGE)
 public class UserManageController {
 
-    /**
-     * 会员列表
-     */
-    @PostMapping("/member/list")
-    public Response memberList() {
-        return null;
-    }
+  /**
+   * 会员列表
+   */
+  @PostMapping("/member/list")
+  public Response memberList() {
+    return null;
+  }
 }

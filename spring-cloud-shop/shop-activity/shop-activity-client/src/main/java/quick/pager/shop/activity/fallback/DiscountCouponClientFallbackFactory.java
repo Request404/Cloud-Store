@@ -14,8 +14,8 @@ import quick.pager.shop.activity.client.DiscountCouponClient;
 @Component
 public class DiscountCouponClientFallbackFactory implements FallbackFactory<DiscountCouponClient> {
 
-    @Override
-    public DiscountCouponClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public DiscountCouponClient create(Throwable cause) {
+    return null;
+  }
 }

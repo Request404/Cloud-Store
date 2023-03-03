@@ -12,21 +12,21 @@ import quick.pager.shop.user.response.BasicResponse;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SellerInfoResponse extends BasicResponse {
-    private static final long serialVersionUID = 4463151693132197632L;
+  private static final long serialVersionUID = 4463151693132197632L;
 
-    private Long id;
+  private Long id;
 
-    private String phone;
+  private String phone;
 
-    private String sellerName;
+  private String sellerName;
 
-    private String address;
+  private String address;
 
-    private Integer sellerStatus;
+  private Integer sellerStatus;
 
-    private String logo;
+  private String logo;
 
-    private String longitude;
+  private String longitude;
 
-    private String latitude;
+  private String latitude;
 }

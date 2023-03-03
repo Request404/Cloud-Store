@@ -9,8 +9,8 @@ import quick.pager.shop.user.response.Response;
  * @author request404
  */
 public interface SellerOrderService {
-    /**
-     * 创建商户订单
-     */
-    Response create(SellerOrderSaveRequest request);
+  /**
+   * 创建商户订单
+   */
+  Response create(SellerOrderSaveRequest request);
 }

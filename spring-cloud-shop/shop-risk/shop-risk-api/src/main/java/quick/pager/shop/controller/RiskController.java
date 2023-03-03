@@ -14,11 +14,11 @@ import quick.pager.shop.user.response.Response;
 public class RiskController {
 
 
-    /**
-     * 用户下单限制
-     */
-    @PostMapping("/order")
-    public Response order() {
-        return null;
-    }
+  /**
+   * 用户下单限制
+   */
+  @PostMapping("/order")
+  public Response order() {
+    return null;
+  }
 }

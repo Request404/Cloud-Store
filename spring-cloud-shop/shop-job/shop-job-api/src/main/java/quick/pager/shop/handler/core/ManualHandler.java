@@ -12,14 +12,14 @@ import quick.pager.shop.handler.AbstractHandler;
 @Slf4j
 public class ManualHandler extends AbstractHandler {
 
-    @Override
-    public boolean support(final JobEnums jobEnums) {
-        return JobEnums.MANUAL.equals(jobEnums);
-    }
+  @Override
+  public boolean support(final JobEnums jobEnums) {
+    return JobEnums.MANUAL.equals(jobEnums);
+  }
 
-    @Override
-    public void execute(final String jobName, final String jobGroup) {
+  @Override
+  public void execute(final String jobName, final String jobGroup) {
 
-        log.info("人工执行任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
-    }
+    log.info("人工执行任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
+  }
 }

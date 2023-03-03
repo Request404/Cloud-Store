@@ -14,22 +14,22 @@ import lombok.EqualsAndHashCode;
 @TableName("t_goods_cart")
 public class GoodsCart extends Model {
 
-    private static final long serialVersionUID = 5264764014218925294L;
+  private static final long serialVersionUID = 5264764014218925294L;
 
-    /**
-     * 用户主键
-     */
-    private Long userId;
-    /**
-     * 冗余商户主键
-     */
-    private Long sellerId;
-    /**
-     * 商品sku主键
-     */
-    private Long skuId;
-    /**
-     * 购买数量
-     */
-    private Integer quantity;
+  /**
+   * 用户主键
+   */
+  private Long userId;
+  /**
+   * 冗余商户主键
+   */
+  private Long sellerId;
+  /**
+   * 商品sku主键
+   */
+  private Long skuId;
+  /**
+   * 购买数量
+   */
+  private Integer quantity;
 }

@@ -1,0 +1,148 @@
+2022-06-29 09:25:26,546 INFO Starting Nacos v1.3.2 on LAPTOP-98HNLMK2 with PID 22960 (F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\target\nacos-server.jar started by Acer in F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\bin)
+
+2022-06-29 09:25:26,550 INFO The following profiles are active: standalone
+
+2022-06-29 09:25:45,711 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4fb61d08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-29 09:25:45,941 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-29 09:25:45,979 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@30bce90b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-29 09:25:45,981 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$748abfba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-29 09:25:45,989 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2022-06-29 09:25:48,265 INFO Tomcat initialized with port(s): 8848 (http)
+
+2022-06-29 09:25:48,387 INFO Starting service [Tomcat]
+
+2022-06-29 09:25:48,387 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2022-06-29 09:25:48,434 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Acer\product\11.2.0\dbhome_1\bin;E:\Machine-Learing\Cuda Development\cudnn\bin;E:\Machine-Learing\Cuda Development\extras\CUPTI\lib64;E:\Machine-Learing\Cuda Development\bin;E:\Machine-Learing\Cuda Development\libnvvp;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\ProgramData\chocolatey\bin;F:\JavaDevEnv\mysql-8.0.20-winx64\bin;F:\JavaDevEnv\apache-maven-3.6.3\bin;F:\JavaDevEnv\gradle-7.3.3-bin\gradle-7.3.3\bin;F:\JavaScriptEnv\nodejs\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.2.0\;E:\Github\Git\Git\cmd;E:\BaiduNetdiskDownload\adt-bundle-windows-x86\sdk\tools;E:\BaiduNetdiskDownload\adt-bundle-windows-x86\sdk\platform-tools;F:\Python\XshellData\Xftp\;F:\Python\XshellData\Xshell\;F:\Python\Python2.7;E:\Python Machine Learn;E:\Python Machine Learn\Library\mingw-w64\bin;E:\Python Machine Learn\Library\usr\bin;E:\Python Machine Learn\Library\bin;E:\Python Machine Learn\Scripts;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;F:\JBrainSW\IntelliJ Idea\IntelliJ IDEA 2021.2\bin;;F:\JBrainSW\WebStorm\WebStorm 2021.2.2\bin;;F:\JBrainSW\PyCharm\PyCharm 2021.1\bin;;C:\Users\Acer\AppData\Roaming\npm;;%DevEco Studio%;.]
+
+2022-06-29 09:25:49,127 INFO Initializing Spring embedded WebApplicationContext
+
+2022-06-29 09:25:49,127 INFO Root WebApplicationContext: initialization completed in 22393 ms
+
+2022-06-29 09:25:51,157 INFO HikariPool-1 - Starting...
+
+2022-06-29 09:25:52,720 INFO HikariPool-1 - Start completed.
+
+2022-06-29 09:25:55,130 INFO Nacos-related cluster resource initialization
+
+2022-06-29 09:25:55,161 INFO The cluster resource is initialized
+
+2022-06-29 09:25:57,132 INFO Reflections took 226 ms to scan 1 urls, producing 6 keys and 24 values 
+
+2022-06-29 09:25:57,318 INFO Reflections took 11 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2022-06-29 09:25:57,360 INFO Reflections took 24 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2022-06-29 09:26:03,560 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2022-06-29 09:26:04,181 INFO Adding welcome page: class path resource [static/index.html]
+
+2022-06-29 09:26:06,376 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2022-06-29 09:26:06,565 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47428937, org.springframework.security.web.context.SecurityContextPersistenceFilter@cf65451, org.springframework.security.web.header.HeaderWriterFilter@47289387, org.springframework.security.web.csrf.CsrfFilter@5990e6c5, org.springframework.security.web.authentication.logout.LogoutFilter@d78795, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37eeec90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64da2a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9d6699, org.springframework.security.web.session.SessionManagementFilter@114a85c2, org.springframework.security.web.access.ExceptionTranslationFilter@35d6ca49]
+
+2022-06-29 09:26:08,217 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2022-06-29 09:26:08,381 INFO Initializing ExecutorService 'taskScheduler'
+
+2022-06-29 09:26:09,115 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2022-06-29 09:26:09,145 INFO Started Nacos in 46.693 seconds (JVM running for 49.793)
+
+2022-06-29 09:26:09,145 INFO Nacos Log files: F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\logs
+
+2022-06-29 09:26:09,161 INFO Nacos Log files: F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\conf
+
+2022-06-29 09:26:09,162 INFO Nacos Log files: F:\360MoveData\Users\Acer\Desktop\岭师\Cloud商城\software-resource\deploy\nacos\data
+
+2022-06-29 09:26:09,163 INFO Nacos started successfully in stand alone mode. use external storage
+
+2022-06-29 09:27:19,612 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2022-06-29 09:27:19,613 INFO Initializing Servlet 'dispatcherServlet'
+
+2022-06-29 09:27:19,666 INFO Completed initialization in 42 ms
+
+2022-06-29 09:35:58,235 INFO [capacityManagement] start correct usage
+
+2022-06-29 09:35:58,392 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 09:36:00,736 WARN clearConfigHistory start
+
+2022-06-29 09:45:58,393 INFO [capacityManagement] start correct usage
+
+2022-06-29 09:45:58,413 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 09:46:00,879 WARN clearConfigHistory start
+
+2022-06-29 09:55:58,414 INFO [capacityManagement] start correct usage
+
+2022-06-29 09:55:58,417 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 09:56:00,981 WARN clearConfigHistory start
+
+2022-06-29 10:05:58,418 INFO [capacityManagement] start correct usage
+
+2022-06-29 10:05:58,421 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 10:06:00,994 WARN clearConfigHistory start
+
+2022-06-29 10:15:58,422 INFO [capacityManagement] start correct usage
+
+2022-06-29 10:15:58,425 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 10:16:01,007 WARN clearConfigHistory start
+
+2022-06-29 10:25:58,426 INFO [capacityManagement] start correct usage
+
+2022-06-29 10:25:58,429 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 10:26:01,065 WARN clearConfigHistory start
+
+2022-06-29 10:35:58,430 INFO [capacityManagement] start correct usage
+
+2022-06-29 10:35:58,432 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 10:36:01,075 WARN clearConfigHistory start
+
+2022-06-29 10:45:58,433 INFO [capacityManagement] start correct usage
+
+2022-06-29 10:45:58,438 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 10:46:01,086 WARN clearConfigHistory start
+
+2022-06-29 10:55:58,440 INFO [capacityManagement] start correct usage
+
+2022-06-29 10:55:58,444 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 10:56:01,094 WARN clearConfigHistory start
+
+2022-06-29 11:05:58,446 INFO [capacityManagement] start correct usage
+
+2022-06-29 11:05:58,453 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 11:06:01,100 WARN clearConfigHistory start
+
+2022-06-29 11:15:58,454 INFO [capacityManagement] start correct usage
+
+2022-06-29 11:15:58,457 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 11:16:01,105 WARN clearConfigHistory start
+
+2022-06-29 11:25:58,459 INFO [capacityManagement] start correct usage
+
+2022-06-29 11:25:58,470 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 11:26:01,109 WARN clearConfigHistory start
+
+2022-06-29 11:35:58,472 INFO [capacityManagement] start correct usage
+
+2022-06-29 11:35:58,480 INFO [capacityManagement] end correct usage, cost: 0s
+
+2022-06-29 11:36:01,115 WARN clearConfigHistory start
+

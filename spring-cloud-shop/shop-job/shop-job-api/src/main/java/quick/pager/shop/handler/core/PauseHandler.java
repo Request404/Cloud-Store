@@ -20,25 +20,25 @@ import quick.pager.shop.trigger.JobTrigger;
 @Slf4j
 public class PauseHandler extends AbstractHandler {
 
-    @Override
-    public boolean support(final JobEnums jobEnums) {
-        return JobEnums.PAUSE.equals(jobEnums);
-    }
+  @Override
+  public boolean support(final JobEnums jobEnums) {
+    return JobEnums.PAUSE.equals(jobEnums);
+  }
 
-    @Override
-    public void execute(final String jobName, final String jobGroup) {
-        log.info("执行暂停任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
-        Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
-        try {
-            JobTrigger.pauseJob(scheduler, jobName, jobGroup);
+  @Override
+  public void execute(final String jobName, final String jobGroup) {
+    log.info("执行暂停任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
+    Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
+    try {
+      JobTrigger.pauseJob(scheduler, jobName, jobGroup);
 
-            // 执行暂停成功后，执行暂定业务代码是
-            JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
-            JobInfo jobInfo = new JobInfo();
-            jobInfo.setJobStatus(JobStatusEnums.PAUSED.getCode());
-            jobInfoMapper.update(jobInfo, new LambdaQueryWrapper<JobInfo>().eq(JobInfo::getJobName, jobName).eq(JobInfo::getJobGroup, jobGroup));
-        } catch (SchedulerException e) {
-            log.error("暂停定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
-        }
+      // 执行暂停成功后，执行暂定业务代码是
+      JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
+      JobInfo jobInfo = new JobInfo();
+      jobInfo.setJobStatus(JobStatusEnums.PAUSED.getCode());
+      jobInfoMapper.update(jobInfo, new LambdaQueryWrapper<JobInfo>().eq(JobInfo::getJobName, jobName).eq(JobInfo::getJobGroup, jobGroup));
+    } catch (SchedulerException e) {
+      log.error("暂停定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
     }
+  }
 }

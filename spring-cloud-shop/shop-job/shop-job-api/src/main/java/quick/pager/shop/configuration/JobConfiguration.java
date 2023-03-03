@@ -14,10 +14,10 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class JobConfiguration {
 
-    @Bean("restTemplate")
-    @LoadBalanced
-    public RestTemplate restTemplate() {
-        return new RestTemplateBuilder().build();
-    }
+  @Bean("restTemplate")
+  @LoadBalanced
+  public RestTemplate restTemplate() {
+    return new RestTemplateBuilder().build();
+  }
 
 }

@@ -19,21 +19,21 @@ import lombok.experimental.Accessors;
 @TableName("t_goods_spu")
 public class GoodsSpu extends Model {
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    /**
-     * spu 名称
-     */
-    private String spuName;
+  /**
+   * spu 名称
+   */
+  private String spuName;
 
-    /**
-     * spu 图片
-     */
-    private String spuImage;
+  /**
+   * spu 图片
+   */
+  private String spuImage;
 
-    /**
-     * 序号
-     */
-    private Integer sequence;
+  /**
+   * 序号
+   */
+  private Integer sequence;
 
 }

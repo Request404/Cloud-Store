@@ -1,7 +1,9 @@
 package quick.pager.shop.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+
 import java.util.Objects;
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,86 +26,86 @@ import quick.pager.shop.utils.DateUtils;
 @Slf4j
 public class GoodsApproveServiceImpl implements GoodsApproveService {
 
-    @Autowired
-    private GoodsSkuMapper goodsSkuMapper;
-    @Autowired
-    private GoodsMapper goodsMapper;
-    @Autowired
-    private GoodsApproveMapper goodsApproveMapper;
+  @Autowired
+  private GoodsSkuMapper goodsSkuMapper;
+  @Autowired
+  private GoodsMapper goodsMapper;
+  @Autowired
+  private GoodsApproveMapper goodsApproveMapper;
 
-    @Override
-    @Transactional(rollbackFor = Exception.class)
-    public Response<Long> create(final GoodsApproveRequest request) {
+  @Override
+  @Transactional(rollbackFor = Exception.class)
+  public Response<Long> create(final GoodsApproveRequest request) {
 
-        GoodsPublishStatusEnum publishStatusEnum = Enum.valueOf(GoodsPublishStatusEnum.class, request.getPublishStatus());
+    GoodsPublishStatusEnum publishStatusEnum = Enum.valueOf(GoodsPublishStatusEnum.class, request.getPublishStatus());
 
-        // 创建审核记录
-        GoodsApprove approve = new GoodsApprove();
-        approve.setGoodsId(request.getGoodsId());
-        approve.setSkuId(request.getSkuId());
-        approve.setPublishStatus(publishStatusEnum.getCode());
-        approve.setDescription(request.getDescription());
-        approve.setCreateTime(DateUtils.dateTime());
-        approve.setUpdateTime(DateUtils.dateTime());
-        approve.setCreateUser(request.getCreateUser());
-        approve.setUpdateUser(request.getUpdateUser());
-        approve.setDeleteStatus(Boolean.FALSE);
-        Assert.isTrue(this.goodsApproveMapper.insert(approve) > 0, () -> "审核失败");
+    // 创建审核记录
+    GoodsApprove approve = new GoodsApprove();
+    approve.setGoodsId(request.getGoodsId());
+    approve.setSkuId(request.getSkuId());
+    approve.setPublishStatus(publishStatusEnum.getCode());
+    approve.setDescription(request.getDescription());
+    approve.setCreateTime(DateUtils.dateTime());
+    approve.setUpdateTime(DateUtils.dateTime());
+    approve.setCreateUser(request.getCreateUser());
+    approve.setUpdateUser(request.getUpdateUser());
+    approve.setDeleteStatus(Boolean.FALSE);
+    Assert.isTrue(this.goodsApproveMapper.insert(approve) > 0, () -> "审核失败");
 
-        Goods goods = new Goods();
-        goods.setPublishStatus(publishStatusEnum.getCode());
-        goods.setUpdateTime(DateUtils.dateTime());
-        goods.setUpdateUser(request.getUpdateUser());
-        int update = this.goodsMapper.update(goods, new LambdaQueryWrapper<Goods>().eq(Goods::getId, request.getGoodsId()));
+    Goods goods = new Goods();
+    goods.setPublishStatus(publishStatusEnum.getCode());
+    goods.setUpdateTime(DateUtils.dateTime());
+    goods.setUpdateUser(request.getUpdateUser());
+    int update = this.goodsMapper.update(goods, new LambdaQueryWrapper<Goods>().eq(Goods::getId, request.getGoodsId()));
 
-        Assert.isTrue(update > 0, () -> "更新商品主表状态失败");
+    Assert.isTrue(update > 0, () -> "更新商品主表状态失败");
 
-        // 审核通过，自动更新sku状态为上架
-        if (GoodsPublishStatusEnum.PASS.equals(publishStatusEnum)) {
-            GoodsSku updateGoodsSku = new GoodsSku();
-            updateGoodsSku.setId(request.getSkuId());
-            updateGoodsSku.setState(Boolean.TRUE);
-            updateGoodsSku.setUpdateTime(DateUtils.dateTime());
-            updateGoodsSku.setUpdateUser(request.getUpdateUser());
-            int skuStatus = this.goodsSkuMapper.update(updateGoodsSku, new LambdaQueryWrapper<GoodsSku>().eq(GoodsSku::getId, request.getSkuId()));
+    // 审核通过，自动更新sku状态为上架
+    if (GoodsPublishStatusEnum.PASS.equals(publishStatusEnum)) {
+      GoodsSku updateGoodsSku = new GoodsSku();
+      updateGoodsSku.setId(request.getSkuId());
+      updateGoodsSku.setState(Boolean.TRUE);
+      updateGoodsSku.setUpdateTime(DateUtils.dateTime());
+      updateGoodsSku.setUpdateUser(request.getUpdateUser());
+      int skuStatus = this.goodsSkuMapper.update(updateGoodsSku, new LambdaQueryWrapper<GoodsSku>().eq(GoodsSku::getId, request.getSkuId()));
 
-            Assert.isTrue(skuStatus > 0, () -> "更新商品状态失败");
-        }
-
-        return Response.toResponse(approve.getId());
+      Assert.isTrue(skuStatus > 0, () -> "更新商品状态失败");
     }
 
-    @Override
-    public Response<GoodsApproveResponse> detail(final Long skuId, final Long goodsId) {
+    return Response.toResponse(approve.getId());
+  }
 
-        Goods goods = this.goodsMapper.selectById(goodsId);
-        Assert.isTrue(Objects.nonNull(goods), () -> "商品主信息不存在");
+  @Override
+  public Response<GoodsApproveResponse> detail(final Long skuId, final Long goodsId) {
 
-        GoodsSku goodsSku = this.goodsSkuMapper.selectById(skuId);
-        Assert.isTrue(Objects.nonNull(goodsSku), () -> "商品不存在");
+    Goods goods = this.goodsMapper.selectById(goodsId);
+    Assert.isTrue(Objects.nonNull(goods), () -> "商品主信息不存在");
 
-        GoodsApprove approve = this.goodsApproveMapper.selectOne(new LambdaQueryWrapper<GoodsApprove>()
-                .eq(GoodsApprove::getGoodsId, goodsId)
-                .eq(GoodsApprove::getSkuId, skuId));
-        // 审核信息不存在
-        if (Objects.isNull(approve)) {
-            return Response.toResponse();
-        }
+    GoodsSku goodsSku = this.goodsSkuMapper.selectById(skuId);
+    Assert.isTrue(Objects.nonNull(goodsSku), () -> "商品不存在");
 
-
-        return Response.toResponse(this.convert(approve));
+    GoodsApprove approve = this.goodsApproveMapper.selectOne(new LambdaQueryWrapper<GoodsApprove>()
+        .eq(GoodsApprove::getGoodsId, goodsId)
+        .eq(GoodsApprove::getSkuId, skuId));
+    // 审核信息不存在
+    if (Objects.isNull(approve)) {
+      return Response.toResponse();
     }
 
-    /**
-     * 数据转换
-     *
-     * @param approve 审核信息
-     */
-    private GoodsApproveResponse convert(final GoodsApprove approve) {
-        return GoodsApproveResponse.builder()
-                .goodsId(approve.getGoodsId())
-                .skuId(approve.getSkuId())
-                .description(approve.getDescription())
-                .build();
-    }
+
+    return Response.toResponse(this.convert(approve));
+  }
+
+  /**
+   * 数据转换
+   *
+   * @param approve 审核信息
+   */
+  private GoodsApproveResponse convert(final GoodsApprove approve) {
+    return GoodsApproveResponse.builder()
+        .goodsId(approve.getGoodsId())
+        .skuId(approve.getSkuId())
+        .description(approve.getDescription())
+        .build();
+  }
 }

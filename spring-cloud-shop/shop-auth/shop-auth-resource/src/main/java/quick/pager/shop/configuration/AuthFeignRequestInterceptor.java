@@ -13,19 +13,19 @@ import org.springframework.util.Assert;
  */
 public class AuthFeignRequestInterceptor implements RequestInterceptor {
 
-    private static final String AUTHORIZATION_HEADER = "Authorization";
+  private static final String AUTHORIZATION_HEADER = "Authorization";
 
-    private static final String BEARER_TOKEN_TYPE = "Bearer";
+  private static final String BEARER_TOKEN_TYPE = "Bearer";
 
-    private final OAuth2RestTemplate oAuth2RestTemplate;
+  private final OAuth2RestTemplate oAuth2RestTemplate;
 
-    public AuthFeignRequestInterceptor(OAuth2RestTemplate oAuth2RestTemplate) {
-        Assert.notNull(oAuth2RestTemplate, "Context can not be null");
-        this.oAuth2RestTemplate = oAuth2RestTemplate;
-    }
+  public AuthFeignRequestInterceptor(OAuth2RestTemplate oAuth2RestTemplate) {
+    Assert.notNull(oAuth2RestTemplate, "Context can not be null");
+    this.oAuth2RestTemplate = oAuth2RestTemplate;
+  }
 
-    @Override
-    public void apply(RequestTemplate template) {
-        template.header(AUTHORIZATION_HEADER, String.format("%s %s", BEARER_TOKEN_TYPE, oAuth2RestTemplate.getAccessToken().toString()));
-    }
+  @Override
+  public void apply(RequestTemplate template) {
+    template.header(AUTHORIZATION_HEADER, String.format("%s %s", BEARER_TOKEN_TYPE, oAuth2RestTemplate.getAccessToken().toString()));
+  }
 }

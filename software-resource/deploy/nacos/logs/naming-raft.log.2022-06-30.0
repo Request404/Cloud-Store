@@ -1,0 +1,914 @@
+2022-06-30 14:49:07,578 INFO raft peers changed: [Member{ip='10.12.156.39', port=8848, state=UP, extendInfo={adWeight=0, raftPort=7848, site=unknow, weight=1}}]
+
+2022-06-30 14:49:07,605 INFO initializing Raft sub-system
+
+2022-06-30 14:49:07,606 INFO finish loading all datums, size: 0 cost 1 ms.
+
+2022-06-30 14:49:07,625 INFO cache loaded, datum count: 0, current term: 117
+
+2022-06-30 14:49:07,625 INFO finish to load data from disk, cost: 20 ms.
+
+2022-06-30 14:49:07,629 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2022-06-30 14:49:07,631 INFO raft notifier started
+
+2022-06-30 14:49:09,650 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2022-06-30 14:49:09,727 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2022-06-30 14:49:16,233 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","term":0,"leaderDueMs":19473,"heartbeatDueMs":5000,"state":"FOLLOWER"}, term: 0
+
+2022-06-30 14:49:35,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":1,"leaderDueMs":18896,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 1
+
+2022-06-30 14:49:54,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":2,"leaderDueMs":17291,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 2
+
+2022-06-30 14:50:12,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":3,"leaderDueMs":17567,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 3
+
+2022-06-30 14:50:30,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":4,"leaderDueMs":17495,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 4
+
+2022-06-30 14:50:47,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":5,"leaderDueMs":17016,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 5
+
+2022-06-30 14:51:05,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":6,"leaderDueMs":15691,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 6
+
+2022-06-30 14:51:21,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":7,"leaderDueMs":18659,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 7
+
+2022-06-30 14:51:40,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":8,"leaderDueMs":19211,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 8
+
+2022-06-30 14:51:59,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":9,"leaderDueMs":17928,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 9
+
+2022-06-30 14:52:17,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":10,"leaderDueMs":15817,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 10
+
+2022-06-30 14:52:33,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":11,"leaderDueMs":18049,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 11
+
+2022-06-30 14:52:52,137 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":12,"leaderDueMs":15314,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 12
+
+2022-06-30 14:53:07,634 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":13,"leaderDueMs":16575,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 13
+
+2022-06-30 14:53:24,665 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":14,"leaderDueMs":15383,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 14
+
+2022-06-30 14:53:40,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":15,"leaderDueMs":16053,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 15
+
+2022-06-30 14:53:56,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":16,"leaderDueMs":16306,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 16
+
+2022-06-30 14:54:13,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":17,"leaderDueMs":18318,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 17
+
+2022-06-30 14:54:31,634 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":18,"leaderDueMs":18124,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 18
+
+2022-06-30 14:54:50,155 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":19,"leaderDueMs":19269,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 19
+
+2022-06-30 14:55:02,248 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth
+
+2022-06-30 14:55:09,644 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":20,"leaderDueMs":17718,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 20
+
+2022-06-30 14:55:19,597 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity
+
+2022-06-30 14:55:27,639 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":21,"leaderDueMs":15190,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 21
+
+2022-06-30 14:55:37,527 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart
+
+2022-06-30 14:55:43,130 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":22,"leaderDueMs":18757,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 22
+
+2022-06-30 14:55:58,124 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway
+
+2022-06-30 14:56:02,136 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":23,"leaderDueMs":15896,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 23
+
+2022-06-30 14:56:12,169 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch
+
+2022-06-30 14:56:18,131 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":24,"leaderDueMs":19512,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 24
+
+2022-06-30 14:56:33,834 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods
+
+2022-06-30 14:56:38,133 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":25,"leaderDueMs":15097,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 25
+
+2022-06-30 14:56:41,236 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job
+
+2022-06-30 14:56:53,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":26,"leaderDueMs":16215,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 26
+
+2022-06-30 14:57:10,130 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":27,"leaderDueMs":18571,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 27
+
+2022-06-30 14:57:21,244 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage
+
+2022-06-30 14:57:27,978 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order
+
+2022-06-30 14:57:29,150 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":28,"leaderDueMs":18703,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 28
+
+2022-06-30 14:57:34,736 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss
+
+2022-06-30 14:57:48,150 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":29,"leaderDueMs":16796,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 29
+
+2022-06-30 14:58:05,217 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":30,"leaderDueMs":16578,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 30
+
+2022-06-30 14:58:16,544 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform
+
+2022-06-30 14:58:22,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":31,"leaderDueMs":17212,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 31
+
+2022-06-30 14:58:31,357 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk
+
+2022-06-30 14:58:39,636 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":32,"leaderDueMs":15432,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 32
+
+2022-06-30 14:58:48,287 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller
+
+2022-06-30 14:58:55,143 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":33,"leaderDueMs":17259,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 33
+
+2022-06-30 14:59:12,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":34,"leaderDueMs":17946,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 34
+
+2022-06-30 14:59:14,529 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement
+
+2022-06-30 14:59:30,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":35,"leaderDueMs":15713,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 35
+
+2022-06-30 14:59:30,967 INFO add listener: com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user
+
+2022-06-30 14:59:46,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":36,"leaderDueMs":18668,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 36
+
+2022-06-30 15:00:05,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":37,"leaderDueMs":18070,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 37
+
+2022-06-30 15:00:24,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":38,"leaderDueMs":18382,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 38
+
+2022-06-30 15:00:42,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":39,"leaderDueMs":15889,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 39
+
+2022-06-30 15:00:58,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":40,"leaderDueMs":15520,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 40
+
+2022-06-30 15:01:14,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":41,"leaderDueMs":16563,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 41
+
+2022-06-30 15:01:31,642 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":42,"leaderDueMs":17851,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 42
+
+2022-06-30 15:01:49,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":43,"leaderDueMs":16946,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 43
+
+2022-06-30 15:02:06,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":44,"leaderDueMs":18454,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 44
+
+2022-06-30 15:02:25,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":45,"leaderDueMs":18965,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 45
+
+2022-06-30 15:02:44,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":46,"leaderDueMs":15433,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 46
+
+2022-06-30 15:02:59,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":47,"leaderDueMs":15733,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 47
+
+2022-06-30 15:03:15,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":48,"leaderDueMs":17480,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 48
+
+2022-06-30 15:03:33,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":49,"leaderDueMs":16948,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 49
+
+2022-06-30 15:03:50,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":50,"leaderDueMs":19414,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 50
+
+2022-06-30 15:04:09,632 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":51,"leaderDueMs":15824,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 51
+
+2022-06-30 15:04:25,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":52,"leaderDueMs":19631,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 52
+
+2022-06-30 15:04:45,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":53,"leaderDueMs":17657,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 53
+
+2022-06-30 15:05:03,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":54,"leaderDueMs":19347,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 54
+
+2022-06-30 15:05:23,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":55,"leaderDueMs":19636,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 55
+
+2022-06-30 15:05:43,194 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":56,"leaderDueMs":15657,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 56
+
+2022-06-30 15:05:59,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":57,"leaderDueMs":18211,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 57
+
+2022-06-30 15:06:17,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":58,"leaderDueMs":18959,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 58
+
+2022-06-30 15:06:36,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":59,"leaderDueMs":15926,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 59
+
+2022-06-30 15:06:52,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":60,"leaderDueMs":16885,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 60
+
+2022-06-30 15:07:09,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":61,"leaderDueMs":18595,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 61
+
+2022-06-30 15:07:28,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":62,"leaderDueMs":18987,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 62
+
+2022-06-30 15:07:47,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":63,"leaderDueMs":19183,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 63
+
+2022-06-30 15:08:07,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":64,"leaderDueMs":18292,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 64
+
+2022-06-30 15:08:25,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":65,"leaderDueMs":15079,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 65
+
+2022-06-30 15:08:41,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":66,"leaderDueMs":15112,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 66
+
+2022-06-30 15:08:56,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":67,"leaderDueMs":15192,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 67
+
+2022-06-30 15:09:12,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":68,"leaderDueMs":17081,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 68
+
+2022-06-30 15:09:29,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":69,"leaderDueMs":19701,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 69
+
+2022-06-30 15:09:49,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":70,"leaderDueMs":15068,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 70
+
+2022-06-30 15:10:05,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":71,"leaderDueMs":19318,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 71
+
+2022-06-30 15:10:24,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":72,"leaderDueMs":16942,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 72
+
+2022-06-30 15:10:41,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":73,"leaderDueMs":18718,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 73
+
+2022-06-30 15:11:00,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":74,"leaderDueMs":18144,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 74
+
+2022-06-30 15:11:19,130 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":75,"leaderDueMs":17749,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 75
+
+2022-06-30 15:11:37,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":76,"leaderDueMs":16758,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 76
+
+2022-06-30 15:11:54,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":77,"leaderDueMs":19192,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 77
+
+2022-06-30 15:12:13,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":78,"leaderDueMs":19525,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 78
+
+2022-06-30 15:12:33,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":79,"leaderDueMs":16999,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 79
+
+2022-06-30 15:12:50,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":80,"leaderDueMs":18714,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 80
+
+2022-06-30 15:13:09,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":81,"leaderDueMs":18015,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 81
+
+2022-06-30 15:13:28,131 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":82,"leaderDueMs":16372,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 82
+
+2022-06-30 15:13:44,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":83,"leaderDueMs":18477,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 83
+
+2022-06-30 15:14:03,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":84,"leaderDueMs":19650,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 84
+
+2022-06-30 15:14:23,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":85,"leaderDueMs":16767,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 85
+
+2022-06-30 15:14:40,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":86,"leaderDueMs":17074,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 86
+
+2022-06-30 15:14:57,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":87,"leaderDueMs":17821,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 87
+
+2022-06-30 15:15:15,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":88,"leaderDueMs":16030,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 88
+
+2022-06-30 15:15:32,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":89,"leaderDueMs":18764,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 89
+
+2022-06-30 15:15:51,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":90,"leaderDueMs":19900,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 90
+
+2022-06-30 15:16:11,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":91,"leaderDueMs":17986,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 91
+
+2022-06-30 15:16:29,149 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":92,"leaderDueMs":17062,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 92
+
+2022-06-30 15:16:46,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":93,"leaderDueMs":16531,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 93
+
+2022-06-30 15:17:03,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":94,"leaderDueMs":17077,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 94
+
+2022-06-30 15:17:21,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":95,"leaderDueMs":15796,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 95
+
+2022-06-30 15:17:37,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":96,"leaderDueMs":17382,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 96
+
+2022-06-30 15:17:54,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":97,"leaderDueMs":18733,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 97
+
+2022-06-30 15:18:13,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":98,"leaderDueMs":15470,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 98
+
+2022-06-30 15:18:29,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":99,"leaderDueMs":18791,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 99
+
+2022-06-30 15:18:48,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":100,"leaderDueMs":15176,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 100
+
+2022-06-30 15:19:03,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":101,"leaderDueMs":15268,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 101
+
+2022-06-30 15:19:19,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":102,"leaderDueMs":15133,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 102
+
+2022-06-30 15:19:34,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":103,"leaderDueMs":17688,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 103
+
+2022-06-30 15:19:52,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":104,"leaderDueMs":18782,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 104
+
+2022-06-30 15:20:11,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":105,"leaderDueMs":17854,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 105
+
+2022-06-30 15:20:29,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":106,"leaderDueMs":17448,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 106
+
+2022-06-30 15:20:47,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":107,"leaderDueMs":19742,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 107
+
+2022-06-30 15:21:07,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":108,"leaderDueMs":19637,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 108
+
+2022-06-30 15:21:27,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":109,"leaderDueMs":15919,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 109
+
+2022-06-30 15:21:43,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":110,"leaderDueMs":15022,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 110
+
+2022-06-30 15:21:58,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":111,"leaderDueMs":19602,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 111
+
+2022-06-30 15:22:18,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":112,"leaderDueMs":16866,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 112
+
+2022-06-30 15:22:35,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":113,"leaderDueMs":19025,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 113
+
+2022-06-30 15:22:55,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":114,"leaderDueMs":16203,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 114
+
+2022-06-30 15:23:11,630 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":115,"leaderDueMs":16998,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 115
+
+2022-06-30 15:23:28,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":116,"leaderDueMs":18976,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 116
+
+2022-06-30 15:23:47,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":117,"leaderDueMs":17389,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 117
+
+2022-06-30 15:24:05,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":118,"leaderDueMs":17907,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 118
+
+2022-06-30 15:24:23,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":119,"leaderDueMs":19748,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 119
+
+2022-06-30 15:24:43,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":120,"leaderDueMs":15854,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 120
+
+2022-06-30 15:24:59,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":121,"leaderDueMs":16257,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 121
+
+2022-06-30 15:25:15,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":122,"leaderDueMs":16412,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 122
+
+2022-06-30 15:25:32,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":123,"leaderDueMs":16119,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 123
+
+2022-06-30 15:25:48,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":124,"leaderDueMs":19728,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 124
+
+2022-06-30 15:26:08,627 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":125,"leaderDueMs":18040,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 125
+
+2022-06-30 15:26:27,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":126,"leaderDueMs":16930,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 126
+
+2022-06-30 15:26:44,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":127,"leaderDueMs":17546,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 127
+
+2022-06-30 15:27:02,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":128,"leaderDueMs":16838,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 128
+
+2022-06-30 15:27:19,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":129,"leaderDueMs":18160,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 129
+
+2022-06-30 15:27:37,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":130,"leaderDueMs":19051,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 130
+
+2022-06-30 15:27:57,127 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":131,"leaderDueMs":16052,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 131
+
+2022-06-30 15:28:13,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":132,"leaderDueMs":17304,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 132
+
+2022-06-30 15:28:31,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":133,"leaderDueMs":16475,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 133
+
+2022-06-30 15:28:47,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":134,"leaderDueMs":16605,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 134
+
+2022-06-30 15:29:04,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":135,"leaderDueMs":15513,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 135
+
+2022-06-30 15:29:20,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":136,"leaderDueMs":19081,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 136
+
+2022-06-30 15:29:30,416 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway
+
+2022-06-30 15:29:30,497 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway, term=137
+
+2022-06-30 15:29:30,510 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway
+
+2022-06-30 15:29:30,511 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway
+
+2022-06-30 15:29:30,624 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway
+
+2022-06-30 15:29:30,624 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway, term=137
+
+2022-06-30 15:29:31,200 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-gateway
+
+2022-06-30 15:29:47,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":137,"leaderDueMs":17072,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 137
+
+2022-06-30 15:29:59,728 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk
+
+2022-06-30 15:29:59,728 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk
+
+2022-06-30 15:29:59,728 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk
+
+2022-06-30 15:29:59,729 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk, term=138
+
+2022-06-30 15:29:59,729 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk
+
+2022-06-30 15:29:59,729 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk, term=138
+
+2022-06-30 15:29:59,729 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth
+
+2022-06-30 15:29:59,729 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-risk
+
+2022-06-30 15:29:59,729 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth
+
+2022-06-30 15:29:59,729 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth
+
+2022-06-30 15:29:59,729 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth, term=138
+
+2022-06-30 15:29:59,729 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth
+
+2022-06-30 15:29:59,729 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth, term=138
+
+2022-06-30 15:29:59,730 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-auth
+
+2022-06-30 15:29:59,730 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage
+
+2022-06-30 15:29:59,730 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage
+
+2022-06-30 15:29:59,730 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage
+
+2022-06-30 15:29:59,731 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage, term=138
+
+2022-06-30 15:29:59,732 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage
+
+2022-06-30 15:29:59,732 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage, term=138
+
+2022-06-30 15:29:59,732 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-manage
+
+2022-06-30 15:30:16,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":138,"leaderDueMs":16215,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 138
+
+2022-06-30 15:30:29,729 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller
+
+2022-06-30 15:30:29,729 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller
+
+2022-06-30 15:30:29,729 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller
+
+2022-06-30 15:30:29,730 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller, term=139
+
+2022-06-30 15:30:29,730 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller
+
+2022-06-30 15:30:29,730 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller, term=139
+
+2022-06-30 15:30:29,730 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-seller
+
+2022-06-30 15:30:29,730 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch
+
+2022-06-30 15:30:29,730 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch
+
+2022-06-30 15:30:29,730 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch
+
+2022-06-30 15:30:29,730 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch, term=139
+
+2022-06-30 15:30:29,730 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch
+
+2022-06-30 15:30:29,730 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch, term=139
+
+2022-06-30 15:30:29,731 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-elasticsearch
+
+2022-06-30 15:30:29,731 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss
+
+2022-06-30 15:30:29,731 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss
+
+2022-06-30 15:30:29,731 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss
+
+2022-06-30 15:30:29,731 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss, term=139
+
+2022-06-30 15:30:29,731 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement
+
+2022-06-30 15:30:29,732 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement, term=139
+
+2022-06-30 15:30:29,732 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart
+
+2022-06-30 15:30:29,732 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart, term=139
+
+2022-06-30 15:30:29,732 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss
+
+2022-06-30 15:30:29,733 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss, term=139
+
+2022-06-30 15:30:29,733 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement
+
+2022-06-30 15:30:29,733 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods
+
+2022-06-30 15:30:29,733 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement
+
+2022-06-30 15:30:29,733 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods, term=139
+
+2022-06-30 15:30:29,733 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user
+
+2022-06-30 15:30:29,734 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user, term=139
+
+2022-06-30 15:30:29,734 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement
+
+2022-06-30 15:30:29,734 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement, term=139
+
+2022-06-30 15:30:29,734 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart
+
+2022-06-30 15:30:29,734 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart
+
+2022-06-30 15:30:29,734 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart
+
+2022-06-30 15:30:29,734 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart, term=139
+
+2022-06-30 15:30:29,734 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-oss
+
+2022-06-30 15:30:29,734 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods
+
+2022-06-30 15:30:29,734 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods
+
+2022-06-30 15:30:29,734 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods
+
+2022-06-30 15:30:29,734 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods, term=139
+
+2022-06-30 15:30:29,735 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user
+
+2022-06-30 15:30:29,735 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user
+
+2022-06-30 15:30:29,735 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user
+
+2022-06-30 15:30:29,735 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user, term=139
+
+2022-06-30 15:30:29,735 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-settlement
+
+2022-06-30 15:30:29,735 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-cart
+
+2022-06-30 15:30:29,735 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-goods
+
+2022-06-30 15:30:29,735 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-user
+
+2022-06-30 15:30:29,735 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform
+
+2022-06-30 15:30:29,735 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform
+
+2022-06-30 15:30:29,735 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform
+
+2022-06-30 15:30:29,736 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform, term=139
+
+2022-06-30 15:30:29,736 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform
+
+2022-06-30 15:30:29,736 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform, term=139
+
+2022-06-30 15:30:29,736 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-platform
+
+2022-06-30 15:30:49,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":139,"leaderDueMs":17067,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 139
+
+2022-06-30 15:30:59,729 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity
+
+2022-06-30 15:30:59,729 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity
+
+2022-06-30 15:30:59,729 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity
+
+2022-06-30 15:30:59,730 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity, term=140
+
+2022-06-30 15:30:59,730 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity
+
+2022-06-30 15:30:59,730 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity, term=140
+
+2022-06-30 15:30:59,730 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order
+
+2022-06-30 15:30:59,730 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-activity
+
+2022-06-30 15:30:59,730 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order
+
+2022-06-30 15:30:59,730 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order
+
+2022-06-30 15:30:59,731 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order, term=140
+
+2022-06-30 15:30:59,731 INFO add task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job
+
+2022-06-30 15:30:59,731 INFO data removed, key=com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job, term=140
+
+2022-06-30 15:30:59,731 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order
+
+2022-06-30 15:30:59,731 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order, term=140
+
+2022-06-30 15:30:59,731 INFO remove task com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job
+
+2022-06-30 15:30:59,731 INFO [RAFT-NOTIFIER] datum is deleted, key: com.alibaba.nacos.naming.domains.meta.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job
+
+2022-06-30 15:30:59,731 INFO add task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job
+
+2022-06-30 15:30:59,731 INFO data removed, key=com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job, term=140
+
+2022-06-30 15:30:59,731 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-order
+
+2022-06-30 15:30:59,731 INFO remove task com.alibaba.nacos.naming.iplist.0759bc76-60b5-4f32-acd5-e5095cf2b93d##shop@@shop-job
+
+2022-06-30 15:31:16,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":140,"leaderDueMs":17353,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 140
+
+2022-06-30 15:31:33,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":141,"leaderDueMs":18662,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 141
+
+2022-06-30 15:31:52,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":142,"leaderDueMs":15137,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 142
+
+2022-06-30 15:32:08,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":143,"leaderDueMs":17750,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 143
+
+2022-06-30 15:32:26,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":144,"leaderDueMs":17413,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 144
+
+2022-06-30 15:32:43,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":145,"leaderDueMs":16362,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 145
+
+2022-06-30 15:33:00,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":146,"leaderDueMs":17081,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 146
+
+2022-06-30 15:33:17,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":147,"leaderDueMs":19543,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 147
+
+2022-06-30 15:33:37,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":148,"leaderDueMs":15116,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 148
+
+2022-06-30 15:33:53,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":149,"leaderDueMs":18531,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 149
+
+2022-06-30 15:34:12,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":150,"leaderDueMs":18404,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 150
+
+2022-06-30 15:34:30,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":151,"leaderDueMs":16096,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 151
+
+2022-06-30 15:34:47,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":152,"leaderDueMs":18885,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 152
+
+2022-06-30 15:35:06,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":153,"leaderDueMs":16266,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 153
+
+2022-06-30 15:35:22,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":154,"leaderDueMs":18279,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 154
+
+2022-06-30 15:35:41,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":155,"leaderDueMs":15904,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 155
+
+2022-06-30 15:35:57,133 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":156,"leaderDueMs":17155,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 156
+
+2022-06-30 15:36:14,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":157,"leaderDueMs":16674,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 157
+
+2022-06-30 15:36:31,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":158,"leaderDueMs":15000,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 158
+
+2022-06-30 15:36:46,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":159,"leaderDueMs":18206,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 159
+
+2022-06-30 15:37:05,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":160,"leaderDueMs":16594,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 160
+
+2022-06-30 15:37:22,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":161,"leaderDueMs":19880,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 161
+
+2022-06-30 15:37:42,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":162,"leaderDueMs":18784,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 162
+
+2022-06-30 15:38:01,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":163,"leaderDueMs":17858,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 163
+
+2022-06-30 15:38:19,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":164,"leaderDueMs":18219,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 164
+
+2022-06-30 15:38:37,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":165,"leaderDueMs":15547,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 165
+
+2022-06-30 15:38:53,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":166,"leaderDueMs":16717,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 166
+
+2022-06-30 15:39:10,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":167,"leaderDueMs":16546,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 167
+
+2022-06-30 15:39:27,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":168,"leaderDueMs":19425,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 168
+
+2022-06-30 15:39:47,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":169,"leaderDueMs":15588,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 169
+
+2022-06-30 15:40:03,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":170,"leaderDueMs":16453,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 170
+
+2022-06-30 15:40:19,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":171,"leaderDueMs":15913,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 171
+
+2022-06-30 15:40:35,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":172,"leaderDueMs":19026,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 172
+
+2022-06-30 15:40:55,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":173,"leaderDueMs":18482,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 173
+
+2022-06-30 15:41:13,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":174,"leaderDueMs":18796,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 174
+
+2022-06-30 15:41:32,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":175,"leaderDueMs":19396,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 175
+
+2022-06-30 15:41:52,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":176,"leaderDueMs":16678,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 176
+
+2022-06-30 15:42:09,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":177,"leaderDueMs":15634,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 177
+
+2022-06-30 15:42:25,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":178,"leaderDueMs":15564,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 178
+
+2022-06-30 15:42:41,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":179,"leaderDueMs":19763,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 179
+
+2022-06-30 15:43:01,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":180,"leaderDueMs":17474,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 180
+
+2022-06-30 15:43:18,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":181,"leaderDueMs":16763,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 181
+
+2022-06-30 15:43:35,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":182,"leaderDueMs":17963,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 182
+
+2022-06-30 15:43:53,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":183,"leaderDueMs":18377,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 183
+
+2022-06-30 15:44:12,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":184,"leaderDueMs":17081,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 184
+
+2022-06-30 15:44:29,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":185,"leaderDueMs":19153,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 185
+
+2022-06-30 15:44:49,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":186,"leaderDueMs":17248,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 186
+
+2022-06-30 15:45:06,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":187,"leaderDueMs":15214,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 187
+
+2022-06-30 15:45:22,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":188,"leaderDueMs":17499,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 188
+
+2022-06-30 15:45:39,646 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":189,"leaderDueMs":19919,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 189
+
+2022-06-30 15:45:59,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":190,"leaderDueMs":18630,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 190
+
+2022-06-30 15:46:18,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":191,"leaderDueMs":15519,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 191
+
+2022-06-30 15:46:34,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":192,"leaderDueMs":18445,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 192
+
+2022-06-30 15:46:53,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":193,"leaderDueMs":16172,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 193
+
+2022-06-30 15:47:09,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":194,"leaderDueMs":16224,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 194
+
+2022-06-30 15:47:26,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":195,"leaderDueMs":19796,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 195
+
+2022-06-30 15:47:46,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":196,"leaderDueMs":19367,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 196
+
+2022-06-30 15:48:05,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":197,"leaderDueMs":15027,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 197
+
+2022-06-30 15:48:21,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":198,"leaderDueMs":16339,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 198
+
+2022-06-30 15:48:37,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":199,"leaderDueMs":18488,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 199
+
+2022-06-30 15:48:56,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":200,"leaderDueMs":17340,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 200
+
+2022-06-30 15:49:13,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":201,"leaderDueMs":18984,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 201
+
+2022-06-30 15:49:32,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":202,"leaderDueMs":18546,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 202
+
+2022-06-30 15:49:51,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":203,"leaderDueMs":16326,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 203
+
+2022-06-30 15:50:08,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":204,"leaderDueMs":16401,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 204
+
+2022-06-30 15:50:24,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":205,"leaderDueMs":17082,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 205
+
+2022-06-30 15:50:42,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":206,"leaderDueMs":18798,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 206
+
+2022-06-30 15:51:01,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":207,"leaderDueMs":18838,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 207
+
+2022-06-30 15:51:20,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":208,"leaderDueMs":19444,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 208
+
+2022-06-30 15:51:39,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":209,"leaderDueMs":18589,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 209
+
+2022-06-30 15:51:58,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":210,"leaderDueMs":16310,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 210
+
+2022-06-30 15:52:15,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":211,"leaderDueMs":19877,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 211
+
+2022-06-30 15:52:35,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":212,"leaderDueMs":19422,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 212
+
+2022-06-30 15:52:54,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":213,"leaderDueMs":18735,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 213
+
+2022-06-30 15:53:13,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":214,"leaderDueMs":16065,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 214
+
+2022-06-30 15:53:30,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":215,"leaderDueMs":19402,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 215
+
+2022-06-30 15:53:49,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":216,"leaderDueMs":17459,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 216
+
+2022-06-30 15:54:07,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":217,"leaderDueMs":15112,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 217
+
+2022-06-30 15:54:22,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":218,"leaderDueMs":16539,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 218
+
+2022-06-30 15:54:39,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":219,"leaderDueMs":19923,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 219
+
+2022-06-30 15:54:59,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":220,"leaderDueMs":16431,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 220
+
+2022-06-30 15:55:16,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":221,"leaderDueMs":18944,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 221
+
+2022-06-30 15:55:35,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":222,"leaderDueMs":17743,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 222
+
+2022-06-30 15:55:53,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":223,"leaderDueMs":18175,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 223
+
+2022-06-30 15:56:11,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":224,"leaderDueMs":19740,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 224
+
+2022-06-30 15:56:31,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":225,"leaderDueMs":17385,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 225
+
+2022-06-30 15:56:49,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":226,"leaderDueMs":17694,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 226
+
+2022-06-30 15:57:07,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":227,"leaderDueMs":15622,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 227
+
+2022-06-30 15:57:23,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":228,"leaderDueMs":16277,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 228
+
+2022-06-30 15:57:39,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":229,"leaderDueMs":16341,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 229
+
+2022-06-30 15:57:56,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":230,"leaderDueMs":16240,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 230
+
+2022-06-30 15:58:12,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":231,"leaderDueMs":17314,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 231
+
+2022-06-30 15:58:30,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":232,"leaderDueMs":19023,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 232
+
+2022-06-30 15:58:49,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":233,"leaderDueMs":18120,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 233
+
+2022-06-30 15:59:08,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":234,"leaderDueMs":18522,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 234
+
+2022-06-30 15:59:27,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":235,"leaderDueMs":18498,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 235
+
+2022-06-30 15:59:45,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":236,"leaderDueMs":16360,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 236
+
+2022-06-30 16:00:02,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":237,"leaderDueMs":19369,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 237
+
+2022-06-30 16:00:21,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":238,"leaderDueMs":16442,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 238
+
+2022-06-30 16:00:38,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":239,"leaderDueMs":17116,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 239
+
+2022-06-30 16:00:55,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":240,"leaderDueMs":16907,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 240
+
+2022-06-30 16:01:12,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":241,"leaderDueMs":17335,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 241
+
+2022-06-30 16:01:30,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":242,"leaderDueMs":15203,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 242
+
+2022-06-30 16:01:45,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":243,"leaderDueMs":17990,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 243
+
+2022-06-30 16:02:03,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":244,"leaderDueMs":15620,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 244
+
+2022-06-30 16:02:19,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":245,"leaderDueMs":16493,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 245
+
+2022-06-30 16:02:36,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":246,"leaderDueMs":18379,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 246
+
+2022-06-30 16:02:54,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":247,"leaderDueMs":16078,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 247
+
+2022-06-30 16:03:11,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":248,"leaderDueMs":15984,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 248
+
+2022-06-30 16:03:27,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":249,"leaderDueMs":17974,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 249
+
+2022-06-30 16:03:45,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":250,"leaderDueMs":18986,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 250
+
+2022-06-30 16:04:04,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":251,"leaderDueMs":16619,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 251
+
+2022-06-30 16:04:21,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":252,"leaderDueMs":15334,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 252
+
+2022-06-30 16:04:36,630 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":253,"leaderDueMs":16016,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 253
+
+2022-06-30 16:04:53,131 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":254,"leaderDueMs":15711,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 254
+
+2022-06-30 16:05:09,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":255,"leaderDueMs":19419,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 255
+
+2022-06-30 16:05:28,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":256,"leaderDueMs":17748,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 256
+
+2022-06-30 16:05:46,630 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":257,"leaderDueMs":18888,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 257
+
+2022-06-30 16:06:05,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":258,"leaderDueMs":17801,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 258
+
+2022-06-30 16:06:23,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":259,"leaderDueMs":17762,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 259
+
+2022-06-30 16:06:41,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":260,"leaderDueMs":16495,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 260
+
+2022-06-30 16:06:58,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":261,"leaderDueMs":16332,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 261
+
+2022-06-30 16:07:14,635 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":262,"leaderDueMs":19121,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 262
+
+2022-06-30 16:07:34,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":263,"leaderDueMs":19662,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 263
+
+2022-06-30 16:07:54,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":264,"leaderDueMs":15699,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 264
+
+2022-06-30 16:08:10,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":265,"leaderDueMs":16607,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 265
+
+2022-06-30 16:08:27,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":266,"leaderDueMs":16515,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 266
+
+2022-06-30 16:08:44,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":267,"leaderDueMs":15258,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 267
+
+2022-06-30 16:08:59,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":268,"leaderDueMs":18792,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 268
+
+2022-06-30 16:09:18,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":269,"leaderDueMs":18636,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 269
+
+2022-06-30 16:09:37,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":270,"leaderDueMs":19944,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 270
+
+2022-06-30 16:09:57,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":271,"leaderDueMs":19141,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 271
+
+2022-06-30 16:10:17,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":272,"leaderDueMs":19264,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 272
+
+2022-06-30 16:10:36,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":273,"leaderDueMs":18578,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 273
+
+2022-06-30 16:10:55,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":274,"leaderDueMs":16825,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 274
+
+2022-06-30 16:11:12,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":275,"leaderDueMs":15352,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 275
+
+2022-06-30 16:11:28,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":276,"leaderDueMs":17460,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 276
+
+2022-06-30 16:11:45,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":277,"leaderDueMs":15419,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 277
+
+2022-06-30 16:12:01,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":278,"leaderDueMs":15616,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 278
+
+2022-06-30 16:12:17,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":279,"leaderDueMs":15561,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 279
+
+2022-06-30 16:12:33,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":280,"leaderDueMs":15450,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 280
+
+2022-06-30 16:12:48,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":281,"leaderDueMs":16788,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 281
+
+2022-06-30 16:13:05,627 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":282,"leaderDueMs":18977,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 282
+
+2022-06-30 16:13:24,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":283,"leaderDueMs":17704,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 283
+
+2022-06-30 16:13:42,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":284,"leaderDueMs":15508,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 284
+
+2022-06-30 16:13:58,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":285,"leaderDueMs":19271,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 285
+
+2022-06-30 16:14:18,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":286,"leaderDueMs":19773,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 286
+
+2022-06-30 16:14:38,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":287,"leaderDueMs":17954,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 287
+
+2022-06-30 16:14:56,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":288,"leaderDueMs":16355,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 288
+
+2022-06-30 16:15:12,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":289,"leaderDueMs":16961,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 289
+
+2022-06-30 16:15:29,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":290,"leaderDueMs":18764,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 290
+
+2022-06-30 16:15:48,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":291,"leaderDueMs":18451,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 291
+
+2022-06-30 16:16:07,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":292,"leaderDueMs":15122,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 292
+
+2022-06-30 16:16:22,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":293,"leaderDueMs":17820,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 293
+
+2022-06-30 16:16:40,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":294,"leaderDueMs":16086,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 294
+
+2022-06-30 16:16:57,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":295,"leaderDueMs":16659,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 295
+
+2022-06-30 16:17:14,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":296,"leaderDueMs":16951,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 296
+
+2022-06-30 16:17:31,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":297,"leaderDueMs":19744,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 297
+
+2022-06-30 16:17:51,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":298,"leaderDueMs":19527,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 298
+
+2022-06-30 16:18:11,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":299,"leaderDueMs":19566,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 299
+
+2022-06-30 16:18:31,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":300,"leaderDueMs":18230,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 300
+
+2022-06-30 16:18:49,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":301,"leaderDueMs":16839,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 301
+
+2022-06-30 16:19:06,630 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":302,"leaderDueMs":16156,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 302
+
+2022-06-30 16:19:23,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":303,"leaderDueMs":17183,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 303
+
+2022-06-30 16:19:40,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":304,"leaderDueMs":18761,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 304
+
+2022-06-30 16:19:59,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":305,"leaderDueMs":16563,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 305
+
+2022-06-30 16:20:16,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":306,"leaderDueMs":15096,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 306
+
+2022-06-30 16:20:32,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":307,"leaderDueMs":15000,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 307
+
+2022-06-30 16:20:47,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":308,"leaderDueMs":17524,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 308
+
+2022-06-30 16:21:05,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":309,"leaderDueMs":19826,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 309
+
+2022-06-30 16:21:25,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":310,"leaderDueMs":18064,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 310
+
+2022-06-30 16:21:43,631 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":311,"leaderDueMs":19056,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 311
+
+2022-06-30 16:22:03,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":312,"leaderDueMs":16348,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 312
+
+2022-06-30 16:22:19,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":313,"leaderDueMs":19068,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 313
+
+2022-06-30 16:22:39,129 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":314,"leaderDueMs":15897,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 314
+
+2022-06-30 16:22:55,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":315,"leaderDueMs":15343,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 315
+
+2022-06-30 16:23:10,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":316,"leaderDueMs":15445,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 316
+
+2022-06-30 16:23:26,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":317,"leaderDueMs":18618,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 317
+
+2022-06-30 16:23:45,130 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":318,"leaderDueMs":18390,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 318
+
+2022-06-30 16:24:03,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":319,"leaderDueMs":17046,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 319
+
+2022-06-30 16:24:21,128 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":320,"leaderDueMs":19741,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 320
+
+2022-06-30 16:24:41,130 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":321,"leaderDueMs":17357,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 321
+
+2022-06-30 16:24:58,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":322,"leaderDueMs":16669,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 322
+
+2022-06-30 16:25:15,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":323,"leaderDueMs":18997,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 323
+
+2022-06-30 16:25:34,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":324,"leaderDueMs":19901,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 324
+
+2022-06-30 16:25:54,630 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":325,"leaderDueMs":15820,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 325
+
+2022-06-30 16:26:10,629 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":326,"leaderDueMs":16804,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 326
+
+2022-06-30 16:26:27,628 INFO leader timeout, start voting,leader: {"ip":"10.12.156.39:8848","voteFor":"10.12.156.39:8848","term":327,"leaderDueMs":18347,"heartbeatDueMs":5000,"state":"CANDIDATE"}, term: 327
+

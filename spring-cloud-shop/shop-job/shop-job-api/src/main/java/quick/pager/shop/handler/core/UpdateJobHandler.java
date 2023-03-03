@@ -19,29 +19,29 @@ import quick.pager.shop.trigger.JobTrigger;
  */
 @Slf4j
 public class UpdateJobHandler extends AbstractHandler {
-    @Override
-    public boolean support(final JobEnums jobEnums) {
-        return JobEnums.UPDATE.equals(jobEnums);
+  @Override
+  public boolean support(final JobEnums jobEnums) {
+    return JobEnums.UPDATE.equals(jobEnums);
+  }
+
+  @Override
+  public void execute(final String jobName, final String jobGroup) {
+    log.info("新增job任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
+
+    // 1. 获取数据库执行的job任务
+    JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
+    JobInfo jobInfo = new JobInfo();
+    jobInfo.setJobName(jobName);
+    jobInfo.setJobGroup(jobGroup);
+    jobInfo.setJobStatus(JobStatusEnums.NORMAL.getCode());
+    JobInfo selectJobInfo = jobInfoMapper.selectOne(new QueryWrapper<>(jobInfo));
+    Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
+    // 2. 获取数据库执行的job任务
+    try {
+      JobTrigger.updateJob(scheduler, selectJobInfo);
+    } catch (SchedulerException e) {
+      log.error("更新定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
     }
 
-    @Override
-    public void execute(final String jobName, final String jobGroup) {
-        log.info("新增job任务 jobName = {}, jobGroup = {}", jobName, jobGroup);
-
-        // 1. 获取数据库执行的job任务
-        JobInfoMapper jobInfoMapper = ShopSpringContext.getBean(JobInfoMapper.class);
-        JobInfo jobInfo = new JobInfo();
-        jobInfo.setJobName(jobName);
-        jobInfo.setJobGroup(jobGroup);
-        jobInfo.setJobStatus(JobStatusEnums.NORMAL.getCode());
-        JobInfo selectJobInfo = jobInfoMapper.selectOne(new QueryWrapper<>(jobInfo));
-        Scheduler scheduler = ShopSpringContext.getBean(Scheduler.class);
-        // 2. 获取数据库执行的job任务
-        try {
-            JobTrigger.updateJob(scheduler, selectJobInfo);
-        } catch (SchedulerException e) {
-            log.error("更新定时任务失败 jobName = {}, jobGroup = {}", jobName, jobGroup);
-        }
-
-    }
+  }
 }

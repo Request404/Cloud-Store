@@ -20,21 +20,21 @@ import quick.pager.shop.properties.QiniuProperties;
 @EnableConfigurationProperties(QiniuProperties.class)
 public class QiniuAutoConfiguration {
 
-    @Autowired
-    private QiniuProperties qiNiuProperties;
+  @Autowired
+  private QiniuProperties qiNiuProperties;
 
-    @Bean
-    public Auth auth() {
-        return Auth.create(qiNiuProperties.getAccessKey(), qiNiuProperties.getSecretKey());
-    }
+  @Bean
+  public Auth auth() {
+    return Auth.create(qiNiuProperties.getAccessKey(), qiNiuProperties.getSecretKey());
+  }
 
-    @Bean
-    public com.qiniu.storage.Configuration configuration() {
-        return new com.qiniu.storage.Configuration(Region.autoRegion());
-    }
+  @Bean
+  public com.qiniu.storage.Configuration configuration() {
+    return new com.qiniu.storage.Configuration(Region.autoRegion());
+  }
 
-    @Bean
-    public UploadManager uploadManager(com.qiniu.storage.Configuration configuration) {
-        return new UploadManager(configuration);
-    }
+  @Bean
+  public UploadManager uploadManager(com.qiniu.storage.Configuration configuration) {
+    return new UploadManager(configuration);
+  }
 }

@@ -18,17 +18,17 @@ import quick.pager.shop.utils.DateUtils;
 public class FeedbackServiceImpl extends ServiceImpl<FeedbackMapper, Feedback> implements FeedbackService {
 
 
-    @Override
-    public Response<Long> create(final Long userId, final FeedbackRequest param) {
+  @Override
+  public Response<Long> create(final Long userId, final FeedbackRequest param) {
 
-        Feedback feedback = new Feedback();
-        feedback.setUserId(userId);
-        feedback.setContent(param.getContent());
-        feedback.setImages(param.getImages());
-        feedback.setDeleteStatus(Boolean.FALSE);
-        feedback.setCreateTime(DateUtils.dateTime());
-        feedback.setUpdateTime(DateUtils.dateTime());
-        Assert.isTrue(this.baseMapper.insert(feedback) > 0, () -> "意见反馈提交失败");
-        return Response.toResponse(feedback.getId());
-    }
+    Feedback feedback = new Feedback();
+    feedback.setUserId(userId);
+    feedback.setContent(param.getContent());
+    feedback.setImages(param.getImages());
+    feedback.setDeleteStatus(Boolean.FALSE);
+    feedback.setCreateTime(DateUtils.dateTime());
+    feedback.setUpdateTime(DateUtils.dateTime());
+    Assert.isTrue(this.baseMapper.insert(feedback) > 0, () -> "意见反馈提交失败");
+    return Response.toResponse(feedback.getId());
+  }
 }

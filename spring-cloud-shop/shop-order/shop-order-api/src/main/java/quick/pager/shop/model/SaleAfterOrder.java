@@ -15,5 +15,5 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("t_sale_after_order")
 public class SaleAfterOrder extends Model {
-    private static final long serialVersionUID = 3997861243689239967L;
+  private static final long serialVersionUID = 3997861243689239967L;
 }

@@ -12,5 +12,5 @@ import quick.pager.shop.user.request.Request;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class SMSTemplateSaveRequest extends Request {
-    private static final long serialVersionUID = -6298599570494118858L;
+  private static final long serialVersionUID = -6298599570494118858L;
 }

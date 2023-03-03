@@ -11,5 +11,5 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class NativeMessageResponse extends BasicResponse {
-    private static final long serialVersionUID = -8645225790778661418L;
+  private static final long serialVersionUID = -8645225790778661418L;
 }

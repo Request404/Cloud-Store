@@ -14,8 +14,8 @@ import quick.pager.shop.activity.client.AssembleClient;
 @Component
 public class FightGroupClientFallbackFactory implements FallbackFactory<AssembleClient> {
 
-    @Override
-    public AssembleClient create(Throwable cause) {
-        return null;
-    }
+  @Override
+  public AssembleClient create(Throwable cause) {
+    return null;
+  }
 }

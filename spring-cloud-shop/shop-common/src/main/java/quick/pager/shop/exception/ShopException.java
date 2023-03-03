@@ -12,9 +12,9 @@ import lombok.EqualsAndHashCode;
 @Data
 public class ShopException extends RuntimeException {
 
-    private static final long serialVersionUID = 7562952216658710834L;
+  private static final long serialVersionUID = 7562952216658710834L;
 
-    public ShopException(String message) {
-        super(message);
-    }
+  public ShopException(String message) {
+    super(message);
+  }
 }

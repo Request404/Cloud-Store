@@ -15,12 +15,12 @@ import quick.pager.shop.user.response.Response;
 @FeignClient(value = ConstantsClient.GOODS_CLIENT, path = ConstantsClient.GOODS)
 public interface GoodsTestJobClient {
 
-    /**
-     * 测试访问服务
-     *
-     * @param params
-     * @return
-     */
-    @RequestMapping(value = "goodsTestJob", method = RequestMethod.POST)
-    Response<String> goodsTestJob(@RequestBody final String params);
+  /**
+   * 测试访问服务
+   *
+   * @param params
+   * @return
+   */
+  @RequestMapping(value = "goodsTestJob", method = RequestMethod.POST)
+  Response<String> goodsTestJob(@RequestBody final String params);
 }

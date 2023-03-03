@@ -17,13 +17,13 @@ import quick.pager.shop.user.response.UserAccountResponse;
 @FeignClient(value = ConstantsClient.USER_CLIENT, path = ConstantsClient.USER, fallbackFactory = UserAccountFallbackFactory.class)
 public interface UserAccountClient {
 
-    /**
-     * 根据用户主键查询用户账户信息
-     *
-     * @param userId 用户主键
-     * @return 户账户信息
-     */
-    @RequestMapping(value = "/account/{userId}", method = RequestMethod.POST)
-    Response<UserAccountResponse> account(@PathVariable("userId") Long userId);
+  /**
+   * 根据用户主键查询用户账户信息
+   *
+   * @param userId 用户主键
+   * @return 户账户信息
+   */
+  @RequestMapping(value = "/account/{userId}", method = RequestMethod.POST)
+  Response<UserAccountResponse> account(@PathVariable("userId") Long userId);
 
 }

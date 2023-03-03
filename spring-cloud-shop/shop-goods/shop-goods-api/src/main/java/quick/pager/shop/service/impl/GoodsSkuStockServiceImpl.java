@@ -9,8 +9,8 @@ import quick.pager.shop.service.GoodsSkuStockService;
 /**
  * <p>
  * 商品库存表
-库存单独抽取出来
-用于后期扩展使用 服务实现类
+ * 库存单独抽取出来
+ * 用于后期扩展使用 服务实现类
  * </p>
  *
  * @author request404

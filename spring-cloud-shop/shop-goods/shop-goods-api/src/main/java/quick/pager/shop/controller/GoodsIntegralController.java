@@ -15,11 +15,11 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(Constants.Module.GOODS)
 public class GoodsIntegralController {
 
-    /**
-     * 积分商城列表
-     */
-    @RequestMapping(value = "/integral/list", method = RequestMethod.POST)
-    public Response goodsIntegral() {
-        return null;
-    }
+  /**
+   * 积分商城列表
+   */
+  @RequestMapping(value = "/integral/list", method = RequestMethod.POST)
+  public Response goodsIntegral() {
+    return null;
+  }
 }

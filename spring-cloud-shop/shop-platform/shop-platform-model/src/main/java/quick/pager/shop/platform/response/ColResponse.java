@@ -10,8 +10,8 @@ import lombok.Data;
 @Data
 public class ColResponse {
 
-    /**
-     * 默认一行两列
-     */
-    private Integer span = 12;
+  /**
+   * 默认一行两列
+   */
+  private Integer span = 12;
 }

@@ -14,11 +14,11 @@ import org.springframework.context.annotation.Configuration;
 @ConditionalOnClass(PaginationInterceptor.class)
 public class PaginationInterceptorConfiguration {
 
-    /**
-     * 分页插件
-     */
-    @Bean
-    public PaginationInterceptor paginationInterceptor() {
-        return new PaginationInterceptor();
-    }
+  /**
+   * 分页插件
+   */
+  @Bean
+  public PaginationInterceptor paginationInterceptor() {
+    return new PaginationInterceptor();
+  }
 }

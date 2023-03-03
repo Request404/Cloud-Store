@@ -7,12 +7,12 @@ package quick.pager.shop.elasticsearch.field;
  */
 public interface GoodsField {
 
-    /**
-     * 商品金额
-     */
-    String SKU_AMOUNT_KEY = "skuAmount";
-    /**
-     * 创建时间
-     */
-    String ORDER_TIME_KEY = "createTime";
+  /**
+   * 商品金额
+   */
+  String SKU_AMOUNT_KEY = "skuAmount";
+  /**
+   * 创建时间
+   */
+  String ORDER_TIME_KEY = "createTime";
 }

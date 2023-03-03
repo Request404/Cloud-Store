@@ -14,15 +14,15 @@ import quick.pager.shop.model.Model;
 @Data
 @TableName("t_role_menu")
 public class RoleMenu extends Model {
-    private static final long serialVersionUID = 5296292799500727996L;
-    /**
-     * 角色主键
-     */
-    private Long roleId;
-    /**
-     * 权限编码
-     */
-    private String permission;
+  private static final long serialVersionUID = 5296292799500727996L;
+  /**
+   * 角色主键
+   */
+  private Long roleId;
+  /**
+   * 权限编码
+   */
+  private String permission;
 
 
 }

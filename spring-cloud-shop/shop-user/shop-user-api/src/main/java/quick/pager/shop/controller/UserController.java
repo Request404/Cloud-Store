@@ -1,6 +1,7 @@
 package quick.pager.shop.controller;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,24 +19,24 @@ import quick.pager.shop.user.response.UserProfileResponse;
 @RequestMapping(ConstantsClient.USER)
 public class UserController implements UserClient {
 
-    @Autowired
-    private UserService userService;
+  @Autowired
+  private UserService userService;
 
-    @Override
-    @PostMapping("/profile/{userId}")
-    public Response<UserProfileResponse> profile(@PathVariable("userId") Long userId) {
-        return userService.profile(userId);
-    }
+  @Override
+  @PostMapping("/profile/{userId}")
+  public Response<UserProfileResponse> profile(@PathVariable("userId") Long userId) {
+    return userService.profile(userId);
+  }
 
-    @Override
-    @PostMapping("/profile/{phone}/info")
-    public Response<UserProfileResponse> profileInfo(@PathVariable("phone") String phone) {
-        return userService.profileInfo(phone);
-    }
+  @Override
+  @PostMapping("/profile/{phone}/info")
+  public Response<UserProfileResponse> profileInfo(@PathVariable("phone") String phone) {
+    return userService.profileInfo(phone);
+  }
 
-    @Override
-    @PostMapping("/batch/profile")
-    public Response<List<UserProfileResponse>> batchProfile(@RequestBody UserRequest request) {
-        return userService.batchProfile(request);
-    }
+  @Override
+  @PostMapping("/batch/profile")
+  public Response<List<UserProfileResponse>> batchProfile(@RequestBody UserRequest request) {
+    return userService.batchProfile(request);
+  }
 }

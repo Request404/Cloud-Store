@@ -10,7 +10,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
  */
 public class AuthUtils {
 
-    public static Authentication getPrincipal() {
-        return SecurityContextHolder.getContext().getAuthentication();
-    }
+  public static Authentication getPrincipal() {
+    return SecurityContextHolder.getContext().getAuthentication();
+  }
 }

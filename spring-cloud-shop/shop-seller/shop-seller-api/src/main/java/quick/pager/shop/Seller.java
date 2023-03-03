@@ -14,9 +14,9 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 public class Seller {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Seller.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(Seller.class, args);
+  }
 
 }
 

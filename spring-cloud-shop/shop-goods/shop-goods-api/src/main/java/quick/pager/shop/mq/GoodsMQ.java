@@ -5,8 +5,8 @@ import org.springframework.messaging.MessageChannel;
 
 public interface GoodsMQ {
 
-    String GREETING = "helloTest";
+  String GREETING = "helloTest";
 
-    @Output(GREETING)
-    MessageChannel greeting();
+  @Output(GREETING)
+  MessageChannel greeting();
 }

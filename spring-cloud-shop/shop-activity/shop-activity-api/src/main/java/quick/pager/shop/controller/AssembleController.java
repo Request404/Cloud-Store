@@ -20,16 +20,16 @@ import quick.pager.shop.service.AssembleService;
 @RestController
 @RequestMapping(ConstantsClient.ACTIVITY)
 public class AssembleController {
-    @Autowired
-    private AssembleService assembleService;
+  @Autowired
+  private AssembleService assembleService;
 
-    /**
-     * 拼团活动商品详情
-     */
-    @PostMapping("/assemble/{activityId}/goods")
-    public Response assembleGoodsInfo(@PathVariable("activityId") Long activityId) {
-        return null;
-    }
+  /**
+   * 拼团活动商品详情
+   */
+  @PostMapping("/assemble/{activityId}/goods")
+  public Response assembleGoodsInfo(@PathVariable("activityId") Long activityId) {
+    return null;
+  }
 
 //    /**
 //     * 拼团规则的商品新增修改
@@ -39,14 +39,14 @@ public class AssembleController {
 //        return assembleService.assembleGoods(request);
 //    }
 
-    /**
-     * 参与拼团的成员
-     *
-     * @param request 请求参数
-     */
-    @PostMapping("/assemble/members")
-    public Response members(@RequestBody AssembleMemberPageRequest request) {
-        return assembleService.members(request);
-    }
+  /**
+   * 参与拼团的成员
+   *
+   * @param request 请求参数
+   */
+  @PostMapping("/assemble/members")
+  public Response members(@RequestBody AssembleMemberPageRequest request) {
+    return assembleService.members(request);
+  }
 
 }

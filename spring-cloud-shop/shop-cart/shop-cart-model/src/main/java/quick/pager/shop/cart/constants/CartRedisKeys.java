@@ -7,8 +7,8 @@ package quick.pager.shop.cart.constants;
  */
 public interface CartRedisKeys {
 
-    /**
-     * 购物车添加前缀
-     */
-    String APP_GOODS_CART_ADD_PREFIX = ":app:goods_cart:create:";
+  /**
+   * 购物车添加前缀
+   */
+  String APP_GOODS_CART_ADD_PREFIX = ":app:goods_cart:create:";
 }

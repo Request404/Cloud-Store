@@ -12,9 +12,9 @@ import quick.pager.shop.model.ExchangeActivityMember;
 @Mapper
 public interface ExchangeActivityMembersMapper extends BaseMapper<ExchangeActivityMember> {
 
-    /**
-     * 换购记录查询
-     */
+  /**
+   * 换购记录查询
+   */
 //    List<ExchangeMemberResponse> select(@Param("activityId") Long activityId, @Param("phone") String phone, @Param("ruleId") Long ruleId);
 //    IPage<ExchangeMemberDTO> select(IPage<ExchangeMemberDTO> page, @Param(Constants.WRAPPER) QueryWrapper<ExchangeMemberDTO> qw);
 }

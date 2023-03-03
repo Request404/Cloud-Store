@@ -21,19 +21,19 @@ import quick.pager.shop.utils.Assert;
 @RequestMapping(ConstantsClient.GOODS)
 public class AppGoodsSkuController {
 
-    @Autowired
-    private AppGoodsSkuService appGoodsSkuService;
+  @Autowired
+  private AppGoodsSkuService appGoodsSkuService;
 
-    /**
-     * 商品检索
-     *
-     * @param param 请求参数
-     */
-    @PostMapping("/app/sku/search")
-    public Response search(@RequestBody GoodsSearchParam param) {
+  /**
+   * 商品检索
+   *
+   * @param param 请求参数
+   */
+  @PostMapping("/app/sku/search")
+  public Response search(@RequestBody GoodsSearchParam param) {
 
-        Assert.isTrue(StringUtils.isNotEmpty(param.getKeyword()), () -> "请输入搜索关键字");
-        return appGoodsSkuService.querySku(param);
-    }
+    Assert.isTrue(StringUtils.isNotEmpty(param.getKeyword()), () -> "请输入搜索关键字");
+    return appGoodsSkuService.querySku(param);
+  }
 
 }

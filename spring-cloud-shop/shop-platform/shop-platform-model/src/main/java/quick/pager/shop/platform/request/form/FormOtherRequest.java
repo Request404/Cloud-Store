@@ -12,13 +12,13 @@ import quick.pager.shop.user.request.Request;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class FormOtherRequest extends Request {
-    private static final long serialVersionUID = 7282045937427025651L;
-    /**
-     * 表单模型
-     */
-    private String bizType;
-    /**
-     * 表单模型名称
-     */
-    private String name;
+  private static final long serialVersionUID = 7282045937427025651L;
+  /**
+   * 表单模型
+   */
+  private String bizType;
+  /**
+   * 表单模型名称
+   */
+  private String name;
 }

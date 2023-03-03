@@ -16,13 +16,13 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(Constants.Module.ORDER)
 public class AppSellerOrderController {
 
-    /**
-     * 商户订单列表
-     *
-     * @return
-     */
-    @GetMapping("/app/seller/{sellerId}/list")
-    public Response list(@PathVariable("sellerId") Long sellerId) {
-        return null;
-    }
+  /**
+   * 商户订单列表
+   *
+   * @return
+   */
+  @GetMapping("/app/seller/{sellerId}/list")
+  public Response list(@PathVariable("sellerId") Long sellerId) {
+    return null;
+  }
 }

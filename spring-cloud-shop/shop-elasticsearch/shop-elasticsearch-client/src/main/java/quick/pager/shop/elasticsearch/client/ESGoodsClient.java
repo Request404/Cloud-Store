@@ -1,6 +1,7 @@
 package quick.pager.shop.elasticsearch.client;
 
 import java.util.List;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,11 +20,11 @@ import quick.pager.shop.user.response.Response;
 @FeignClient(value = ConstantsClient.ELASTICSEARCH_CLIENT, path = ConstantsClient.ELASTICSEARCH)
 public interface ESGoodsClient {
 
-    /**
-     * 查询商品
-     *
-     * @param request 请求参数
-     */
-    @RequestMapping(value = "/goods/page", method = RequestMethod.POST)
-    public Response<List<ESGoodsResponse>> queryPage(@RequestBody final ESGoodsPageRequest request);
+  /**
+   * 查询商品
+   *
+   * @param request 请求参数
+   */
+  @RequestMapping(value = "/goods/page", method = RequestMethod.POST)
+  public Response<List<ESGoodsResponse>> queryPage(@RequestBody final ESGoodsPageRequest request);
 }

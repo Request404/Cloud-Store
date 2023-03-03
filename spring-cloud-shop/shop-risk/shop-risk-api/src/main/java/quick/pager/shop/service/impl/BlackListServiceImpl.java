@@ -1,9 +1,11 @@
 package quick.pager.shop.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -24,28 +26,28 @@ import quick.pager.shop.utils.DateUtils;
 public class BlackListServiceImpl extends ServiceImpl<BlacklistMapper, BlackList> implements BlacklistService {
 
 
-    @Override
-    public Response<List<WhiteBlacklistResponse>> queryPage(final WhiteBlacklistPageRequest request) {
+  @Override
+  public Response<List<WhiteBlacklistResponse>> queryPage(final WhiteBlacklistPageRequest request) {
 
-        LambdaQueryWrapper<BlackList> wrapper = new LambdaQueryWrapper<>();
-        if (StringUtils.isNotEmpty(request.getPhone())) {
-            wrapper.eq(BlackList::getPhone, request.getPhone());
-        }
-        if (Objects.nonNull(request.getState())) {
-            wrapper.eq(BlackList::getState, request.getState());
-        }
-        if (CollectionUtils.isNotEmpty(request.getRange())) {
-            wrapper.ge(BlackList::getUpdateTime, request.getRange().get(IConsts.ZERO));
-            wrapper.le(BlackList::getUpdateTime, request.getRange().get(IConsts.ONE));
-        }
-
-        Response<List<BlackList>> page = this.toPage(request.getPage(), request.getPageSize(), wrapper);
-
-        return Response.toResponse(page.getData().stream().map(this::convert).collect(Collectors.toList()), page.getTotal());
+    LambdaQueryWrapper<BlackList> wrapper = new LambdaQueryWrapper<>();
+    if (StringUtils.isNotEmpty(request.getPhone())) {
+      wrapper.eq(BlackList::getPhone, request.getPhone());
+    }
+    if (Objects.nonNull(request.getState())) {
+      wrapper.eq(BlackList::getState, request.getState());
+    }
+    if (CollectionUtils.isNotEmpty(request.getRange())) {
+      wrapper.ge(BlackList::getUpdateTime, request.getRange().get(IConsts.ZERO));
+      wrapper.le(BlackList::getUpdateTime, request.getRange().get(IConsts.ONE));
     }
 
-    @Override
-    public Response<List<String>> queryList() {
+    Response<List<BlackList>> page = this.toPage(request.getPage(), request.getPageSize(), wrapper);
+
+    return Response.toResponse(page.getData().stream().map(this::convert).collect(Collectors.toList()), page.getTotal());
+  }
+
+  @Override
+  public Response<List<String>> queryList() {
 //        BlackList blackList = new BlackList();
 //        BeanUtils.copyProperties(blackListDTO, blackList);
 //        QueryWrapper<BlackList> qw = new QueryWrapper<>();
@@ -53,60 +55,60 @@ public class BlackListServiceImpl extends ServiceImpl<BlacklistMapper, BlackList
 //            qw.eq("phone", blackListDTO.getPhone());
 //        }
 //        return Response.toResponse(blackListMapper.selectPage(new Page<>(blackListDTO.getPage(), blackListDTO.getPageSize()), qw));
-        return null;
-    }
+    return null;
+  }
 
-    @Override
-    public Response<Long> create(final WhiteBlacklistSaveRequest request) {
-        BlackList blackList = new BlackList();
-        blackList.setState(Boolean.FALSE);
-        blackList.setPhone(request.getPhone());
-        blackList.setCreateTime(DateUtils.dateTime());
-        blackList.setUpdateTime(DateUtils.dateTime());
-        blackList.setCreateUser(request.getCreateUser());
-        blackList.setUpdateUser(request.getUpdateUser());
-        blackList.setDeleteStatus(Boolean.FALSE);
-        Assert.isTrue(this.baseMapper.insert(blackList) > 0, () -> "添加黑名单失败");
-        return Response.toResponse(blackList.getId());
-    }
+  @Override
+  public Response<Long> create(final WhiteBlacklistSaveRequest request) {
+    BlackList blackList = new BlackList();
+    blackList.setState(Boolean.FALSE);
+    blackList.setPhone(request.getPhone());
+    blackList.setCreateTime(DateUtils.dateTime());
+    blackList.setUpdateTime(DateUtils.dateTime());
+    blackList.setCreateUser(request.getCreateUser());
+    blackList.setUpdateUser(request.getUpdateUser());
+    blackList.setDeleteStatus(Boolean.FALSE);
+    Assert.isTrue(this.baseMapper.insert(blackList) > 0, () -> "添加黑名单失败");
+    return Response.toResponse(blackList.getId());
+  }
 
-    @Override
-    public Response<Long> modify(final WhiteBlacklistSaveRequest request) {
-        BlackList blackList = new BlackList();
-        blackList.setState(request.getState());
-        blackList.setPhone(request.getPhone());
-        blackList.setUpdateTime(DateUtils.dateTime());
-        blackList.setUpdateUser(request.getUpdateUser());
-        Assert.isTrue(this.baseMapper.update(blackList, new LambdaQueryWrapper<BlackList>().eq(BlackList::getId, request.getId())) > 0, () -> "更新黑名单失败¬");
-        return Response.toResponse(request.getId());
-    }
+  @Override
+  public Response<Long> modify(final WhiteBlacklistSaveRequest request) {
+    BlackList blackList = new BlackList();
+    blackList.setState(request.getState());
+    blackList.setPhone(request.getPhone());
+    blackList.setUpdateTime(DateUtils.dateTime());
+    blackList.setUpdateUser(request.getUpdateUser());
+    Assert.isTrue(this.baseMapper.update(blackList, new LambdaQueryWrapper<BlackList>().eq(BlackList::getId, request.getId())) > 0, () -> "更新黑名单失败¬");
+    return Response.toResponse(request.getId());
+  }
 
-    @Override
-    public Response<Long> delete(final Long id) {
+  @Override
+  public Response<Long> delete(final Long id) {
 
-        BlackList blackList = this.baseMapper.selectById(id);
+    BlackList blackList = this.baseMapper.selectById(id);
 
-        Assert.isTrue(Objects.nonNull(blackList), () -> "黑名单不存在");
+    Assert.isTrue(Objects.nonNull(blackList), () -> "黑名单不存在");
 
-        Assert.isTrue(this.baseMapper.deleteById(id) > 0, () -> "删除黑名单失败");
-        return Response.toResponse(id);
-    }
+    Assert.isTrue(this.baseMapper.deleteById(id) > 0, () -> "删除黑名单失败");
+    return Response.toResponse(id);
+  }
 
-    /**
-     * 数据转换
-     *
-     * @param blackList 黑名单
-     * @return 数据响应
-     */
-    private WhiteBlacklistResponse convert(final BlackList blackList) {
-        WhiteBlacklistResponse response = new WhiteBlacklistResponse();
-        response.setId(blackList.getId());
-        response.setPhone(blackList.getPhone());
-        response.setState(blackList.getState());
-        response.setCreateTime(blackList.getCreateTime());
-        response.setUpdateTime(blackList.getUpdateTime());
-        response.setCreateUser(blackList.getCreateUser());
-        response.setUpdateUser(blackList.getUpdateUser());
-        return response;
-    }
+  /**
+   * 数据转换
+   *
+   * @param blackList 黑名单
+   * @return 数据响应
+   */
+  private WhiteBlacklistResponse convert(final BlackList blackList) {
+    WhiteBlacklistResponse response = new WhiteBlacklistResponse();
+    response.setId(blackList.getId());
+    response.setPhone(blackList.getPhone());
+    response.setState(blackList.getState());
+    response.setCreateTime(blackList.getCreateTime());
+    response.setUpdateTime(blackList.getUpdateTime());
+    response.setCreateUser(blackList.getCreateUser());
+    response.setUpdateUser(blackList.getUpdateUser());
+    return response;
+  }
 }

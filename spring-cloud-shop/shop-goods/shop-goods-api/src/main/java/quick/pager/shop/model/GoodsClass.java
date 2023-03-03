@@ -19,22 +19,22 @@ import lombok.experimental.Accessors;
 @TableName("t_goods_class")
 public class GoodsClass extends Model {
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    /**
-     * 商品spuId
-     */
-    private Long spuId;
+  /**
+   * 商品spuId
+   */
+  private Long spuId;
 
-    /**
-     * 分类名称
-     */
-    private String className;
+  /**
+   * 分类名称
+   */
+  private String className;
 
-    /**
-     * 序号
-     */
-    private Integer sequence;
+  /**
+   * 序号
+   */
+  private Integer sequence;
 
 
 }

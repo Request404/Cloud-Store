@@ -1,6 +1,7 @@
 package quick.pager.shop.user.response;
 
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
@@ -10,18 +11,18 @@ import lombok.Data;
  */
 @Data
 public class CommonResponse implements Serializable {
-    private static final long serialVersionUID = 4795023687882738889L;
+  private static final long serialVersionUID = 4795023687882738889L;
 
-    /**
-     * 主键
-     */
-    private Long id;
-    /**
-     * 名称
-     */
-    private String name;
-    /**
-     * 图标
-     */
-    private String icon;
+  /**
+   * 主键
+   */
+  private Long id;
+  /**
+   * 名称
+   */
+  private String name;
+  /**
+   * 图标
+   */
+  private String icon;
 }

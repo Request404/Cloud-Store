@@ -11,12 +11,13 @@ import quick.pager.shop.service.SellerOrderService;
 @Service
 public class SellerOrderServiceImpl implements SellerOrderService {
 
-    @Autowired
-    private ESSellerOrderClient esSellerOrderClient;
-    @Autowired
-    private SellerOrderMapper sellerOrderMapper;
-    @Override
-    public Response create(SellerOrderSaveRequest request) {
-        return null;
-    }
+  @Autowired
+  private ESSellerOrderClient esSellerOrderClient;
+  @Autowired
+  private SellerOrderMapper sellerOrderMapper;
+
+  @Override
+  public Response create(SellerOrderSaveRequest request) {
+    return null;
+  }
 }

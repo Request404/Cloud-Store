@@ -12,19 +12,19 @@ import quick.pager.shop.user.response.Response;
  */
 public interface AssembleRuleService extends IService<AssembleActivityRule> {
 
-    /**
-     * 拼团活动规则
-     *
-     * @param activityId 活动主键
-     * @return 拼团活动内容
-     */
-    Response<AssembleActivityRuleResponse> info(Long activityId);
+  /**
+   * 拼团活动规则
+   *
+   * @param activityId 活动主键
+   * @return 拼团活动内容
+   */
+  Response<AssembleActivityRuleResponse> info(Long activityId);
 
-    /**
-     * 修改规则
-     *
-     * @param request 请求参数
-     * @return 拼团规则主键
-     */
-    Response<Long> rule(AssembleRuleSaveRequest request);
+  /**
+   * 修改规则
+   *
+   * @param request 请求参数
+   * @return 拼团规则主键
+   */
+  Response<Long> rule(AssembleRuleSaveRequest request);
 }

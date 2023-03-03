@@ -13,7 +13,7 @@ export default {
   name: 'ActivityDatabase',
   data () {
     return {
-      url: 'https://www.baidu.com/'
+      url: 'http://192.168.19.128:15672/'
     }
   },
   mounted () {

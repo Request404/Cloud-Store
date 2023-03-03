@@ -15,28 +15,28 @@ import quick.pager.shop.risk.request.WhiteBlacklistSaveRequest;
  */
 @Component
 public class RiskClientFallbackFactory implements FallbackFactory<RiskClient> {
-    @Override
-    public RiskClient create(Throwable cause) {
-        return new RiskClient() {
-            @Override
-            public Response queryList(WhiteBlacklistPageRequest request) {
-                return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
-            }
+  @Override
+  public RiskClient create(Throwable cause) {
+    return new RiskClient() {
+      @Override
+      public Response queryList(WhiteBlacklistPageRequest request) {
+        return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
+      }
 
-            @Override
-            public Response<Long> create(WhiteBlacklistSaveRequest request) {
-                return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
-            }
+      @Override
+      public Response<Long> create(WhiteBlacklistSaveRequest request) {
+        return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
+      }
 
-            @Override
-            public Response<Long> modify(WhiteBlacklistSaveRequest request) {
-                return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
-            }
+      @Override
+      public Response<Long> modify(WhiteBlacklistSaveRequest request) {
+        return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
+      }
 
-            @Override
-            public Response<Long> delete(Long id) {
-                return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
-            }
-        };
-    }
+      @Override
+      public Response<Long> delete(Long id) {
+        return Response.toError(ResponseStatus.Code.EXCEPTION_CODE, ResponseStatus.TELNET_EXCEPTION);
+      }
+    };
+  }
 }

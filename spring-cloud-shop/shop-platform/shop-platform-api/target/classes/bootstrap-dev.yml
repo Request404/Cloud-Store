@@ -25,14 +25,19 @@ spring:
         dashboard: 127.0.0.1:8080
       filter:
         enabled: true
-
-seata:
-  service:
-    vgroup-mapping:
-      shop-platform-seata-service-group: default
-    grouplist:
-      default: 192.168.19.128:8091
-    disable-global-transaction: false
+  zipkin:
+    base-url: http://192.168.19.128:9411
+    discovery-client-enabled: false
+  sleuth:
+    sampler:
+      probability: 1.0  # 采样的百分比
+#seata:
+#  service:
+#    vgroup-mapping:
+#      shop-platform-seata-service-group: default
+#    grouplist:
+#      default: 192.168.19.128:8091
+#    disable-global-transaction: false
 
 security:
   oauth2:

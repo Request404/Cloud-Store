@@ -2,6 +2,7 @@ package quick.pager.shop.controller;
 
 import java.util.List;
 import java.util.Objects;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,36 +28,36 @@ import quick.pager.shop.user.response.Response;
 @RequestMapping(ConstantsClient.PLATFORM)
 public class SystemConfigDetailController {
 
-    @Autowired
-    private SystemConfigDetailService systemConfigDetailService;
+  @Autowired
+  private SystemConfigDetailService systemConfigDetailService;
 
-    /**
-     * 创建配置
-     */
-    @PostMapping("/config/detail/create")
-    public Response<Long> create(@RequestBody SystemConfigDetailSaveRequest request) {
-        return systemConfigDetailService.create(request);
+  /**
+   * 创建配置
+   */
+  @PostMapping("/config/detail/create")
+  public Response<Long> create(@RequestBody SystemConfigDetailSaveRequest request) {
+    return systemConfigDetailService.create(request);
+  }
+
+  /**
+   * 创建配置
+   */
+  @PutMapping("/config/detail/modify")
+  public Response<Long> modify(@RequestBody SystemConfigDetailSaveRequest request) {
+    if (Objects.isNull(request)) {
+      return Response.toError(ResponseStatus.Code.FAIL_CODE, ResponseStatus.PARAMS_EXCEPTION);
     }
 
-    /**
-     * 创建配置
-     */
-    @PutMapping("/config/detail/modify")
-    public Response<Long> modify(@RequestBody SystemConfigDetailSaveRequest request) {
-        if (Objects.isNull(request)) {
-            return Response.toError(ResponseStatus.Code.FAIL_CODE, ResponseStatus.PARAMS_EXCEPTION);
-        }
+    return systemConfigDetailService.modify(request);
+  }
 
-        return systemConfigDetailService.modify(request);
-    }
+  /**
+   * 查询配置列表，无分页
+   */
+  @GetMapping("/config/detail/list")
+  public Response<List<SystemConfigDetailResponse>> queryList(SystemConfigDetailOtherRequest request) {
 
-    /**
-     * 查询配置列表，无分页
-     */
-    @GetMapping("/config/detail/list")
-    public Response<List<SystemConfigDetailResponse>> queryList(SystemConfigDetailOtherRequest request) {
-
-        return systemConfigDetailService.queryList(request);
-    }
+    return systemConfigDetailService.queryList(request);
+  }
 
 }

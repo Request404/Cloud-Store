@@ -16,3 +16,10 @@ spring:
         server-addr: 127.0.0.1:8848
         group: shop
         namespace: 0759bc76-60b5-4f32-acd5-e5095cf2b93d
+
+  zipkin:
+    base-url: http://192.168.19.128:9411
+    discovery-client-enabled: false
+  sleuth:
+    sampler:
+      probability: 1.0  # 采样的百分比

@@ -10,20 +10,20 @@ public class GoodsCartServiceImpl implements GoodsCartService {
 //    @Autowired
 //    private GoodsClient goodsClient;
 
-    @Override
-    public Response goodsCarts() {
+  @Override
+  public Response goodsCarts() {
 
 //        return goodsClient.goodsCarts(param.getUserId());
-        return null;
-    }
+    return null;
+  }
 
-    @Override
-    public Response modifyGoodsCart() {
+  @Override
+  public Response modifyGoodsCart() {
 
 //        return goodsClient.modifyGoodsCart(param.getUserId(),
 //                Optional.ofNullable(param.getGoodsIds()).orElse(Collections.emptyList()).toArray(new Long[0]),
 //                param.getGoodsCount(),
 //                param.getEvent());
-        return null;
-    }
+    return null;
+  }
 }

@@ -1,6 +1,7 @@
 package quick.pager.shop.controller.monitor;
 
 import java.util.List;
+
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -21,23 +22,23 @@ import quick.pager.shop.utils.Assert;
 @RequestMapping(Constants.Module.MANAGE)
 public class MonitorController {
 
-    @Autowired
-    private DiscoveryClient discoveryClient;
+  @Autowired
+  private DiscoveryClient discoveryClient;
 
-    /**
-     * 获取serviceUrl服务地址
-     */
-    @PostMapping("/monitor/serviceUrl")
-    public Response<String> serviceUrl(@RequestParam("serviceId") String serviceId) {
+  /**
+   * 获取serviceUrl服务地址
+   */
+  @PostMapping("/monitor/serviceUrl")
+  public Response<String> serviceUrl(@RequestParam("serviceId") String serviceId) {
 
-        List<ServiceInstance> instances = discoveryClient.getInstances(serviceId);
-        Assert.isTrue(CollectionUtils.isNotEmpty(instances), () -> ResponseStatus.SERVICE_NOT_FOUND);
-        // 服务地址
-        ServiceInstance serviceInstance = instances.get(0);
+    List<ServiceInstance> instances = discoveryClient.getInstances(serviceId);
+    Assert.isTrue(CollectionUtils.isNotEmpty(instances), () -> ResponseStatus.SERVICE_NOT_FOUND);
+    // 服务地址
+    ServiceInstance serviceInstance = instances.get(0);
 
-        Response<String> response = Response.toResponse();
+    Response<String> response = Response.toResponse();
 
-        response.setData(serviceInstance.getUri().toString());
-        return response;
-    }
+    response.setData(serviceInstance.getUri().toString());
+    return response;
+  }
 }
